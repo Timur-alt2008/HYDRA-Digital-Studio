@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-05T11:55:35.138Z",
+  "note": "Local lab run; mobile = 4x CPU slowdown + 1.6 Mbps / 150 ms. Google Fonts blocked when OFFLINE=1.",
+  "rows": [
+    {
+      "view": "mobile",
+      "page": "/",
+      "fcp_ms": 1444,
+      "lcp_ms": 2504,
+      "cls": 0,
+      "kb": 83,
+      "dom": 710
+    },
+    {
+      "view": "mobile",
+      "page": "/projects/",
+      "fcp_ms": 952,
+      "lcp_ms": 1568,
+      "cls": 0,
+      "kb": 110,
+      "dom": 646
+    },
+    {
+      "view": "mobile",
+      "page": "/start/",
+      "fcp_ms": 928,
+      "lcp_ms": 1460,
+      "cls": 0,
+      "kb": 58,
+      "dom": 318
+    },
+    {
+      "view": "mobile",
+      "page": "/projects/coffee-house/",
+      "fcp_ms": 1148,
+      "lcp_ms": 1148,
+      "cls": 0,
+      "kb": 56,
+      "dom": 228
+    },
+    {
+      "view": "desktop",
+      "page": "/",
+      "fcp_ms": 236,
+      "lcp_ms": 1180,
+      "cls": 0,
+      "kb": 64,
+      "dom": 710
+    },
+    {
+      "view": "desktop",
+      "page": "/projects/",
+      "fcp_ms": 188,
+      "lcp_ms": 1164,
+      "cls": 0,
+      "kb": 212,
+      "dom": 646
+    },
+    {
+      "view": "desktop",
+      "page": "/start/",
+      "fcp_ms": 120,
+      "lcp_ms": 120,
+      "cls": 0,
+      "kb": 66,
+      "dom": 318
+    },
+    {
+      "view": "desktop",
+      "page": "/projects/coffee-house/",
+      "fcp_ms": 184,
+      "lcp_ms": 1100,
+      "cls": 0,
+      "kb": 109,
+      "dom": 228
+    }
+  ]
+}

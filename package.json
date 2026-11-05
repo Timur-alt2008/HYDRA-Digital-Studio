@@ -1,0 +1,29 @@
+{
+  "name": "hydra-digital-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "HYDRA — independent digital development studio website. React + TypeScript static generation, vanilla TS client, zero client framework.",
+  "type": "module",
+  "scripts": {
+    "build": "tsx scripts/build.tsx",
+    "serve": "node scripts/serve.mjs",
+    "dev": "npm run build && npm run serve",
+    "test": "node tests/e2e.mjs",
+    "typecheck": "tsc --noEmit",
+    "assets": "node scripts/assets.mjs"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "esbuild": "^0.28.0",
+    "playwright": "^1.56.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  },
+  "engines": { "node": ">=20" }
+}

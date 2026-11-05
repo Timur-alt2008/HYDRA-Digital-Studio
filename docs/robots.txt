@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://timur-alt2008.github.io/HYDRA-Digital-Studio/sitemap.xml
