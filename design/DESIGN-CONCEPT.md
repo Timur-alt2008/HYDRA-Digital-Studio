@@ -45,8 +45,8 @@ Nothing was copied: no layouts, assets or code from references — only techniqu
 - **Colour (v4, experiment — "violet night").** Palette `#0B0720` · `#25134D` · `#6A2FC8` · `#9D71E8` · `#D1B8FF` ·
   `#F2E9FF`. Violet-black `#0B0720` for dark blocks and primary buttons, panels `#160D33`/`#25134D`; vivid violet
   `#6A2FC8` is the only accent and light source, `#9D71E8` for small accent text on dark, `#5524A8` for small accent
-  text on lavender (AA). Light surfaces stay soft (no bright white): page `#D9CAF4`, alternate sections `#CDBAEE`,
-  cards `#E6DAFB`, text and pills on dark `#F2E9FF`. Lilac side lights in dark sections.
+  text on lavender (AA). Light surfaces stay soft and muted (no bright white): page `#CBC6D8`, alternate sections
+  `#C0B9CF`, cards `#DCD7E8`, text and pills on dark `#F2E9FF`. Lilac side lights in dark sections.
   The previous grey + electric-blue version is kept on the `palette-grey-blue` branch.
 - **Signature fill.** The hero and every inner page head are inset rounded cards on the light page: black with a
   faint 96 px grid, an electric-blue light from the left edge, a soft diagonal ray, a blue band, and a fade through
@@ -85,3 +85,12 @@ Nothing was copied: no layouts, assets or code from references — only techniqu
 - Every portfolio item is labelled **Demo**, **Concept** or **Internal tool**; the businesses in the demos are fictional.
 - No invented history, team size, clients, awards or numbers.
 - Services outside the four directions are listed as *not offered*.
+
+## Languages
+
+The site is published in five languages — English (default, at the root), Ukrainian, Russian, German and Polish.
+Tone: Ukrainian and Russian address the reader as «ви/вы», German uses the formal «Sie», Polish the friendly
+informal «ty», as modern Polish studio sites do. Brand terms (HYDRA, Telegram, Mini App, Project Builder) and
+technical tags (Front-end, QA, R&D) stay in English. The header shows a compact language dropdown; the mobile menu
+shows all five languages as a row. Manrope, Inter and JetBrains Mono cover Cyrillic (including Ukrainian letters)
+and Latin Extended (Polish and German).

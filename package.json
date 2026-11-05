@@ -8,7 +8,7 @@
     "build": "tsx scripts/build.tsx",
     "serve": "node scripts/serve.mjs",
     "dev": "npm run build && npm run serve",
-    "test": "node tests/e2e.mjs && node tests/ru-smoke.mjs",
+    "test": "node tests/e2e.mjs && node tests/locales-smoke.mjs",
     "typecheck": "tsc --noEmit",
     "assets": "node scripts/assets.mjs"
   },

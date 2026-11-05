@@ -240,7 +240,7 @@ export function initBuilder() {
     labels.forEach((l, k) => { l.classList.toggle("is-current", k === current); l.classList.toggle("is-done", k < current); });
     prev.disabled = current === 0;
     nextLabel.textContent = current === steps.length - 1 ? t("Send brief", "Отправить бриф") : t("Next", "Далее");
-    count.textContent = t(`Step ${current + 1} of ${steps.length}`, `Шаг ${current + 1} из ${steps.length}`);
+    count.textContent = t("Step {n} of {total}", "Шаг {n} из {total}", { n: current + 1, total: steps.length });
     progress.style.setProperty("--p", String((current + 1) / steps.length));
     if (current === 2) renderFeatures();
     if (current === steps.length - 1) renderSummary();

@@ -17,7 +17,7 @@ if (existsSync(".env")) {
 }
 process.env.BUILD_ID = Date.now().toString(36); // cache-busting for CSS/JS on GitHub Pages
 const { SITE, absoluteAsset, absoluteFor } = await import("../src/config");
-const { LOCALES, setLocale, localePrefix } = await import("../src/i18n");
+const { LOCALES, setLocale, localePrefix, missing } = await import("../src/i18n");
 const { getProjects } = await import("../src/data/projects");
 const { Home } = await import("../src/pages/Home");
 const { About, Contact, NotFound, Process, ProjectDetail, Projects, Services, Start } = await import("../src/pages/Inner");
@@ -69,6 +69,10 @@ for (const l of LOCALES) {
 }
 setLocale("en");
 write("404.html", "<!doctype html>" + renderToStaticMarkup(<NotFound />));
+if (missing.size) {
+  console.error(`✗ ${missing.size} untranslated strings:\n` + [...missing].slice(0, 40).map((m) => "  " + m).join("\n"));
+  if (!process.env.I18N_ALLOW_MISSING) process.exit(1);
+}
 
 // 4. client bundle + styles
 await esbuild({

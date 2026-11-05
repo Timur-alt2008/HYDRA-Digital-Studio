@@ -30,7 +30,7 @@ no-JS support, Open Graph, JSON-LD, sitemap, robots.txt, 404 page.
 - **React 19 + TypeScript** components rendered to static HTML at build time (no client framework shipped)
 - **Vanilla TypeScript** client bundle (24 KB, 9 KB gzipped) built with **esbuild**
 - Hand-written CSS design system (Manrope + Inter + JetBrains Mono; violet palette `#0B0720 · #25134D · #6A2FC8 · #9D71E8 · #D1B8FF · #F2E9FF` (previous grey + blue version: branch `palette-grey-blue`))
-- **Bilingual**: English at the root, Russian under `/ru/`, EN/RU switcher on every page, `hreflang` + bilingual sitemap
+- **Five languages**: English at the root, Ukrainian `/uk/`, Russian `/ru/`, German `/de/`, Polish `/pl/`; language dropdown on every page, `hreflang` for all locales and a multilingual sitemap
 - **Playwright** end-to-end tests on 9 viewports
 
 ```
@@ -39,16 +39,28 @@ src/
   data/                services, projects, process, FAQ, capabilities — single source of truth
   components/          Layout, UI kit, HydraCore diagram, blocks, vector art
   pages/               Home + inner pages (About, Services, Projects, ProjectDetail, Process, Contact, Start, 404)
-  i18n.ts              locale switch for the build: L("English", "Русский")
+  i18n.ts              locale switch for the build: L("English", "Русский"); uk/de/pl come from dictionaries
+  i18n-dict/           uk.json, de.json, pl.json (keyed by the English text) + _source.json (extracted)
   client/              main.ts (header, menu, reveals, core, filters, before/after, process), telegram.ts, forms.ts
   styles/main.css      design tokens + components
 scripts/build.tsx      static build → /docs (GitHub Pages)
 scripts/serve.mjs      local server that mimics GitHub Pages (base path + 404)
 scripts/assets.mjs     regenerates og.png and apple-touch-icon.png
 tests/e2e.mjs          Playwright QA suite → tests/report.json
-tests/ru-smoke.mjs     Russian locale: interactive parts, language switch, untranslated-text scan
+tests/locales-smoke.mjs  RU/UK/DE/PL: interactive parts, language switch, scan for leftover English
+scripts/extract-strings.ts  collects every L()/t() pair into src/i18n-dict/_source.json
 design/                design concept and research decisions
 docs/                  production build (served by GitHub Pages)
+```
+
+## Translations
+
+English and Russian are written inline: `L("Start a project", "Начать проект")`. Ukrainian, German and Polish
+live in `src/i18n-dict/<locale>.json`, keyed by the English string. After changing texts:
+
+```bash
+npx tsx scripts/extract-strings.ts   # refresh src/i18n-dict/_source.json
+npm run build                        # fails and lists every phrase that has no translation yet
 ```
 
 ## Run it

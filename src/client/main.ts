@@ -193,7 +193,7 @@ function initFilters() {
       t.hidden = !ok;
       if (ok) { shown++; t.classList.add("is-in"); }
     });
-    if (status) status.textContent = tr(`${shown} project${shown === 1 ? "" : "s"} shown`, `Показано проектов: ${shown}`);
+    if (status) status.textContent = tr("Projects shown: {n}", "Показано проектов: {n}", { n: shown });
     if (animate && !reduceMotion()) {
       // FLIP: animate tiles from their old position to the new one
       tiles.filter((t) => !t.hidden).forEach((t) => {
@@ -294,8 +294,17 @@ function initFaq() {
   });
 }
 
+/* ------------------------------------------------ language dropdown */
+function initLang() {
+  const d = $<HTMLDetailsElement>("[data-lang]");
+  if (!d) return;
+  document.addEventListener("click", (e) => { if (d.open && !d.contains(e.target as Node)) d.open = false; });
+  d.addEventListener("keydown", (e) => { if (e.key === "Escape" && d.open) { d.open = false; d.querySelector("summary")?.focus(); } });
+}
+
 function boot() {
   initHeader();
+  initLang();
   initMenu();
   initReveal();
   initCore();
