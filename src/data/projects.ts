@@ -188,7 +188,7 @@ export const getProjects = (): Project[] => [
     cover: "hdi-recs",
     extra: [{ src: "hdi-ideas", alt: L("Idea report: six scores, six answers and the design review checklist", "Отчёт по идее: шесть оценок, шесть ответов и чек-лист дизайн-ревью") }],
     repo: REPO + "HYDRA-Design-Intelligence",
-    accent: "#7298d8",
+    accent: "#3d58df",
     featured: true,
   },
   {
@@ -204,7 +204,7 @@ export const getProjects = (): Project[] => [
     features: [L("Bot conversation with quick replies", "Диалог с ботом и быстрые ответы"), L("Service and slot selection", "Выбор услуги и времени"), L("Main-button confirmation pattern", "Подтверждение главной кнопкой"), L("Booking summary returned to the chat", "Итог записи приходит в чат")],
     stack: ["TypeScript", L("Telegram Mini Apps SDK (target)", "Telegram Mini Apps SDK (целевой)"), L("Telegram Bot API (target)", "Telegram Bot API (целевой)")],
     art: "miniapp-booking",
-    accent: "#7298d8",
+    accent: "#3d58df",
   },
   {
     slug: "music-recognition-bot",
@@ -234,7 +234,7 @@ export const getProjects = (): Project[] => [
     features: [L("Order creation with categories", "Создание заказов по категориям"), L("Provider responses and selection", "Отклики исполнителей и выбор"), L("Status notifications", "Уведомления о статусах"), L("Migrations with Alembic", "Миграции через Alembic")],
     stack: ["Python", "aiogram", "SQLite", "Alembic"],
     art: "bot-market",
-    accent: "#a9bbd6",
+    accent: "#a1a3ad",
   },
   {
     slug: "hydra-marketplace",

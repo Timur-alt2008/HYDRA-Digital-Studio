@@ -32,13 +32,14 @@ function initHeader() {
   const sections = $$("[data-theme]").filter((s) => !s.closest(".site-header") && !s.closest(".mobile-menu"));
   const pick = () => {
     const probeY = 36;
+    // the innermost (last in document order) themed block under the header wins;
+    // the light page itself shows around the inset hero card
+    let theme = "light";
     for (const s of sections) {
       const r = s.getBoundingClientRect();
-      if (r.top <= probeY && r.bottom > probeY) {
-        header.dataset.headerTheme = s.getAttribute("data-theme") || "dark";
-        return;
-      }
+      if (r.top <= probeY && r.bottom > probeY) theme = s.getAttribute("data-theme") || "dark";
     }
+    header.dataset.headerTheme = theme;
   };
   window.addEventListener("scroll", () => requestAnimationFrame(pick), { passive: true });
   window.addEventListener("resize", pick);

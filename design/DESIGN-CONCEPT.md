@@ -42,19 +42,20 @@ Nothing was copied: no layouts, assets or code from references — only techniqu
 
 ## 3. Visual system
 
-- **Colour (v2 — "white, soft blue, deep navy").** Light surfaces dominate: soft white `#F4F6FA` and ice
-  `#E9EEF6`, with light blue `#DCE5F2` for tints. Deep navy `#111722` (with `#172033`, `#1F2B42`, `#27364D`)
-  carries the contrast sections, hero, page heads and footer. Soft blue `#7298D8` is the only accent — buttons'
-  arrow badges, links, indices, graphics, interactive states, glossy gradient type — never long text. Small blue
-  text on light uses `#4A6FB0` (AA); muted text is `#536783` on light and `#A9BBD6` on dark.
-- **Gloss, carefully.** Dark sections get soft radial blue light spots; light sections stay clean with very soft
-  shadows. Glass (blur) is used only where content scrolls beneath: the scrolled header, sticky service nav,
-  before/after tags and handle, the contact card on dark. Large accent words use a blue gradient "reflection".
-  No neon outlines, no flashing.
+- **Colour (v3 — "black, electric blue, white").** Lavender-white surfaces `#F6F7FB` / `#EFF0FC`, light blue
+  `#D7DEF7` for tints. Neutral black `#111111` for contrast blocks and the footer. Electric blue `#3550D0` /
+  `#3D58DF` is the accent and the light source; `#8A9CE9` is used for small accent text on black (AA). Muted text:
+  `#5A5F73` on light, `#A1A3AD` on black.
+- **Signature fill.** The hero and every inner page head are inset rounded cards on the light page: black with a
+  faint 96 px grid, an electric-blue light from the left edge, a soft diagonal ray, a blue band, and a fade through
+  lavender to white at the bottom (black → blue → white). The CTA band before the footer runs white → blue.
+- **Gloss, carefully.** Glass (blur) only where content passes beneath: the scrolled header, sticky service nav,
+  the frosted ghost button, before/after tags. Large accent words use a blue gradient. No neon outlines, no flashing.
+- **Buttons.** Black pill with a white round arrow badge on light; white pill with a black badge on black; frosted
+  white ghost button on blue.
 - **Type.** Manrope 700 for headings (sentence case, tight tracking), Inter for text, JetBrains Mono for labels and
   indices. All three include Cyrillic, so the Russian version uses the same system.
-- **Shape.** Pill buttons with a round arrow badge (navy pill on light, white pill on dark), 12–28 px radii on
-  cards, fields and frames, pill chips, filters and choices.
+- **Shape.** 12–28 px radii on cards, fields and frames; pill chips, filters and choices.
 - **Grid.** 12 columns, asymmetric placements (8/4, 5/7, offset project tiles), generous section rhythm
   `clamp(88px, 13vw, 200px)`.
 - **Components.** Head rows (services as an index, not cards), spec sheet table, browser frames for real

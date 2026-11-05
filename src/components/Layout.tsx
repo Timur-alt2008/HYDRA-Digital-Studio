@@ -163,7 +163,7 @@ export function Layout({ meta, children }: { meta: PageMeta; children: React.Rea
         {!meta.noindex && <link rel="alternate" hrefLang="ru" href={absoluteFor("ru", meta.path)} />}
         {!meta.noindex && <link rel="alternate" hrefLang="x-default" href={absoluteFor("en", meta.path)} />}
         {meta.noindex && <meta name="robots" content="noindex" />}
-        <meta name="theme-color" content="#111722" />
+        <meta name="theme-color" content="#111111" />
         <meta name="color-scheme" content="light dark" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content={SITE.legalName} />
@@ -190,7 +190,7 @@ export function Layout({ meta, children }: { meta: PageMeta; children: React.Rea
       </head>
       <body data-page={meta.nav || "other"} data-base={href("")}>
         <a className="skip-link" href="#main">{L("Skip to content", "Перейти к содержимому")}</a>
-        <Header current={meta.nav} theme={meta.headerTheme || "dark"} path={meta.path} />
+        <Header current={meta.nav} theme={meta.headerTheme || "light"} path={meta.path} />
         <main id="main">{children}</main>
         <Footer />
       </body>

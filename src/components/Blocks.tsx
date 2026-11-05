@@ -200,7 +200,7 @@ export function ContactForm({ compact }: { compact?: boolean }) {
 
 export function CtaBand() {
   return (
-    <section className="section" data-theme="dark">
+    <section className="section" data-theme="blue">
       <div className="wrap cta-band">
         <Label accent>{L("Next step", "Следующий шаг")}</Label>
         <p className="cta-band__title"><a href={href("start/")}>{L("Start a", "Начать")}<br />{L("project", "проект")} <span className="accent">→</span></a></p>

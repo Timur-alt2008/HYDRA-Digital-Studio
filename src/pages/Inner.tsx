@@ -211,7 +211,7 @@ export function ProjectDetail({ p, next }: { p: Project; next: Project }) {
     keywords: p.stack.join(", "),
   };
   return (
-    <Layout meta={{ path: `projects/${p.slug}/`, title: `${p.title} — ${statusLabel(p.status)}`, description: p.summary, nav: "projects", jsonLd: [jsonLd] }}>
+    <Layout meta={{ path: `projects/${p.slug}/`, title: `${p.title} — ${statusLabel(p.status)}`, description: p.summary, nav: "projects", jsonLd: [jsonLd], headerTheme: "dark" }}>
       <section className="p-hero" data-theme="dark">
         <div className="wrap">
           <a className="link-arrow" href={href("projects/")}><Icon name="back" /> {L("All projects", "Все проекты")}</a>
@@ -467,7 +467,7 @@ export function Start() {
 /* -------------------------------------------------------------------- 404 */
 export function NotFound() {
   return (
-    <Layout meta={{ path: "404.html", title: L("Page not found", "Страница не найдена"), description: L("This page does not exist.", "Такой страницы нет."), noindex: true }}>
+    <Layout meta={{ path: "404.html", title: L("Page not found", "Страница не найдена"), description: L("This page does not exist.", "Такой страницы нет."), noindex: true, headerTheme: "dark" }}>
       <section data-theme="dark">
         <div className="wrap nf">
           <span className="index">{L("Error 404", "Ошибка 404")}</span>

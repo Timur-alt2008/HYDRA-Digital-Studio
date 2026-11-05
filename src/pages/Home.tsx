@@ -43,10 +43,10 @@ export function Home() {
               <strong>{L("custom digital products", "цифровые продукты")}</strong>
               {L(" — from the first idea to launch.", " — от первой идеи до запуска.")}
             </p>
-            <div className="hero__ctas" data-reveal style={{ ["--i" as string]: 1 }}>
-              <Btn to="start/">{L("Start a project", "Начать проект")}</Btn>
-              <Btn to="projects/" ghost icon={null}>{L("See the work", "Смотреть работы")}</Btn>
-            </div>
+          </div>
+          <div className="hero__ctas" data-reveal style={{ ["--i" as string]: 1 }}>
+            <Btn to="start/">{L("Start a project", "Начать проект")}</Btn>
+            <Btn to="projects/" ghost icon={null}>{L("See the work", "Смотреть работы")}</Btn>
           </div>
           <div className="hero__core"><HydraCore /></div>
           <div className="hero__foot">
