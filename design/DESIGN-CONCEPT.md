@@ -42,11 +42,11 @@ Nothing was copied: no layouts, assets or code from references — only techniqu
 
 ## 3. Visual system
 
-- **Colour (v3.2 — "soft greys + electric blue").** No pure white anywhere, to avoid glare: page `#E8E8E8`,
-  alternate sections `#DEDEDE`, cards/fields/panels `#F2F2F2`, borders `#CBCBCB`/`#C4C4C4`, light badges `#D9D9D9`.
-  Text and pills on black use a softened white `#EDEDED`. Dark scale `#0B0B0B` → `#1A1A1A` → `#333333`. Muted text:
-  `#575757` on the greys and `#9E9E9E` on black (both AA). The only colour is electric blue `#3550D0` / `#3D58DF`,
-  with `#8A9CE9` for small accent text on black.
+- **Colour (v3.3 — "mid greys + electric blue").** No pure white, to avoid glare: page `#D4D4D4`, alternate
+  sections `#C9C9C9`, cards/fields/panels `#E2E2E2`, borders `#B3B3B3`/`#A8A8A8`, light badges `#C2C2C2`. Text and
+  pills on black use a softened white `#EDEDED`. Dark scale `#0B0B0B` → `#1A1A1A` → `#333333`. Muted text: `#4A4A4A`
+  on the greys and `#9E9E9E` on black (both AA). The only colour is electric blue `#3550D0` / `#3D58DF`, with
+  `#8A9CE9` for small accent text on black.
 - **Signature fill.** The hero and every inner page head are inset rounded cards on the light page: black with a
   faint 96 px grid, an electric-blue light from the left edge, a soft diagonal ray, a blue band, and a fade through
   lavender to white at the bottom (black → blue → white). The CTA band before the footer runs white → blue.

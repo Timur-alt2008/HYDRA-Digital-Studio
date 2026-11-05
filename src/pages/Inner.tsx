@@ -364,7 +364,7 @@ export function Start() {
   const steps = [L("Product", "Продукт"), L("Task", "Задача"), L("Features", "Функции"), L("Budget", "Бюджет"), L("Timeline", "Сроки"), L("Contacts", "Контакты")];
   return (
     <Layout meta={{ path: "start/", title: "Project Builder", description: L("Build your project brief in six steps: product type, goal, features, budget, timeline and contacts.", "Соберите бриф проекта за шесть шагов: тип продукта, задача, функции, бюджет, сроки и контакты."), nav: "start" }}>
-      <section className="page-head" data-theme="dark" style={{ paddingBottom: 40 }}>
+      <section className="page-head" data-theme="dark">
         <div className="wrap">
           <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}><span className="index">Project Builder</span><Label>{L("About 3 minutes", "Около 3 минут")}</Label></div>
           <SplitTitle as="h1" className="page-head__title" lines={[L("Build your", "Соберите"), L("brief.", "бриф.")]} accentLine={1} />
