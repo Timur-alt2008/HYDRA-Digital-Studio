@@ -15,6 +15,7 @@ if (existsSync(".env")) {
     if (m && process.env[m[1]] === undefined) process.env[m[1]] = m[2].replace(/^["']|["']$/g, "");
   }
 }
+process.env.BUILD_ID = Date.now().toString(36); // cache-busting for CSS/JS on GitHub Pages
 const { SITE, absolute } = await import("../src/config");
 const { PROJECTS } = await import("../src/data/projects");
 const { Home } = await import("../src/pages/Home");

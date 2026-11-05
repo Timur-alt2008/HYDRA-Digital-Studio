@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-05T11:58:12.774Z",
+  "date": "2026-11-05T12:40:51.037Z",
   "pages": 19,
   "viewports": [
     [
@@ -4428,12 +4428,12 @@
       "detail": "200"
     },
     {
-      "name": "link /HYDRA-Digital-Studio/assets/main.css",
+      "name": "link /HYDRA-Digital-Studio/assets/main.css?v=mw3j7ch8",
       "ok": true,
       "detail": "200"
     },
     {
-      "name": "link /HYDRA-Digital-Studio/assets/main.js",
+      "name": "link /HYDRA-Digital-Studio/assets/main.js?v=mw3j7ch8",
       "ok": true,
       "detail": "200"
     },

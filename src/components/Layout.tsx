@@ -152,9 +152,9 @@ export function Layout({ meta, children }: { meta: PageMeta; children: React.Rea
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=JetBrains+Mono:wght@400;500&display=swap" />
-        <link rel="stylesheet" href={href("assets/main.css")} />
+        <link rel="stylesheet" href={href(`assets/main.css?v=${process.env.BUILD_ID || "dev"}`)} />
         <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.replace('no-js','js')" }} />
-        <script type="module" src={href("assets/main.js")} />
+        <script type="module" src={href(`assets/main.js?v=${process.env.BUILD_ID || "dev"}`)} />
         {ld.map((o, i) => (
           <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(o).replace(/</g, "\\u003c") }} />
         ))}
