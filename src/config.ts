@@ -10,12 +10,12 @@ const env = (key: string, fallback: string): string => {
 };
 
 export const SITE = {
-  name: "HYDRA",
-  legalName: "HYDRA Digital Studio",
+  name: "T-HYDRA",
+  legalName: "T-HYDRA Digital Studio",
   tagline: "We build digital experiences.",
   slogan: "Think beyond. Build without limits.",
   description:
-    "HYDRA is an independent digital development studio: websites from scratch, website redesign, Telegram bots and Mini Apps, and custom digital products — from first idea to launch.",
+    "T-HYDRA is an independent digital development studio: websites from scratch, website redesign, Telegram bots and Mini Apps, and custom digital products — from first idea to launch.",
   /** Public origin, without trailing slash. */
   origin: env("SITE_ORIGIN", "https://timur-alt2008.github.io"),
   /** Path prefix the site is served from (GitHub Pages project site). Must start and end with "/". */
@@ -34,6 +34,16 @@ export const SITE = {
   formEndpoint: env("FORM_ENDPOINT", ""),
   contactEmail: env("CONTACT_EMAIL", ""),
   contactTelegram: env("CONTACT_TELEGRAM", ""),
+  /**
+   * Accounts ("My account": sign-up, sign-in, the visitor's requests and their status).
+   * With a Supabase project configured (see setup/ACCOUNTS-SETUP.md) accounts are real and requests from
+   * signed-in visitors reach the studio. Both values are public by design (row-level security protects the data).
+   * Empty → clearly labelled demo mode: accounts and requests live only in the visitor's browser.
+   */
+  /** Experimental copy: hide it from search engines so it never competes with the main site. */
+  lab: env("LAB", "0") === "1", // main site; the T-HYDRA-Lab copy builds with LAB=1
+  supabaseUrl: env("SUPABASE_URL", ""),
+  supabaseAnonKey: env("SUPABASE_ANON_KEY", ""),
 } as const;
 
 /** Build an internal page URL that respects the base path and the active locale. */
@@ -55,3 +65,5 @@ export const absoluteAsset = (path: string): string => SITE.origin + asset(path)
 
 export const contactMode = (): "endpoint" | "email" | "telegram" | "demo" =>
   SITE.formEndpoint ? "endpoint" : SITE.contactEmail ? "email" : SITE.contactTelegram ? "telegram" : "demo";
+
+export const accountMode = (): "live" | "demo" => (SITE.supabaseUrl && SITE.supabaseAnonKey ? "live" : "demo");

@@ -33,7 +33,7 @@ export function Home() {
           <SplitTitle as="h1" id="hero-title" className="hero__title" lines={[L("One core.", "Одно ядро."), L("Four heads.", "Четыре головы.")]} accentLine={1} />
           <div className="hero__intro">
             <p className="lead" data-reveal>
-              {L("HYDRA designs and builds ", "HYDRA проектирует и разрабатывает ")}
+              {L("T-HYDRA designs and builds ", "T-HYDRA проектирует и разрабатывает ")}
               <strong>{L("websites", "сайты")}</strong>
               {L(", ", ", ")}
               <strong>{L("redesigns", "делает редизайн")}</strong>
@@ -76,7 +76,7 @@ export function Home() {
       {/* 03 — brand */}
       <section className="section" data-theme="ice" aria-labelledby="brand-title">
         <div className="wrap">
-          <SectionHead index={L("Manifesto", "Манифест")} label={L("Why HYDRA", "Почему HYDRA")} title={<h2 id="brand-title" className="sr-only">{L("Why HYDRA", "Почему HYDRA")}</h2>} />
+          <SectionHead index={L("Manifesto", "Манифест")} label={L("Why T-HYDRA", "Почему T-HYDRA")} title={<h2 id="brand-title" className="sr-only">{L("Why T-HYDRA", "Почему T-HYDRA")}</h2>} />
           <p className="manifesto" data-reveal>
             {L("The hydra grows a new head for every one you cut. We work the same way: ", "У гидры на месте каждой отрубленной головы вырастает новая. Мы работаем так же: ")}
             <em>{L("every limit", "каждое ограничение")}</em>

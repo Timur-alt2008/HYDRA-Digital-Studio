@@ -21,11 +21,12 @@ const { LOCALES, setLocale, localePrefix, missing } = await import("../src/i18n"
 const { getProjects } = await import("../src/data/projects");
 const { Home } = await import("../src/pages/Home");
 const { About, Contact, NotFound, Process, ProjectDetail, Projects, Services, Start } = await import("../src/pages/Inner");
+const { Account } = await import("../src/pages/Account");
 
-const OUT = "docs";
+const OUT = process.env.OUT_DIR || "docs";
 const t0 = Date.now();
 
-type Route = { path: string; el: () => React.ReactElement; priority: number };
+type Route = { path: string; el: () => React.ReactElement; priority: number; sitemap?: false };
 const projects = getProjects();
 const routes: Route[] = [
   { path: "", el: () => <Home />, priority: 1 },
@@ -35,6 +36,7 @@ const routes: Route[] = [
   { path: "about/", el: () => <About />, priority: 0.7 },
   { path: "contact/", el: () => <Contact />, priority: 0.8 },
   { path: "start/", el: () => <Start />, priority: 0.8 },
+  { path: "account/", el: () => <Account />, priority: 0.3, sitemap: false },
   ...projects.map((p, i) => ({
     path: `projects/${p.slug}/`,
     // data is re-read inside the locale so titles/texts are translated
@@ -90,8 +92,8 @@ writeFileSync(join(OUT, "assets/main.css"), css.code);
 
 // 5. SEO files
 const today = new Date().toISOString().slice(0, 10);
-write("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${LOCALES.flatMap((l) => routes.map((r) => `  <url><loc>${absoluteFor(l, r.path)}</loc><lastmod>${today}</lastmod><priority>${r.priority}</priority>${LOCALES.map((x) => `<xhtml:link rel="alternate" hreflang="${x}" href="${absoluteFor(x, r.path)}"/>`).join("")}</url>`)).join("\n")}\n</urlset>\n`);
-write("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${absoluteAsset("sitemap.xml")}\n`);
+write("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${LOCALES.flatMap((l) => routes.filter((r) => r.sitemap !== false).map((r) => `  <url><loc>${absoluteFor(l, r.path)}</loc><lastmod>${today}</lastmod><priority>${r.priority}</priority>${LOCALES.map((x) => `<xhtml:link rel="alternate" hreflang="${x}" href="${absoluteFor(x, r.path)}"/>`).join("")}</url>`)).join("\n")}\n</urlset>\n`);
+write("robots.txt", SITE.lab ? "User-agent: *\nDisallow: /\n" : `User-agent: *\nAllow: /\n\nSitemap: ${absoluteAsset("sitemap.xml")}\n`);
 write("site.webmanifest", JSON.stringify({ name: SITE.legalName, short_name: SITE.name, start_url: SITE.base, display: "standalone", background_color: "#0b0720", theme_color: "#0b0720", icons: [{ src: `${SITE.base}favicon.svg`, sizes: "any", type: "image/svg+xml" }, { src: `${SITE.base}apple-touch-icon.png`, sizes: "180x180", type: "image/png" }] }, null, 2));
 
 console.log(`✓ built ${pages + 1} pages into /${OUT} in ${Date.now() - t0} ms (base ${SITE.base})`);

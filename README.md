@@ -47,11 +47,24 @@ scripts/build.tsx      static build → /docs (GitHub Pages)
 scripts/serve.mjs      local server that mimics GitHub Pages (base path + 404)
 scripts/assets.mjs     regenerates og.png and apple-touch-icon.png
 tests/e2e.mjs          Playwright QA suite → tests/report.json
+tests/account.mjs        My account: sign-up/in, requests from both forms, statuses (demo backend)
+tests/account-live.mjs   the same flow against a local mock of the Supabase API (live backend)
 tests/locales-smoke.mjs  RU/UK/DE/PL: interactive parts, language switch, scan for leftover English
 scripts/extract-strings.ts  collects every L()/t() pair into src/i18n-dict/_source.json
 design/                design concept and research decisions
 docs/                  production build (served by GitHub Pages)
 ```
+
+## My account
+
+`/account/` lets visitors sign up, sign in and follow their requests (active / completed). Briefs sent from the
+contact form or the Project Builder while signed in are saved to the account.
+
+- **Demo mode** (default, no configuration): accounts and requests live in the visitor's browser (passwords only
+  as PBKDF2 hashes); a labelled "studio simulation" switch shows how statuses change.
+- **Live mode**: set `SUPABASE_URL` and `SUPABASE_ANON_KEY`, run `supabase/schema.sql` once. Row-level security
+  lets each visitor read and create only their own requests; admins listed in `public.admins` get a studio tab to
+  change statuses and leave notes. Step-by-step guide (RU): `setup/ACCOUNTS-SETUP.md`.
 
 ## Translations
 

@@ -126,7 +126,7 @@ export function ProjectArt({ kind, accent, title }: { kind: string; accent: stri
   );
 }
 
-/** Service visuals: each head of HYDRA gets its own composition. */
+/** Service visuals: each head of T-HYDRA gets its own composition. */
 export function ServiceArt({ id }: { id: string }) {
   if (id === "web") {
     return (

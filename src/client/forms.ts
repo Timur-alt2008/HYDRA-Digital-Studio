@@ -3,6 +3,7 @@
    endpoint → POST JSON · email → mail app · telegram → copy + open chat · demo → copy / download only. */
 
 import { t } from "./lang";
+import { accountNoteHtml, prefillFromAccount, saveToAccount, type SaveResult } from "./account";
 
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 const TG = /^@?[a-zA-Z][a-zA-Z0-9_]{4,31}$/;
@@ -14,9 +15,9 @@ const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&l
 const briefId = () => {
   const d = new Date();
   const rnd = Math.random().toString(36).slice(2, 6).toUpperCase();
-  return `HY-${String(d.getFullYear()).slice(2)}${String(d.getMonth() + 1).padStart(2, "0")}${String(d.getDate()).padStart(2, "0")}-${rnd}`;
+  return `TH-${String(d.getFullYear()).slice(2)}${String(d.getMonth() + 1).padStart(2, "0")}${String(d.getDate()).padStart(2, "0")}-${rnd}`;
 };
-const toText = (id: string, brief: Brief) => [`${t("HYDRA project brief", "Бриф проекта HYDRA")} ${id}`, "", ...Object.entries(brief).filter(([, v]) => v).map(([k, v]) => `${k}: ${v}`)].join("\n");
+const toText = (id: string, brief: Brief) => [`${t("T-HYDRA project brief", "Бриф проекта T-HYDRA")} ${id}`, "", ...Object.entries(brief).filter(([, v]) => v).map(([k, v]) => `${k}: ${v}`)].join("\n");
 
 function validContact(v: string) { return EMAIL.test(v.trim()) || TG.test(v.trim()); }
 
@@ -55,13 +56,14 @@ async function deliver(form: HTMLElement, id: string, brief: Brief): Promise<{ o
   return { ok: true, note: t("Demo mode: nothing was sent. Your brief is ready below — copy or download it.", "Демо-режим: ничего не отправлено. Бриф готов ниже — скопируйте или скачайте его.") };
 }
 
-function showConfirm(box: HTMLElement, id: string, brief: Brief, note: string, ok: boolean) {
+function showConfirm(box: HTMLElement, id: string, brief: Brief, note: string, ok: boolean, acc?: SaveResult) {
   const text = toText(id, brief);
   box.hidden = false;
   box.innerHTML = `
     <span class="label label--accent">${ok ? t("Brief ready", "Бриф готов") : t("Not sent", "Не отправлено")}</span>
     <p class="confirm__id">${esc(id)}</p>
     <p>${esc(note)}</p>
+    ${acc ? accountNoteHtml(acc) : ""}
     <div class="summary"><dl>${Object.entries(brief).filter(([, v]) => v).map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join("")}</dl></div>
     <div style="display:flex;gap:12px;flex-wrap:wrap">
       <button type="button" class="btn btn--small" data-copy><span>${t("Copy brief", "Скопировать бриф")}</span></button>
@@ -83,9 +85,17 @@ function showConfirm(box: HTMLElement, id: string, brief: Brief, note: string, o
   box.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "center" });
 }
 
+/** Save to the visitor's account (if signed in) and adjust the delivery note in live mode. */
+async function withAccount(req: Parameters<typeof saveToAccount>[0], res: { ok: boolean; note: string }) {
+  const acc = await saveToAccount(req);
+  if (acc.saved && acc.live) res = { ok: true, note: t("Your request is saved in your account and the studio can see it. Follow its status in My account.", "Заявка сохранена в вашем кабинете, студия её видит. Следите за статусом в личном кабинете.") };
+  return { acc, res };
+}
+
 /* ------------------------------------------------------------ contact form */
 export function initContactForms() {
   document.querySelectorAll<HTMLFormElement>("[data-contact-form]").forEach((form) => {
+    prefillFromAccount(form);
     const f = (n: string) => form.elements.namedItem(n) as HTMLInputElement | null;
     const validate = () => {
       let ok = true;
@@ -119,8 +129,9 @@ export function initContactForms() {
       const btn = form.querySelector<HTMLButtonElement>('button[type="submit"]')!;
       btn.disabled = true;
       const id = briefId();
-      const res = await deliver(form, id, brief);
-      showConfirm(form.querySelector<HTMLElement>("[data-confirm]")!, id, brief, res.note, res.ok);
+      const delivered = await deliver(form, id, brief);
+      const { acc, res } = await withAccount({ ref: id, kind: "message", product: brief[K.need] || t("Message", "Сообщение"), summary: brief[K.message].slice(0, 180), brief }, delivered);
+      showConfirm(form.querySelector<HTMLElement>("[data-confirm]")!, id, brief, res.note, res.ok, acc);
       btn.disabled = false;
       if (res.ok) btn.querySelector("span")!.textContent = t("Send another", "Отправить ещё");
     });
@@ -267,16 +278,18 @@ export function initBuilder() {
     next.disabled = true;
     const brief = { ...collect(), [K.source]: "Project Builder" };
     const id = briefId();
-    const res = await deliver(form, id, brief);
+    const delivered = await deliver(form, id, brief);
+    const { acc, res } = await withAccount({ ref: id, kind: "brief", product: TYPE_LABEL[val("type")] || "Project Builder", summary: [val("task"), val("budget"), val("timeline")].filter(Boolean).join(" · "), brief }, delivered);
     steps.forEach((s) => (s.hidden = true));
     form.querySelector<HTMLElement>("[data-builder-nav]")!.hidden = true;
     labels.forEach((l) => { l.classList.remove("is-current"); l.classList.add("is-done"); });
     count.textContent = t("Done", "Готово");
     progress.style.setProperty("--p", "1");
-    showConfirm(confirm, id, brief, res.note, res.ok);
+    showConfirm(confirm, id, brief, res.note, res.ok, acc);
     if (res.ok) { try { localStorage.removeItem(DRAFT_KEY); } catch { /* ignore */ } }
   });
 
   restore();
+  prefillFromAccount(form as HTMLFormElement);
   go(0, false);
 }

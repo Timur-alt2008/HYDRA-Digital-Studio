@@ -1,7 +1,7 @@
 import React from "react";
 import { asset, href } from "../config";
 
-type IconName = "arrow" | "arrow-up-right" | "external" | "github" | "telegram" | "copy" | "download" | "check" | "mail" | "back";
+type IconName = "arrow" | "arrow-up-right" | "external" | "github" | "telegram" | "copy" | "download" | "check" | "mail" | "user" | "back";
 
 export function Icon({ name, title }: { name: IconName; title?: string }) {
   const p = { width: 24, height: 24, viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: 1.6, "aria-hidden": title ? undefined : true, role: title ? "img" : undefined } as const;
@@ -24,6 +24,8 @@ export function Icon({ name, title }: { name: IconName; title?: string }) {
       return <svg {...p}><path d="M12 4v11M7 10l5 5 5-5M4 20h16" strokeLinecap="round" /></svg>;
     case "check":
       return <svg {...p}><path d="m5 12 4.5 4.5L19 7" strokeLinecap="round" /></svg>;
+    case "user":
+      return <svg {...p}><circle cx="12" cy="8.5" r="3.6" /><path d="M4.8 20c.9-3.6 3.7-5.6 7.2-5.6s6.3 2 7.2 5.6" strokeLinecap="round" /></svg>;
     case "mail":
       return <svg {...p}><rect x="3" y="5" width="18" height="14" /><path d="m3 6 9 7 9-7" /></svg>;
   }

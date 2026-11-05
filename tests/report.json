@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-05T21:17:44.479Z",
+  "date": "2026-11-05T22:40:23.321Z",
   "pages": 95,
   "viewports": [
     [
@@ -39,7 +39,7 @@
       800
     ]
   ],
-  "passed": 4559,
+  "passed": 4564,
   "failed": 0,
   "results": [
     {
@@ -2440,7 +2440,7 @@
     {
       "name": "/ title + description",
       "ok": true,
-      "detail": "HYDRA — Independent digital development studio"
+      "detail": "T-HYDRA — Independent digital development studio"
     },
     {
       "name": "1440×900 / no JS errors",
@@ -2470,7 +2470,7 @@
     {
       "name": "/services/ title + description",
       "ok": true,
-      "detail": "Services — HYDRA"
+      "detail": "Services — T-HYDRA"
     },
     {
       "name": "1440×900 /services/ no JS errors",
@@ -2500,7 +2500,7 @@
     {
       "name": "/projects/ title + description",
       "ok": true,
-      "detail": "Projects — HYDRA"
+      "detail": "Projects — T-HYDRA"
     },
     {
       "name": "1440×900 /projects/ no JS errors",
@@ -2530,7 +2530,7 @@
     {
       "name": "/process/ title + description",
       "ok": true,
-      "detail": "Process — HYDRA"
+      "detail": "Process — T-HYDRA"
     },
     {
       "name": "1440×900 /process/ no JS errors",
@@ -2560,7 +2560,7 @@
     {
       "name": "/about/ title + description",
       "ok": true,
-      "detail": "About — HYDRA"
+      "detail": "About — T-HYDRA"
     },
     {
       "name": "1440×900 /about/ no JS errors",
@@ -2590,7 +2590,7 @@
     {
       "name": "/contact/ title + description",
       "ok": true,
-      "detail": "Contact — HYDRA"
+      "detail": "Contact — T-HYDRA"
     },
     {
       "name": "1440×900 /contact/ no JS errors",
@@ -2620,7 +2620,7 @@
     {
       "name": "/start/ title + description",
       "ok": true,
-      "detail": "Project Builder — HYDRA"
+      "detail": "Project Builder — T-HYDRA"
     },
     {
       "name": "1440×900 /start/ no JS errors",
@@ -2650,7 +2650,7 @@
     {
       "name": "/projects/barber-atelier/ title + description",
       "ok": true,
-      "detail": "Barber Atelier — Demo — HYDRA"
+      "detail": "Barber Atelier — Demo — T-HYDRA"
     },
     {
       "name": "1440×900 /projects/barber-atelier/ no JS errors",
@@ -2680,7 +2680,7 @@
     {
       "name": "/projects/coffee-house/ title + description",
       "ok": true,
-      "detail": "Coffee House & Bakery — Demo — HYDRA"
+      "detail": "Coffee House & Bakery — Demo — T-HYDRA"
     },
     {
       "name": "1440×900 /projects/coffee-house/ no JS errors",
@@ -2710,7 +2710,7 @@
     {
       "name": "/projects/fitness-club/ title + description",
       "ok": true,
-      "detail": "Fitness Club Platform — Demo — HYDRA"
+      "detail": "Fitness Club Platform — Demo — T-HYDRA"
     },
     {
       "name": "1440×900 /projects/fitness-club/ no JS errors",
@@ -2740,7 +2740,7 @@
     {
       "name": "/projects/cinema/ title + description",
       "ok": true,
-      "detail": "Cinema — Thriller & Horror — Demo — HYDRA"
+      "detail": "Cinema — Thriller & Horror — Demo — T-HYDRA"
     },
     {
       "name": "1440×900 /projects/cinema/ no JS errors",
@@ -2770,7 +2770,7 @@
     {
       "name": "/projects/auto-service/ title + description",
       "ok": true,
-      "detail": "Auto Service — Demo — HYDRA"
+      "detail": "Auto Service — Demo — T-HYDRA"
     },
     {
       "name": "1440×900 /projects/auto-service/ no JS errors",
@@ -2800,7 +2800,7 @@
     {
       "name": "/projects/premium-automotive/ title + description",
       "ok": true,
-      "detail": "Premium Automotive — Demo — HYDRA"
+      "detail": "Premium Automotive — Demo — T-HYDRA"
     },
     {
       "name": "1440×900 /projects/premium-automotive/ no JS errors",
@@ -2830,7 +2830,7 @@
     {
       "name": "/projects/beauty-salon/ title + description",
       "ok": true,
-      "detail": "Quiet-Luxury Beauty Salon — Demo — HYDRA"
+      "detail": "Quiet-Luxury Beauty Salon — Demo — T-HYDRA"
     },
     {
       "name": "1440×900 /projects/beauty-salon/ no JS errors",
@@ -2860,7 +2860,7 @@
     {
       "name": "/projects/design-intelligence/ title + description",
       "ok": true,
-      "detail": "HYDRA Design Intelligence — Internal tool — HYDRA"
+      "detail": "T-HYDRA Design Intelligence — Internal tool — T-HYDRA"
     },
     {
       "name": "1440×900 /projects/design-intelligence/ no JS errors",
@@ -2890,7 +2890,7 @@
     {
       "name": "/projects/booking-mini-app/ title + description",
       "ok": true,
-      "detail": "Booking Mini App — Demo — HYDRA"
+      "detail": "Booking Mini App — Demo — T-HYDRA"
     },
     {
       "name": "1440×900 /projects/booking-mini-app/ no JS errors",
@@ -2920,7 +2920,7 @@
     {
       "name": "/projects/music-recognition-bot/ title + description",
       "ok": true,
-      "detail": "Music Recognition Bot — Concept — HYDRA"
+      "detail": "Music Recognition Bot — Concept — T-HYDRA"
     },
     {
       "name": "1440×900 /projects/music-recognition-bot/ no JS errors",
@@ -2950,7 +2950,7 @@
     {
       "name": "/projects/marketplace-bot/ title + description",
       "ok": true,
-      "detail": "Services Marketplace Bot — Concept — HYDRA"
+      "detail": "Services Marketplace Bot — Concept — T-HYDRA"
     },
     {
       "name": "1440×900 /projects/marketplace-bot/ no JS errors",
@@ -2980,7 +2980,7 @@
     {
       "name": "/projects/hydra-marketplace/ title + description",
       "ok": true,
-      "detail": "HYDRA Marketplace Mini App — Concept — HYDRA"
+      "detail": "HYDRA Marketplace Mini App — Concept — T-HYDRA"
     },
     {
       "name": "1440×900 /projects/hydra-marketplace/ no JS errors",
@@ -3010,7 +3010,7 @@
     {
       "name": "/uk/ title + description",
       "ok": true,
-      "detail": "HYDRA — Незалежна студія цифрової розробки"
+      "detail": "T-HYDRA — Незалежна студія цифрової розробки"
     },
     {
       "name": "1440×900 /uk/ no JS errors",
@@ -3040,7 +3040,7 @@
     {
       "name": "/uk/services/ title + description",
       "ok": true,
-      "detail": "Послуги — HYDRA"
+      "detail": "Послуги — T-HYDRA"
     },
     {
       "name": "1440×900 /uk/services/ no JS errors",
@@ -3070,7 +3070,7 @@
     {
       "name": "/uk/projects/ title + description",
       "ok": true,
-      "detail": "Проєкти — HYDRA"
+      "detail": "Проєкти — T-HYDRA"
     },
     {
       "name": "1440×900 /uk/projects/ no JS errors",
@@ -3100,7 +3100,7 @@
     {
       "name": "/uk/process/ title + description",
       "ok": true,
-      "detail": "Процес — HYDRA"
+      "detail": "Процес — T-HYDRA"
     },
     {
       "name": "1440×900 /uk/process/ no JS errors",
@@ -3130,7 +3130,7 @@
     {
       "name": "/uk/about/ title + description",
       "ok": true,
-      "detail": "Про студію — HYDRA"
+      "detail": "Про студію — T-HYDRA"
     },
     {
       "name": "1440×900 /uk/about/ no JS errors",
@@ -3160,7 +3160,7 @@
     {
       "name": "/uk/contact/ title + description",
       "ok": true,
-      "detail": "Контакти — HYDRA"
+      "detail": "Контакти — T-HYDRA"
     },
     {
       "name": "1440×900 /uk/contact/ no JS errors",
@@ -3190,7 +3190,7 @@
     {
       "name": "/uk/start/ title + description",
       "ok": true,
-      "detail": "Project Builder — HYDRA"
+      "detail": "Project Builder — T-HYDRA"
     },
     {
       "name": "1440×900 /uk/start/ no JS errors",
@@ -3220,7 +3220,7 @@
     {
       "name": "/uk/projects/barber-atelier/ title + description",
       "ok": true,
-      "detail": "Barber Atelier — Демо — HYDRA"
+      "detail": "Barber Atelier — Демо — T-HYDRA"
     },
     {
       "name": "1440×900 /uk/projects/barber-atelier/ no JS errors",
@@ -3250,7 +3250,7 @@
     {
       "name": "/uk/projects/coffee-house/ title + description",
       "ok": true,
-      "detail": "Кав’ярня й пекарня — Демо — HYDRA"
+      "detail": "Кав’ярня й пекарня — Демо — T-HYDRA"
     },
     {
       "name": "1440×900 /uk/projects/coffee-house/ no JS errors",
@@ -3280,7 +3280,7 @@
     {
       "name": "/uk/projects/fitness-club/ title + description",
       "ok": true,
-      "detail": "Платформа фітнес-клубу — Демо — HYDRA"
+      "detail": "Платформа фітнес-клубу — Демо — T-HYDRA"
     },
     {
       "name": "1440×900 /uk/projects/fitness-club/ no JS errors",
@@ -3310,7 +3310,7 @@
     {
       "name": "/uk/projects/cinema/ title + description",
       "ok": true,
-      "detail": "Кінотеатр — трилери й горори — Демо — HYDRA"
+      "detail": "Кінотеатр — трилери й горори — Демо — T-HYDRA"
     },
     {
       "name": "1440×900 /uk/projects/cinema/ no JS errors",
@@ -3340,7 +3340,7 @@
     {
       "name": "/uk/projects/auto-service/ title + description",
       "ok": true,
-      "detail": "Автосервіс — Демо — HYDRA"
+      "detail": "Автосервіс — Демо — T-HYDRA"
     },
     {
       "name": "1440×900 /uk/projects/auto-service/ no JS errors",
@@ -3370,7 +3370,7 @@
     {
       "name": "/uk/projects/premium-automotive/ title + description",
       "ok": true,
-      "detail": "Преміум-автостудія — Демо — HYDRA"
+      "detail": "Преміум-автостудія — Демо — T-HYDRA"
     },
     {
       "name": "1440×900 /uk/projects/premium-automotive/ no JS errors",
@@ -3400,7 +3400,7 @@
     {
       "name": "/uk/projects/beauty-salon/ title + description",
       "ok": true,
-      "detail": "Салон краси в стилі quiet luxury — Демо — HYDRA"
+      "detail": "Салон краси в стилі quiet luxury — Демо — T-HYDRA"
     },
     {
       "name": "1440×900 /uk/projects/beauty-salon/ no JS errors",
@@ -3430,7 +3430,7 @@
     {
       "name": "/uk/projects/design-intelligence/ title + description",
       "ok": true,
-      "detail": "HYDRA Design Intelligence — Внутрішній інструмент — HYDRA"
+      "detail": "T-HYDRA Design Intelligence — Внутрішній інструмент — T-HYDRA"
     },
     {
       "name": "1440×900 /uk/projects/design-intelligence/ no JS errors",
@@ -3460,7 +3460,7 @@
     {
       "name": "/uk/projects/booking-mini-app/ title + description",
       "ok": true,
-      "detail": "Booking Mini App — Демо — HYDRA"
+      "detail": "Booking Mini App — Демо — T-HYDRA"
     },
     {
       "name": "1440×900 /uk/projects/booking-mini-app/ no JS errors",
@@ -3490,7 +3490,7 @@
     {
       "name": "/uk/projects/music-recognition-bot/ title + description",
       "ok": true,
-      "detail": "Бот розпізнавання музики — Концепт — HYDRA"
+      "detail": "Бот розпізнавання музики — Концепт — T-HYDRA"
     },
     {
       "name": "1440×900 /uk/projects/music-recognition-bot/ no JS errors",
@@ -3520,7 +3520,7 @@
     {
       "name": "/uk/projects/marketplace-bot/ title + description",
       "ok": true,
-      "detail": "Бот-маркетплейс послуг — Концепт — HYDRA"
+      "detail": "Бот-маркетплейс послуг — Концепт — T-HYDRA"
     },
     {
       "name": "1440×900 /uk/projects/marketplace-bot/ no JS errors",
@@ -3550,7 +3550,7 @@
     {
       "name": "/uk/projects/hydra-marketplace/ title + description",
       "ok": true,
-      "detail": "HYDRA Marketplace Mini App — Концепт — HYDRA"
+      "detail": "HYDRA Marketplace Mini App — Концепт — T-HYDRA"
     },
     {
       "name": "1440×900 /uk/projects/hydra-marketplace/ no JS errors",
@@ -3580,7 +3580,7 @@
     {
       "name": "/ru/ title + description",
       "ok": true,
-      "detail": "HYDRA — Независимая студия цифровой разработки"
+      "detail": "T-HYDRA — Независимая студия цифровой разработки"
     },
     {
       "name": "1440×900 /ru/ no JS errors",
@@ -3610,7 +3610,7 @@
     {
       "name": "/ru/services/ title + description",
       "ok": true,
-      "detail": "Услуги — HYDRA"
+      "detail": "Услуги — T-HYDRA"
     },
     {
       "name": "1440×900 /ru/services/ no JS errors",
@@ -3640,7 +3640,7 @@
     {
       "name": "/ru/projects/ title + description",
       "ok": true,
-      "detail": "Проекты — HYDRA"
+      "detail": "Проекты — T-HYDRA"
     },
     {
       "name": "1440×900 /ru/projects/ no JS errors",
@@ -3670,7 +3670,7 @@
     {
       "name": "/ru/process/ title + description",
       "ok": true,
-      "detail": "Процесс — HYDRA"
+      "detail": "Процесс — T-HYDRA"
     },
     {
       "name": "1440×900 /ru/process/ no JS errors",
@@ -3700,7 +3700,7 @@
     {
       "name": "/ru/about/ title + description",
       "ok": true,
-      "detail": "О студии — HYDRA"
+      "detail": "О студии — T-HYDRA"
     },
     {
       "name": "1440×900 /ru/about/ no JS errors",
@@ -3730,7 +3730,7 @@
     {
       "name": "/ru/contact/ title + description",
       "ok": true,
-      "detail": "Контакты — HYDRA"
+      "detail": "Контакты — T-HYDRA"
     },
     {
       "name": "1440×900 /ru/contact/ no JS errors",
@@ -3760,7 +3760,7 @@
     {
       "name": "/ru/start/ title + description",
       "ok": true,
-      "detail": "Project Builder — HYDRA"
+      "detail": "Project Builder — T-HYDRA"
     },
     {
       "name": "1440×900 /ru/start/ no JS errors",
@@ -3790,7 +3790,7 @@
     {
       "name": "/ru/projects/barber-atelier/ title + description",
       "ok": true,
-      "detail": "Barber Atelier — Демо — HYDRA"
+      "detail": "Barber Atelier — Демо — T-HYDRA"
     },
     {
       "name": "1440×900 /ru/projects/barber-atelier/ no JS errors",
@@ -3820,7 +3820,7 @@
     {
       "name": "/ru/projects/coffee-house/ title + description",
       "ok": true,
-      "detail": "Кофейня и пекарня — Демо — HYDRA"
+      "detail": "Кофейня и пекарня — Демо — T-HYDRA"
     },
     {
       "name": "1440×900 /ru/projects/coffee-house/ no JS errors",
@@ -3850,7 +3850,7 @@
     {
       "name": "/ru/projects/fitness-club/ title + description",
       "ok": true,
-      "detail": "Платформа фитнес-клуба — Демо — HYDRA"
+      "detail": "Платформа фитнес-клуба — Демо — T-HYDRA"
     },
     {
       "name": "1440×900 /ru/projects/fitness-club/ no JS errors",
@@ -3880,7 +3880,7 @@
     {
       "name": "/ru/projects/cinema/ title + description",
       "ok": true,
-      "detail": "Кинотеатр — триллеры и хорроры — Демо — HYDRA"
+      "detail": "Кинотеатр — триллеры и хорроры — Демо — T-HYDRA"
     },
     {
       "name": "1440×900 /ru/projects/cinema/ no JS errors",
@@ -3910,7 +3910,7 @@
     {
       "name": "/ru/projects/auto-service/ title + description",
       "ok": true,
-      "detail": "Автосервис — Демо — HYDRA"
+      "detail": "Автосервис — Демо — T-HYDRA"
     },
     {
       "name": "1440×900 /ru/projects/auto-service/ no JS errors",
@@ -3940,7 +3940,7 @@
     {
       "name": "/ru/projects/premium-automotive/ title + description",
       "ok": true,
-      "detail": "Премиум-автостудия — Демо — HYDRA"
+      "detail": "Премиум-автостудия — Демо — T-HYDRA"
     },
     {
       "name": "1440×900 /ru/projects/premium-automotive/ no JS errors",
@@ -3970,7 +3970,7 @@
     {
       "name": "/ru/projects/beauty-salon/ title + description",
       "ok": true,
-      "detail": "Салон красоты в стиле quiet luxury — Демо — HYDRA"
+      "detail": "Салон красоты в стиле quiet luxury — Демо — T-HYDRA"
     },
     {
       "name": "1440×900 /ru/projects/beauty-salon/ no JS errors",
@@ -4000,7 +4000,7 @@
     {
       "name": "/ru/projects/design-intelligence/ title + description",
       "ok": true,
-      "detail": "HYDRA Design Intelligence — Внутренний инструмент — HYDRA"
+      "detail": "T-HYDRA Design Intelligence — Внутренний инструмент — T-HYDRA"
     },
     {
       "name": "1440×900 /ru/projects/design-intelligence/ no JS errors",
@@ -4030,7 +4030,7 @@
     {
       "name": "/ru/projects/booking-mini-app/ title + description",
       "ok": true,
-      "detail": "Booking Mini App — Демо — HYDRA"
+      "detail": "Booking Mini App — Демо — T-HYDRA"
     },
     {
       "name": "1440×900 /ru/projects/booking-mini-app/ no JS errors",
@@ -4060,7 +4060,7 @@
     {
       "name": "/ru/projects/music-recognition-bot/ title + description",
       "ok": true,
-      "detail": "Бот распознавания музыки — Концепт — HYDRA"
+      "detail": "Бот распознавания музыки — Концепт — T-HYDRA"
     },
     {
       "name": "1440×900 /ru/projects/music-recognition-bot/ no JS errors",
@@ -4090,7 +4090,7 @@
     {
       "name": "/ru/projects/marketplace-bot/ title + description",
       "ok": true,
-      "detail": "Бот-маркетплейс услуг — Концепт — HYDRA"
+      "detail": "Бот-маркетплейс услуг — Концепт — T-HYDRA"
     },
     {
       "name": "1440×900 /ru/projects/marketplace-bot/ no JS errors",
@@ -4120,7 +4120,7 @@
     {
       "name": "/ru/projects/hydra-marketplace/ title + description",
       "ok": true,
-      "detail": "HYDRA Marketplace Mini App — Концепт — HYDRA"
+      "detail": "HYDRA Marketplace Mini App — Концепт — T-HYDRA"
     },
     {
       "name": "1440×900 /ru/projects/hydra-marketplace/ no JS errors",
@@ -4150,7 +4150,7 @@
     {
       "name": "/de/ title + description",
       "ok": true,
-      "detail": "HYDRA — Unabhängiges Studio für digitale Entwicklung"
+      "detail": "T-HYDRA — Unabhängiges Studio für digitale Entwicklung"
     },
     {
       "name": "1440×900 /de/ no JS errors",
@@ -4180,7 +4180,7 @@
     {
       "name": "/de/services/ title + description",
       "ok": true,
-      "detail": "Leistungen — HYDRA"
+      "detail": "Leistungen — T-HYDRA"
     },
     {
       "name": "1440×900 /de/services/ no JS errors",
@@ -4210,7 +4210,7 @@
     {
       "name": "/de/projects/ title + description",
       "ok": true,
-      "detail": "Projekte — HYDRA"
+      "detail": "Projekte — T-HYDRA"
     },
     {
       "name": "1440×900 /de/projects/ no JS errors",
@@ -4240,7 +4240,7 @@
     {
       "name": "/de/process/ title + description",
       "ok": true,
-      "detail": "Prozess — HYDRA"
+      "detail": "Prozess — T-HYDRA"
     },
     {
       "name": "1440×900 /de/process/ no JS errors",
@@ -4270,7 +4270,7 @@
     {
       "name": "/de/about/ title + description",
       "ok": true,
-      "detail": "Über uns — HYDRA"
+      "detail": "Über uns — T-HYDRA"
     },
     {
       "name": "1440×900 /de/about/ no JS errors",
@@ -4300,7 +4300,7 @@
     {
       "name": "/de/contact/ title + description",
       "ok": true,
-      "detail": "Kontakt — HYDRA"
+      "detail": "Kontakt — T-HYDRA"
     },
     {
       "name": "1440×900 /de/contact/ no JS errors",
@@ -4330,7 +4330,7 @@
     {
       "name": "/de/start/ title + description",
       "ok": true,
-      "detail": "Project Builder — HYDRA"
+      "detail": "Project Builder — T-HYDRA"
     },
     {
       "name": "1440×900 /de/start/ no JS errors",
@@ -4360,7 +4360,7 @@
     {
       "name": "/de/projects/barber-atelier/ title + description",
       "ok": true,
-      "detail": "Barber Atelier — Demo — HYDRA"
+      "detail": "Barber Atelier — Demo — T-HYDRA"
     },
     {
       "name": "1440×900 /de/projects/barber-atelier/ no JS errors",
@@ -4390,7 +4390,7 @@
     {
       "name": "/de/projects/coffee-house/ title + description",
       "ok": true,
-      "detail": "Café & Bäckerei — Demo — HYDRA"
+      "detail": "Café & Bäckerei — Demo — T-HYDRA"
     },
     {
       "name": "1440×900 /de/projects/coffee-house/ no JS errors",
@@ -4420,7 +4420,7 @@
     {
       "name": "/de/projects/fitness-club/ title + description",
       "ok": true,
-      "detail": "Fitnessclub-Plattform — Demo — HYDRA"
+      "detail": "Fitnessclub-Plattform — Demo — T-HYDRA"
     },
     {
       "name": "1440×900 /de/projects/fitness-club/ no JS errors",
@@ -4450,7 +4450,7 @@
     {
       "name": "/de/projects/cinema/ title + description",
       "ok": true,
-      "detail": "Kino — Thriller & Horror — Demo — HYDRA"
+      "detail": "Kino — Thriller & Horror — Demo — T-HYDRA"
     },
     {
       "name": "1440×900 /de/projects/cinema/ no JS errors",
@@ -4480,7 +4480,7 @@
     {
       "name": "/de/projects/auto-service/ title + description",
       "ok": true,
-      "detail": "Autowerkstatt — Demo — HYDRA"
+      "detail": "Autowerkstatt — Demo — T-HYDRA"
     },
     {
       "name": "1440×900 /de/projects/auto-service/ no JS errors",
@@ -4510,7 +4510,7 @@
     {
       "name": "/de/projects/premium-automotive/ title + description",
       "ok": true,
-      "detail": "Premium Automotive — Demo — HYDRA"
+      "detail": "Premium Automotive — Demo — T-HYDRA"
     },
     {
       "name": "1440×900 /de/projects/premium-automotive/ no JS errors",
@@ -4540,7 +4540,7 @@
     {
       "name": "/de/projects/beauty-salon/ title + description",
       "ok": true,
-      "detail": "Quiet-Luxury-Beautysalon — Demo — HYDRA"
+      "detail": "Quiet-Luxury-Beautysalon — Demo — T-HYDRA"
     },
     {
       "name": "1440×900 /de/projects/beauty-salon/ no JS errors",
@@ -4570,7 +4570,7 @@
     {
       "name": "/de/projects/design-intelligence/ title + description",
       "ok": true,
-      "detail": "HYDRA Design Intelligence — Internes Tool — HYDRA"
+      "detail": "T-HYDRA Design Intelligence — Internes Tool — T-HYDRA"
     },
     {
       "name": "1440×900 /de/projects/design-intelligence/ no JS errors",
@@ -4600,7 +4600,7 @@
     {
       "name": "/de/projects/booking-mini-app/ title + description",
       "ok": true,
-      "detail": "Booking Mini App — Demo — HYDRA"
+      "detail": "Booking Mini App — Demo — T-HYDRA"
     },
     {
       "name": "1440×900 /de/projects/booking-mini-app/ no JS errors",
@@ -4630,7 +4630,7 @@
     {
       "name": "/de/projects/music-recognition-bot/ title + description",
       "ok": true,
-      "detail": "Musikerkennungs-Bot — Konzept — HYDRA"
+      "detail": "Musikerkennungs-Bot — Konzept — T-HYDRA"
     },
     {
       "name": "1440×900 /de/projects/music-recognition-bot/ no JS errors",
@@ -4660,7 +4660,7 @@
     {
       "name": "/de/projects/marketplace-bot/ title + description",
       "ok": true,
-      "detail": "Marktplatz-Bot für Dienstleistungen — Konzept — HYDRA"
+      "detail": "Marktplatz-Bot für Dienstleistungen — Konzept — T-HYDRA"
     },
     {
       "name": "1440×900 /de/projects/marketplace-bot/ no JS errors",
@@ -4690,7 +4690,7 @@
     {
       "name": "/de/projects/hydra-marketplace/ title + description",
       "ok": true,
-      "detail": "HYDRA Marketplace Mini App — Konzept — HYDRA"
+      "detail": "HYDRA Marketplace Mini App — Konzept — T-HYDRA"
     },
     {
       "name": "1440×900 /de/projects/hydra-marketplace/ no JS errors",
@@ -4720,7 +4720,7 @@
     {
       "name": "/pl/ title + description",
       "ok": true,
-      "detail": "HYDRA — Niezależne studio tworzenia rozwiązań cyfrowych"
+      "detail": "T-HYDRA — Niezależne studio tworzenia rozwiązań cyfrowych"
     },
     {
       "name": "1440×900 /pl/ no JS errors",
@@ -4750,7 +4750,7 @@
     {
       "name": "/pl/services/ title + description",
       "ok": true,
-      "detail": "Usługi — HYDRA"
+      "detail": "Usługi — T-HYDRA"
     },
     {
       "name": "1440×900 /pl/services/ no JS errors",
@@ -4780,7 +4780,7 @@
     {
       "name": "/pl/projects/ title + description",
       "ok": true,
-      "detail": "Projekty — HYDRA"
+      "detail": "Projekty — T-HYDRA"
     },
     {
       "name": "1440×900 /pl/projects/ no JS errors",
@@ -4810,7 +4810,7 @@
     {
       "name": "/pl/process/ title + description",
       "ok": true,
-      "detail": "Proces — HYDRA"
+      "detail": "Proces — T-HYDRA"
     },
     {
       "name": "1440×900 /pl/process/ no JS errors",
@@ -4840,7 +4840,7 @@
     {
       "name": "/pl/about/ title + description",
       "ok": true,
-      "detail": "O studiu — HYDRA"
+      "detail": "O studiu — T-HYDRA"
     },
     {
       "name": "1440×900 /pl/about/ no JS errors",
@@ -4870,7 +4870,7 @@
     {
       "name": "/pl/contact/ title + description",
       "ok": true,
-      "detail": "Kontakt — HYDRA"
+      "detail": "Kontakt — T-HYDRA"
     },
     {
       "name": "1440×900 /pl/contact/ no JS errors",
@@ -4900,7 +4900,7 @@
     {
       "name": "/pl/start/ title + description",
       "ok": true,
-      "detail": "Project Builder — HYDRA"
+      "detail": "Project Builder — T-HYDRA"
     },
     {
       "name": "1440×900 /pl/start/ no JS errors",
@@ -4930,7 +4930,7 @@
     {
       "name": "/pl/projects/barber-atelier/ title + description",
       "ok": true,
-      "detail": "Barber Atelier — Demo — HYDRA"
+      "detail": "Barber Atelier — Demo — T-HYDRA"
     },
     {
       "name": "1440×900 /pl/projects/barber-atelier/ no JS errors",
@@ -4960,7 +4960,7 @@
     {
       "name": "/pl/projects/coffee-house/ title + description",
       "ok": true,
-      "detail": "Kawiarnia i piekarnia — Demo — HYDRA"
+      "detail": "Kawiarnia i piekarnia — Demo — T-HYDRA"
     },
     {
       "name": "1440×900 /pl/projects/coffee-house/ no JS errors",
@@ -4990,7 +4990,7 @@
     {
       "name": "/pl/projects/fitness-club/ title + description",
       "ok": true,
-      "detail": "Platforma klubu fitness — Demo — HYDRA"
+      "detail": "Platforma klubu fitness — Demo — T-HYDRA"
     },
     {
       "name": "1440×900 /pl/projects/fitness-club/ no JS errors",
@@ -5020,7 +5020,7 @@
     {
       "name": "/pl/projects/cinema/ title + description",
       "ok": true,
-      "detail": "Kino — thrillery i horrory — Demo — HYDRA"
+      "detail": "Kino — thrillery i horrory — Demo — T-HYDRA"
     },
     {
       "name": "1440×900 /pl/projects/cinema/ no JS errors",
@@ -5050,7 +5050,7 @@
     {
       "name": "/pl/projects/auto-service/ title + description",
       "ok": true,
-      "detail": "Serwis samochodowy — Demo — HYDRA"
+      "detail": "Serwis samochodowy — Demo — T-HYDRA"
     },
     {
       "name": "1440×900 /pl/projects/auto-service/ no JS errors",
@@ -5080,7 +5080,7 @@
     {
       "name": "/pl/projects/premium-automotive/ title + description",
       "ok": true,
-      "detail": "Premium Automotive — Demo — HYDRA"
+      "detail": "Premium Automotive — Demo — T-HYDRA"
     },
     {
       "name": "1440×900 /pl/projects/premium-automotive/ no JS errors",
@@ -5110,7 +5110,7 @@
     {
       "name": "/pl/projects/beauty-salon/ title + description",
       "ok": true,
-      "detail": "Salon urody w stylu quiet luxury — Demo — HYDRA"
+      "detail": "Salon urody w stylu quiet luxury — Demo — T-HYDRA"
     },
     {
       "name": "1440×900 /pl/projects/beauty-salon/ no JS errors",
@@ -5140,7 +5140,7 @@
     {
       "name": "/pl/projects/design-intelligence/ title + description",
       "ok": true,
-      "detail": "HYDRA Design Intelligence — Narzędzie wewnętrzne — HYDRA"
+      "detail": "T-HYDRA Design Intelligence — Narzędzie wewnętrzne — T-HYDRA"
     },
     {
       "name": "1440×900 /pl/projects/design-intelligence/ no JS errors",
@@ -5170,7 +5170,7 @@
     {
       "name": "/pl/projects/booking-mini-app/ title + description",
       "ok": true,
-      "detail": "Booking Mini App — Demo — HYDRA"
+      "detail": "Booking Mini App — Demo — T-HYDRA"
     },
     {
       "name": "1440×900 /pl/projects/booking-mini-app/ no JS errors",
@@ -5200,7 +5200,7 @@
     {
       "name": "/pl/projects/music-recognition-bot/ title + description",
       "ok": true,
-      "detail": "Bot do rozpoznawania muzyki — Koncept — HYDRA"
+      "detail": "Bot do rozpoznawania muzyki — Koncept — T-HYDRA"
     },
     {
       "name": "1440×900 /pl/projects/music-recognition-bot/ no JS errors",
@@ -5230,7 +5230,7 @@
     {
       "name": "/pl/projects/marketplace-bot/ title + description",
       "ok": true,
-      "detail": "Bot-marketplace usług — Koncept — HYDRA"
+      "detail": "Bot-marketplace usług — Koncept — T-HYDRA"
     },
     {
       "name": "1440×900 /pl/projects/marketplace-bot/ no JS errors",
@@ -5260,7 +5260,7 @@
     {
       "name": "/pl/projects/hydra-marketplace/ title + description",
       "ok": true,
-      "detail": "HYDRA Marketplace Mini App — Koncept — HYDRA"
+      "detail": "HYDRA Marketplace Mini App — Koncept — T-HYDRA"
     },
     {
       "name": "1440×900 /pl/projects/hydra-marketplace/ no JS errors",
@@ -21908,12 +21908,12 @@
       "detail": "200"
     },
     {
-      "name": "link /HYDRA-Digital-Studio/assets/main.css?v=mw41b0il",
+      "name": "link /HYDRA-Digital-Studio/assets/main.css?v=mw44b2rh",
       "ok": true,
       "detail": "200"
     },
     {
-      "name": "link /HYDRA-Digital-Studio/assets/main.js?v=mw41b0il",
+      "name": "link /HYDRA-Digital-Studio/assets/main.js?v=mw44b2rh",
       "ok": true,
       "detail": "200"
     },
@@ -21964,6 +21964,11 @@
     },
     {
       "name": "link /HYDRA-Digital-Studio/pl/",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "link /HYDRA-Digital-Studio/account/",
       "ok": true,
       "detail": "200"
     },
@@ -22488,6 +22493,11 @@
       "detail": "200"
     },
     {
+      "name": "link /HYDRA-Digital-Studio/uk/account/",
+      "ok": true,
+      "detail": "200"
+    },
+    {
       "name": "link /HYDRA-Digital-Studio/uk/start/?type=web",
       "ok": true,
       "detail": "200"
@@ -22504,6 +22514,11 @@
     },
     {
       "name": "link /HYDRA-Digital-Studio/uk/start/?type=products",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "link /HYDRA-Digital-Studio/ru/account/",
       "ok": true,
       "detail": "200"
     },
@@ -22528,6 +22543,11 @@
       "detail": "200"
     },
     {
+      "name": "link /HYDRA-Digital-Studio/de/account/",
+      "ok": true,
+      "detail": "200"
+    },
+    {
       "name": "link /HYDRA-Digital-Studio/de/start/?type=web",
       "ok": true,
       "detail": "200"
@@ -22544,6 +22564,11 @@
     },
     {
       "name": "link /HYDRA-Digital-Studio/de/start/?type=products",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "link /HYDRA-Digital-Studio/pl/account/",
       "ok": true,
       "detail": "200"
     },

@@ -13,7 +13,7 @@ export type Service = {
   fits: string[];
 };
 
-/** The four heads of HYDRA. Nothing outside these four is offered. */
+/** The four heads of T-HYDRA. Nothing outside these four is offered. */
 export const getServices = (): Service[] => [
   {
     id: "web",
@@ -42,7 +42,7 @@ export const getServices = (): Service[] => [
     ),
     includes: [L("Full visual redesign", "Полное обновление дизайна"), L("New structure and navigation", "Новая структура и навигация"), L("Interface improvements", "Улучшение интерфейсов"), L("Modernised functionality", "Модернизация функциональности"), L("Responsive adaptation", "Адаптация под все устройства"), L("Technical update and speed", "Техническое обновление и скорость")],
     deliverables: [L("UX and technical audit", "UX- и технический аудит"), L("New information architecture", "Новая информационная архитектура"), L("Redesigned interface and content blocks", "Новый интерфейс и контентные блоки"), L("Migration of existing content", "Перенос существующего контента"), L("Performance and accessibility fixes", "Исправления скорости и доступности"), L("Before / after comparison", "Сравнение «до / после»")],
-    stack: [L("Audit with HYDRA Design Intelligence", "Аудит в HYDRA Design Intelligence"), "Lighthouse · Core Web Vitals", L("Modern front-end stack", "Современный фронтенд-стек"), L("Redirect and SEO safety", "Сохранение SEO и редиректы")],
+    stack: [L("Audit with T-HYDRA Design Intelligence", "Аудит в T-HYDRA Design Intelligence"), "Lighthouse · Core Web Vitals", L("Modern front-end stack", "Современный фронтенд-стек"), L("Redirect and SEO safety", "Сохранение SEO и редиректы")],
     fits: [L("The site looks outdated or breaks on phones", "Сайт выглядит устаревшим или ломается на телефонах"), L("Visitors do not find what they need", "Посетители не находят нужное"), L("The code base is hard to change", "Код сложно менять")],
   },
   {
@@ -77,5 +77,5 @@ export const getServices = (): Service[] => [
   },
 ];
 
-/** What HYDRA explicitly does not offer — focus is part of the brand. */
+/** What T-HYDRA explicitly does not offer — focus is part of the brand. */
 export const getNotOffered = () => [L("SEO promotion", "SEO-продвижение"), L("Paid advertising", "Контекстная реклама"), L("Social media management", "SMM"), L("Video production", "Видеопродакшн"), L("Branding as a separate service", "Брендинг как отдельная услуга"), L("Native mobile apps", "Нативные мобильные приложения")];

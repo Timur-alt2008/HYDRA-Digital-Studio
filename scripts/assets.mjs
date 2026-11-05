@@ -27,7 +27,7 @@ const og = `<!doctype html><html><head><style>
 <div class="wrap">
   <div class="top"><b>We build digital experiences</b><span>Web · Redesign · Telegram · Products</span></div>
   <h1>One core.<br><span>Four heads.</span></h1>
-  <div class="foot"><span class="brand">${mark}HYDRA</span><span>Think beyond. Build without limits.</span></div>
+  <div class="foot"><span class="brand">${mark}<b style="color:#9d71e8;font-weight:800">T</b>-HYDRA</span><span>Think beyond. Build without limits.</span></div>
 </div></body></html>`;
 
 const browser = await chromium.launch();

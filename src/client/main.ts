@@ -1,7 +1,8 @@
-/* HYDRA — client behaviour. Progressive enhancement only: every page works without JS. */
+/* T-HYDRA — client behaviour. Progressive enhancement only: every page works without JS. */
 import { initBuilder, initContactForms } from "./forms";
 import { initTelegram } from "./telegram";
 import { t as tr } from "./lang";
+import { initAccountLink, initAccountPage } from "./account";
 
 const $ = <T extends Element = HTMLElement>(sel: string, root: ParentNode = document) => root.querySelector<T>(sel);
 const $$ = <T extends Element = HTMLElement>(sel: string, root: ParentNode = document) => Array.from(root.querySelectorAll<T>(sel));
@@ -305,6 +306,8 @@ function initLang() {
 function boot() {
   initHeader();
   initLang();
+  initAccountLink();
+  initAccountPage();
   initMenu();
   initReveal();
   initCore();

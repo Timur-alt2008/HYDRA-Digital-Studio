@@ -211,10 +211,10 @@ for (const vp of VIEWPORTS) {
   await form.locator('button[type="submit"]').click();
   await page.waitForTimeout(300);
   const confirm = form.locator("[data-confirm]");
-  check("contact form confirmation", await confirm.isVisible() && /HY-\d{6}-[A-Z0-9]{4}/.test(await confirm.textContent()));
+  check("contact form confirmation", await confirm.isVisible() && /TH-\d{6}-[A-Z0-9]{4}/.test(await confirm.textContent()));
   check("contact form brief content", (await confirm.textContent()).includes("Telegram bot") && (await confirm.textContent()).includes("Demo mode"));
   const [download] = await Promise.all([page.waitForEvent("download"), confirm.locator("[data-download]").click()]);
-  check("brief download", /HY-.*\.txt$/.test(download.suggestedFilename()));
+  check("brief download", /TH-.*\.txt$/.test(download.suggestedFilename()));
   await page.context().close();
 }
 

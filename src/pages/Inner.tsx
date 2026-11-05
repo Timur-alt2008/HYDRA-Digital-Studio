@@ -39,8 +39,8 @@ export function About() {
   ];
   const services = getServices();
   return (
-    <Layout meta={{ path: "about/", title: L("About", "О студии"), description: L("HYDRA is an independent digital development studio. Our philosophy, approach, specialisation and values.", "HYDRA — независимая студия цифровой разработки. Философия, подход, специализация и ценности."), nav: "about" }}>
-      <PageHead index={L("About", "О студии")} label={L("The studio", "Студия")} lines={[L("A studio", "Студия"), L("with one core.", "с одним ядром.")]} lead={L("HYDRA is an independent digital development studio. We take a product at any stage — an idea, a half-built prototype or a live site that needs a new life — and turn it into a fast, considered, working digital experience.", "HYDRA — независимая студия цифровой разработки. Мы берём продукт на любом этапе — идею, недоделанный прототип или живой сайт, которому нужна новая жизнь, — и превращаем его в быстрый, продуманный, работающий цифровой продукт.")} aside={<span className="label">{SITE.slogan}</span>} />
+    <Layout meta={{ path: "about/", title: L("About", "О студии"), description: L("T-HYDRA is an independent digital development studio. Our philosophy, approach, specialisation and values.", "T-HYDRA — независимая студия цифровой разработки. Философия, подход, специализация и ценности."), nav: "about" }}>
+      <PageHead index={L("About", "О студии")} label={L("The studio", "Студия")} lines={[L("A studio", "Студия"), L("with one core.", "с одним ядром.")]} lead={L("T-HYDRA is an independent digital development studio. We take a product at any stage — an idea, a half-built prototype or a live site that needs a new life — and turn it into a fast, considered, working digital experience.", "T-HYDRA — независимая студия цифровой разработки. Мы берём продукт на любом этапе — идею, недоделанный прототип или живой сайт, которому нужна новая жизнь, — и превращаем его в быстрый, продуманный, работающий цифровой продукт.")} aside={<span className="label">{SITE.slogan}</span>} />
 
       <section className="section" data-theme="light" aria-labelledby="philo">
         <div className="wrap">
@@ -50,6 +50,7 @@ export function About() {
             <div className="p-body__content prose lead" data-reveal>
               <p>{L("In the myth, the hydra grows two heads for every one that is cut off. We took the idea literally: one core — research, design and engineering working as one — and four heads, each a discipline that grows from that core.", "В мифе у гидры на месте каждой отрубленной головы вырастают две. Мы восприняли эту идею буквально: одно ядро — исследование, дизайн и разработка, работающие как единое целое, — и четыре головы, каждая из которых — направление, растущее из этого ядра.")}</p>
               <p>{L("A limitation in a brief is not a stop sign for us. It is the moment to look for the better solution, and then to build it properly.", "Ограничение в брифе для нас не знак «стоп». Это момент, чтобы найти лучшее решение — и затем сделать его как следует.")}</p>
+              <p>{L("The T in T-HYDRA is the founder's initial — a reminder that behind the studio there is a person who answers for every project.", "Буква T в T-HYDRA — инициал основателя: напоминание о том, что за студией стоит человек, который отвечает за каждый проект.")}</p>
             </div>
           </div>
         </div>
@@ -117,8 +118,8 @@ export function Services() {
   const services = getServices();
   const startLabel = (id: string) => (id === "products" ? L("Start a product", "Начать продукт") : id === "telegram" ? L("Start a Telegram project", "Начать Telegram-проект") : id === "redesign" ? L("Start a redesign", "Начать редизайн") : L("Start a website", "Начать сайт"));
   return (
-    <Layout meta={{ path: "services/", title: L("Services", "Услуги"), description: L("Web development, website redesign, Telegram bots and Mini Apps, custom digital products — what HYDRA builds and what you get.", "Веб-разработка, редизайн сайтов, Telegram-боты и Mini Apps, цифровые продукты — что делает HYDRA и что вы получаете."), nav: "services" }}>
-      <PageHead index={L("Services", "Услуги")} label={L("Four heads", "Четыре головы")} lines={[L("Four", "Четыре"), L("services.", "направления.")]} lead={L("Everything HYDRA does fits into four directions. Each has its own process, deliverables and stack — and the same standard of design and engineering.", "Всё, что делает HYDRA, укладывается в четыре направления. У каждого свой процесс, результаты и стек — и единый стандарт дизайна и разработки.")} />
+    <Layout meta={{ path: "services/", title: L("Services", "Услуги"), description: L("Web development, website redesign, Telegram bots and Mini Apps, custom digital products — what T-HYDRA builds and what you get.", "Веб-разработка, редизайн сайтов, Telegram-боты и Mini Apps, цифровые продукты — что делает T-HYDRA и что вы получаете."), nav: "services" }}>
+      <PageHead index={L("Services", "Услуги")} label={L("Four heads", "Четыре головы")} lines={[L("Four", "Четыре"), L("services.", "направления.")]} lead={L("Everything T-HYDRA does fits into four directions. Each has its own process, deliverables and stack — and the same standard of design and engineering.", "Всё, что делает T-HYDRA, укладывается в четыре направления. У каждого свой процесс, результаты и стек — и единый стандарт дизайна и разработки.")} />
       <nav className="svc-nav wrap" aria-label={L("Services", "Услуги")} data-svc-nav data-theme="light">
         {services.map((s) => <a key={s.id} href={`#${s.id}`}>{s.index} {s.title}</a>)}
       </nav>
@@ -176,7 +177,7 @@ export function Services() {
 export function Projects() {
   const projects = getProjects();
   return (
-    <Layout meta={{ path: "projects/", title: L("Projects", "Проекты"), description: L("HYDRA portfolio: websites, redesigns, Telegram bots, Telegram Mini Apps and digital products. Demo projects and concepts are labelled.", "Портфолио HYDRA: сайты, редизайны, Telegram-боты, Telegram Mini Apps и цифровые продукты. Демо-проекты и концепты подписаны."), nav: "projects" }}>
+    <Layout meta={{ path: "projects/", title: L("Projects", "Проекты"), description: L("T-HYDRA portfolio: websites, redesigns, Telegram bots, Telegram Mini Apps and digital products. Demo projects and concepts are labelled.", "Портфолио T-HYDRA: сайты, редизайны, Telegram-боты, Telegram Mini Apps и цифровые продукты. Демо-проекты и концепты подписаны."), nav: "projects" }}>
       <PageHead index={L("Projects", "Проекты")} label={L("Portfolio", "Портфолио")} lines={[L("Selected", "Избранные"), L("work.", "работы.")]} lead={<>{L("Demo projects for fictional businesses, concepts and our own tools. Every project is labelled — ", "Демо-проекты для вымышленных компаний, концепты и собственные инструменты. Каждый проект подписан — ")}<strong>{statusLabel("Demo")}</strong>, <strong>{statusLabel("Concept")}</strong> {L("or", "или")} <strong>{statusLabel("Internal tool")}</strong>{L(" — and the code is real.", " — а код настоящий.")}</>} />
       <section className="section" data-theme="light">
         <div className="wrap">
@@ -282,7 +283,7 @@ export function ProjectDetail({ p, next }: { p: Project; next: Project }) {
 export function Process() {
   const process = getProcess();
   return (
-    <Layout meta={{ path: "process/", title: L("Process", "Процесс"), description: L("How HYDRA builds: Idea → Research → Design → Development → Testing → Launch.", "Как работает HYDRA: Идея → Исследование → Дизайн → Разработка → Тестирование → Запуск."), nav: "process" }}>
+    <Layout meta={{ path: "process/", title: L("Process", "Процесс"), description: L("How T-HYDRA builds: Idea → Research → Design → Development → Testing → Launch.", "Как работает T-HYDRA: Идея → Исследование → Дизайн → Разработка → Тестирование → Запуск."), nav: "process" }}>
       <PageHead index={L("Process", "Процесс")} label={L("Idea → Launch", "Идея → Запуск")} lines={[L("Six steps.", "Шесть шагов."), L("No surprises.", "Без сюрпризов.")]} lead={L("Every project moves through the same six stages. The depth changes with the scope — a landing page and a Mini App need different research — but the order never does.", "Каждый проект проходит одни и те же шесть этапов. Глубина зависит от объёма — лендингу и Mini App нужно разное исследование, — но порядок не меняется никогда.")} />
       <section className="section" data-theme="dark" style={{ paddingTop: 0 }}>
         <div className="wrap pinned" data-pinned>
@@ -326,7 +327,7 @@ export function Process() {
 export function Contact() {
   const mode = contactMode();
   return (
-    <Layout meta={{ path: "contact/", title: L("Contact", "Контакты"), description: L("Start a conversation with HYDRA: send a short brief or use the step-by-step Project Builder.", "Начните разговор с HYDRA: отправьте короткий бриф или заполните пошаговый Project Builder."), nav: "contact" }}>
+    <Layout meta={{ path: "contact/", title: L("Contact", "Контакты"), description: L("Start a conversation with T-HYDRA: send a short brief or use the step-by-step Project Builder.", "Начните разговор с T-HYDRA: отправьте короткий бриф или заполните пошаговый Project Builder."), nav: "contact" }}>
       <PageHead index={L("Contact", "Контакты")} label={L("Let's talk", "Давайте обсудим")} lines={[L("Tell us", "Расскажите"), L("everything.", "всё.")]} lead={L("A few sentences are enough to start. We answer with questions or a scoped proposal — never with a template.", "Для начала хватит пары предложений. В ответ пришлём вопросы или предложение с объёмом работ — никогда не шаблон.")} />
       <section className="section" data-theme="light">
         <div className="wrap contact">
@@ -444,7 +445,7 @@ export function Start() {
                   <div className="field"><label htmlFor="b-contact">{L("Email or Telegram", "Email или Telegram")}</label><input id="b-contact" name="contact" required maxLength={120} placeholder={L("you@company.com or @username", "you@company.com или @username")} /><span className="field__error" data-error="contact" aria-live="polite" /></div>
                 </div>
                 <div className="field"><label htmlFor="b-company">{L("Company or project name", "Компания или проект")} <span className="muted">{L("(optional)", "(необязательно)")}</span></label><input id="b-company" name="company" maxLength={120} /></div>
-                <label className="check"><input type="checkbox" name="consent" required /> <span>{L("I agree that HYDRA may use these details to reply to my request.", "Я согласен, что HYDRA использует эти данные, чтобы ответить на запрос.")}</span></label>
+                <label className="check"><input type="checkbox" name="consent" required /> <span>{L("I agree that T-HYDRA may use these details to reply to my request.", "Я согласен, что T-HYDRA использует эти данные, чтобы ответить на запрос.")}</span></label>
                 <span className="field__error" data-error="consent" aria-live="polite" />
                 <div className="summary" data-summary />
                 <ModeNotice />
@@ -472,7 +473,7 @@ export function NotFound() {
         <div className="wrap nf">
           <span className="index">{L("Error 404", "Ошибка 404")}</span>
           <SplitTitle as="h1" className="page-head__title" lines={["Cut off.", "Grow back."]} accentLine={1} />
-          <p className="lead muted">{L("This head is gone. The rest of HYDRA is still here.", "Этой головы больше нет. Остальная HYDRA на месте.")} <span lang="ru">Эта страница не найдена.</span></p>
+          <p className="lead muted">{L("This head is gone. The rest of T-HYDRA is still here.", "Этой головы больше нет. Остальная T-HYDRA на месте.")} <span lang="ru">Эта страница не найдена.</span></p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}><Btn to="">{L("Back to home", "На главную")}</Btn><Btn to="projects/" ghost>{L("See projects", "Проекты")}</Btn></div>
         </div>
       </section>

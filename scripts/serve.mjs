@@ -5,7 +5,7 @@ import { extname, join, normalize } from "node:path";
 
 const BASE = process.env.BASE_PATH || "/HYDRA-Digital-Studio/";
 const PORT = Number(process.env.PORT || 4321);
-const ROOT = "docs";
+const ROOT = process.env.SERVE_DIR || "docs";
 const TYPES = { ".html": "text/html; charset=utf-8", ".css": "text/css", ".js": "text/javascript", ".svg": "image/svg+xml", ".webp": "image/webp", ".png": "image/png", ".json": "application/json", ".xml": "application/xml", ".txt": "text/plain", ".webmanifest": "application/manifest+json" };
 
 export function startServer(port = PORT) {

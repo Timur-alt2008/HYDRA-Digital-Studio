@@ -7,7 +7,7 @@ export type PageMeta = {
   path: string; // e.g. "" or "about/"
   title: string;
   description: string;
-  nav?: "home" | "services" | "projects" | "process" | "about" | "contact" | "start";
+  nav?: "home" | "services" | "projects" | "process" | "about" | "contact" | "start" | "account";
   headerTheme?: "dark" | "light";
   jsonLd?: object[];
   noindex?: boolean;
@@ -23,9 +23,14 @@ export const getNav = (): { id: NonNullable<PageMeta["nav"]>; label: string; pat
 
 export const siteDescription = () =>
   L(
-    "HYDRA is an independent digital development studio: websites from scratch, website redesign, Telegram bots and Mini Apps, and custom digital products — from first idea to launch.",
-    "HYDRA — независимая студия цифровой разработки: сайты с нуля, редизайн сайтов, Telegram-боты и Mini Apps, цифровые продукты — от идеи до запуска."
+    "T-HYDRA is an independent digital development studio: websites from scratch, website redesign, Telegram bots and Mini Apps, and custom digital products — from first idea to launch.",
+    "T-HYDRA — независимая студия цифровой разработки: сайты с нуля, редизайн сайтов, Telegram-боты и Mini Apps, цифровые продукты — от идеи до запуска."
   );
+
+/** Wordmark: the "T" is the founder's initial, set in the accent colour. */
+function Wordmark() {
+  return <span className="brand__word"><b>T</b>-HYDRA</span>;
+}
 
 function LangLinks({ path }: { path: string }) {
   const cur = locale();
@@ -58,9 +63,9 @@ function Header({ current, theme, path }: { current?: string; theme: "dark" | "l
     <>
       <header className="site-header" data-header-theme={theme}>
         <div className="wrap site-header__inner">
-          <a className="brand" href={href("")} aria-label={L("HYDRA — home", "HYDRA — на главную")}>
+          <a className="brand" href={href("")} aria-label={L("T-HYDRA — home", "T-HYDRA — на главную")}>
             <BrandMark className="brand__mark" />
-            <span>HYDRA</span>
+            <Wordmark />
           </a>
           <nav className="nav" aria-label={L("Main", "Основное меню")}>
             <ul className="nav__links">
@@ -71,6 +76,10 @@ function Header({ current, theme, path }: { current?: string; theme: "dark" | "l
               ))}
             </ul>
             <LangSwitch path={path} />
+            <a className="account-link" href={href("account/")} data-account-link aria-current={current === "account" ? "page" : undefined}>
+              <Icon name="user" />
+              <span data-account-label>{L("Sign in", "Войти")}</span>
+            </a>
             <Btn to="start/" small>{L("Start a project", "Начать проект")}</Btn>
             <button className="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
               <span className="menu-toggle__bars" aria-hidden="true" />
@@ -81,7 +90,7 @@ function Header({ current, theme, path }: { current?: string; theme: "dark" | "l
       </header>
       <div className="mobile-menu" id="mobile-menu" aria-label={L("Menu", "Меню")} role="dialog" aria-modal="true" hidden>
         <ol>
-          {[{ id: "home", label: L("Home", "Главная"), path: "" }, ...nav, { id: "start", label: L("Start a project", "Начать проект"), path: "start/" }].map((n, i) => (
+          {[{ id: "home", label: L("Home", "Главная"), path: "" }, ...nav, { id: "account", label: L("My account", "Личный кабинет"), path: "account/" }, { id: "start", label: L("Start a project", "Начать проект"), path: "start/" }].map((n, i) => (
             <li key={n.id}>
               <a href={href(n.path)} style={{ ["--i" as string]: i }} aria-current={current === n.id ? "page" : undefined}>{n.label}</a>
             </li>
@@ -103,7 +112,7 @@ function Footer() {
       <div className="wrap">
         <div className="site-footer__grid">
           <div className="site-footer__intro">
-            <a className="brand" href={href("")}><BrandMark className="brand__mark" /><span>HYDRA</span></a>
+            <a className="brand" href={href("")}><BrandMark className="brand__mark" /><Wordmark /></a>
             <p className="muted" style={{ maxWidth: "38ch" }}>{siteDescription()}</p>
             <div><Btn to="start/">{L("Start a project", "Начать проект")}</Btn></div>
           </div>
@@ -131,10 +140,11 @@ function Footer() {
               <li><a href={SITE.github} target="_blank" rel="noopener noreferrer">GitHub</a></li>
               <li><a href={href("projects/design-intelligence/")}>Design Intelligence</a></li>
               <li><a href={href("start/")}>Project Builder</a></li>
+              <li><a href={href("account/")}>{L("My account", "Личный кабинет")}</a></li>
             </ul>
           </div>
         </div>
-        <div className="site-footer__mark" aria-hidden="true">HYDRA</div>
+        <div className="site-footer__mark" aria-hidden="true"><b>T-</b>HYDRA</div>
         <div className="site-footer__bottom">
           <span className="label">© {SITE.year} {SITE.legalName}</span>
           <span className="label">{SITE.slogan}</span>
@@ -173,7 +183,7 @@ export function Layout({ meta, children }: { meta: PageMeta; children: React.Rea
         <link rel="canonical" href={canonical} />
         {!meta.noindex && LOCALES.map((l) => <link key={l} rel="alternate" hrefLang={l} href={absoluteFor(l, meta.path)} />)}
         {!meta.noindex && <link rel="alternate" hrefLang="x-default" href={absoluteFor("en", meta.path)} />}
-        {meta.noindex && <meta name="robots" content="noindex" />}
+        {(meta.noindex || SITE.lab) && <meta name="robots" content="noindex" />}
         <meta name="theme-color" content="#0b0720" />
         <meta name="color-scheme" content="light dark" />
         <meta property="og:type" content="website" />
@@ -201,7 +211,7 @@ export function Layout({ meta, children }: { meta: PageMeta; children: React.Rea
           <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(o).replace(/</g, "\\u003c") }} />
         ))}
       </head>
-      <body data-page={meta.nav || "other"} data-base={href("")}>
+      <body data-page={meta.nav || "other"} data-base={href("")} data-account-url={href("account/")} data-sb-url={SITE.supabaseUrl || undefined} data-sb-key={SITE.supabaseAnonKey || undefined}>
         <a className="skip-link" href="#main">{L("Skip to content", "Перейти к содержимому")}</a>
         <Header current={meta.nav} theme={meta.headerTheme || "light"} path={meta.path} />
         <main id="main">{children}</main>

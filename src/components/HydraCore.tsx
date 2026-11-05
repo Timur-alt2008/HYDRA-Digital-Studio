@@ -24,7 +24,7 @@ export const neckPath = (hx: number, hy: number, cx = CORE.x, cy = CORE.y) =>
 export function HydraCore() {
   return (
     <div className="core" data-core>
-      <svg viewBox="0 0 600 640" role="group" aria-label={L("HYDRA: one core, four heads — Web Development, Website Redesign, Telegram Development, Custom Digital Products", "HYDRA: одно ядро, четыре головы — веб-разработка, редизайн, Telegram-разработка, цифровые продукты")}>
+      <svg viewBox="0 0 600 640" role="group" aria-label={L("T-HYDRA: one core, four heads — Web Development, Website Redesign, Telegram Development, Custom Digital Products", "T-HYDRA: одно ядро, четыре головы — веб-разработка, редизайн, Telegram-разработка, цифровые продукты")}>
         <g aria-hidden="true">
           {HEADS.map((h, i) => (
             <path key={`n${i}`} className="neck" data-neck={i} d={neckPath(h.x, h.y)} style={{ ["--n" as string]: i }} />

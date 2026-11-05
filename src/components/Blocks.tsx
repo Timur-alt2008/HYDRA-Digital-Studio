@@ -186,7 +186,7 @@ export function ContactForm({ compact }: { compact?: boolean }) {
         <textarea id="cf-message" name="message" required minLength={20} maxLength={3000} placeholder={compact ? L("Goal, current situation, deadline…", "Цель, что есть сейчас, сроки…") : L("What are you building, for whom, what exists already, and when do you need it?", "Что вы создаёте, для кого, что уже есть и когда нужно?")} />
         <span className="field__error" aria-live="polite" />
       </div>
-      <label className="check"><input type="checkbox" name="consent" required /> <span>{L("I agree that HYDRA may use these details to reply to my request. Nothing is shared with third parties.", "Я согласен, что HYDRA использует эти данные, чтобы ответить на запрос. Третьим лицам ничего не передаётся.")}</span></label>
+      <label className="check"><input type="checkbox" name="consent" required /> <span>{L("I agree that T-HYDRA may use these details to reply to my request. Nothing is shared with third parties.", "Я согласен, что T-HYDRA использует эти данные, чтобы ответить на запрос. Третьим лицам ничего не передаётся.")}</span></label>
       <span className="field__error" data-consent-error aria-live="polite" />
       <ModeNotice />
       <div style={{ display: "flex", gap: 12, flexWrap: "wrap", alignItems: "center" }}>

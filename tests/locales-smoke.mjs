@@ -18,7 +18,7 @@ const B = "http://127.0.0.1:4332/HYDRA-Digital-Studio/";
 const b = await chromium.launch();
 const ok = []; const bad = [];
 const check = (name, cond, info = "") => (cond ? ok : bad).push(name + (cond ? "" : " → " + info));
-const pages = ["", "about/", "services/", "projects/", "process/", "contact/", "start/", "projects/barber-atelier/", "projects/design-intelligence/"];
+const pages = ["", "about/", "services/", "projects/", "process/", "contact/", "start/", "account/", "projects/barber-atelier/", "projects/design-intelligence/"];
 
 for (const l of ["ru", "uk", "de", "pl"]) {
   const p = await b.newPage({ viewport: { width: 1280, height: 900 } });
