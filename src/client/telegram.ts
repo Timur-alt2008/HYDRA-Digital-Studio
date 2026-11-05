@@ -1,23 +1,29 @@
 /* Interactive Telegram demo: a scripted bot + a Mini App booking flow. Nothing leaves the browser. */
 
+import { t } from "./lang";
+
 type Answer = { text: string; keys?: [string, string][] };
 
 const now = () => new Date().toTimeString().slice(0, 5);
 const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]!));
 
 const SERVICES = [
-  { id: "call", name: "Intro call", meta: "30 min · free" },
-  { id: "review", name: "Website review", meta: "60 min" },
-  { id: "workshop", name: "Product workshop", meta: "90 min" },
+  { id: "call", name: t("Intro call", "Знакомство"), meta: t("30 min · free", "30 мин · бесплатно") },
+  { id: "review", name: t("Website review", "Разбор сайта"), meta: t("60 min", "60 мин") },
+  { id: "workshop", name: t("Product workshop", "Продуктовый воркшоп"), meta: t("90 min", "90 мин") },
 ];
-const DAYS = ["Today", "Tomorrow", "Friday"];
+const DAY_IDS = ["today", "tomorrow", "friday"] as const;
+const DAY_LABEL: Record<string, string> = { today: t("Today", "Сегодня"), tomorrow: t("Tomorrow", "Завтра"), friday: t("Friday", "Пятница") };
 const SLOTS = ["10:00", "11:30", "13:00", "14:30", "16:00", "17:30"];
 
+const K_BOOK: [string, string] = ["book", t("Book a session", "Записаться")];
+const K_WHAT: [string, string] = ["services", t("What can you do?", "Что ты умеешь?")];
+const K_APP: [string, string] = ["app", t("Open Mini App ↗", "Открыть Mini App ↗")];
 const ANSWERS: Record<string, Answer> = {
-  services: { text: "I can show what a booking bot does:\n• book a session\n• answer common questions\n• hand you over to a person\n• open a Mini App for complex steps", keys: [["book", "Book a session"], ["app", "Open Mini App ↗"]] },
-  book: { text: "Which session?", keys: SERVICES.map((s) => [`svc:${s.id}`, s.name] as [string, string]) },
-  hours: { text: "Mon–Fri · 10:00–19:00\nReplies within one working day.", keys: [["book", "Book a session"], ["services", "What can you do?"]] },
-  human: { text: "In a real bot this would notify a manager and pass the conversation on. In this demo nobody is on the other side 🙂", keys: [["book", "Book a session"], ["services", "What can you do?"]] },
+  services: { text: t("I can show what a booking bot does:\n• book a session\n• answer common questions\n• hand you over to a person\n• open a Mini App for complex steps", "Я покажу, что умеет бот для записи:\n• записать на сессию\n• ответить на частые вопросы\n• передать разговор человеку\n• открыть Mini App для сложных шагов"), keys: [K_BOOK, K_APP] },
+  book: { text: t("Which session?", "На какую сессию?"), keys: SERVICES.map((s) => [`svc:${s.id}`, s.name] as [string, string]) },
+  hours: { text: t("Mon–Fri · 10:00–19:00\nReplies within one working day.", "Пн–Пт · 10:00–19:00\nОтвечаем в течение рабочего дня."), keys: [K_BOOK, K_WHAT] },
+  human: { text: t("In a real bot this would notify a manager and pass the conversation on. In this demo nobody is on the other side 🙂", "В настоящем боте здесь бы уведомился менеджер и подхватил разговор. В демо на той стороне никого нет 🙂"), keys: [K_BOOK, K_WHAT] },
 };
 
 export function initTelegram() {
@@ -33,7 +39,7 @@ export function initTelegram() {
   const main = root.querySelector<HTMLButtonElement>("[data-mini-main]")!;
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  const state = { service: "", day: DAYS[1], slot: "", done: false };
+  const state = { service: "", day: "tomorrow", slot: "", done: false };
   let busy = false;
 
   const push = (text: string, who: "bot" | "me", typing = false) => {
@@ -49,28 +55,28 @@ export function initTelegram() {
   };
   const reply = (a: Answer) => {
     busy = true;
-    sub.textContent = "typing…";
-    const t = push("typing…", "bot", true);
+    sub.textContent = t("typing…", "печатает…");
+    const tp = push(t("typing…", "печатает…"), "bot", true);
     setTimeout(() => {
-      t.remove();
+      tp.remove();
       push(a.text, "bot");
-      sub.textContent = "bot";
+      sub.textContent = t("bot", "бот");
       if (a.keys) setKeys(a.keys);
       busy = false;
     }, reduce ? 0 : 650);
   };
 
   const showTab = (id: "bot" | "app", focus = false) => {
-    tabs.forEach((t) => { const on = t.dataset.tgTab === id; t.setAttribute("aria-selected", String(on)); t.tabIndex = on ? 0 : -1; if (on && focus) t.focus(); });
+    tabs.forEach((tb) => { const on = tb.dataset.tgTab === id; tb.setAttribute("aria-selected", String(on)); tb.tabIndex = on ? 0 : -1; if (on && focus) tb.focus(); });
     panelBot.hidden = id !== "bot";
     panelApp.hidden = id !== "app";
     panelApp.style.display = id === "app" ? "flex" : "none";
-    sub.textContent = id === "app" ? "mini app" : "bot";
+    sub.textContent = id === "app" ? "mini app" : t("bot", "бот");
     if (id === "app") renderMini();
   };
-  tabs.forEach((t, i) => {
-    t.addEventListener("click", () => showTab(t.dataset.tgTab as "bot" | "app"));
-    t.addEventListener("keydown", (e) => { if (e.key === "ArrowRight" || e.key === "ArrowLeft") { e.preventDefault(); showTab(tabs[(i + 1) % 2].dataset.tgTab as "bot" | "app", true); } });
+  tabs.forEach((tb, i) => {
+    tb.addEventListener("click", () => showTab(tb.dataset.tgTab as "bot" | "app"));
+    tb.addEventListener("keydown", (e) => { if (e.key === "ArrowRight" || e.key === "ArrowLeft") { e.preventDefault(); showTab(tabs[(i + 1) % 2].dataset.tgTab as "bot" | "app", true); } });
   });
 
   keys.addEventListener("click", (e) => {
@@ -82,13 +88,13 @@ export function initTelegram() {
     if (q.startsWith("svc:")) {
       const s = SERVICES.find((x) => x.id === q.slice(4))!;
       state.service = s.id;
-      reply({ text: `${s.name} — ${s.meta}.\nPick a time:`, keys: SLOTS.slice(1, 5).map((t) => [`slot:${t}`, `Tomorrow ${t}`] as [string, string]) });
+      reply({ text: `${s.name} — ${s.meta}.\n${t("Pick a time:", "Выберите время:")}`, keys: SLOTS.slice(1, 5).map((x) => [`slot:${x}`, `${DAY_LABEL.tomorrow} ${x}`] as [string, string]) });
       return;
     }
     if (q.startsWith("slot:")) {
-      state.slot = q.slice(5); state.day = "Tomorrow";
+      state.slot = q.slice(5); state.day = "tomorrow";
       const s = SERVICES.find((x) => x.id === state.service)!;
-      reply({ text: `✅ Booked (demo): ${s.name}\n${state.day}, ${state.slot}\nI'll remind you an hour before.`, keys: [["services", "What can you do?"], ["app", "Open Mini App ↗"]] });
+      reply({ text: `✅ ${t("Booked (demo)", "Записано (демо)")}: ${s.name}\n${DAY_LABEL[state.day]}, ${state.slot}\n${t("I'll remind you an hour before.", "Напомню за час до начала.")}`, keys: [K_WHAT, K_APP] });
       return;
     }
     reply(ANSWERS[q] || ANSWERS.services);
@@ -97,19 +103,19 @@ export function initTelegram() {
   function renderMini() {
     if (state.done) {
       const s = SERVICES.find((x) => x.id === state.service)!;
-      mini.innerHTML = `<div class="mini__done"><div class="mini__check" aria-hidden="true">✓</div><b>Booked</b><span>${esc(s.name)} · ${esc(state.day)} ${esc(state.slot)}</span><small>Demo — nothing was sent. The bot posted a confirmation in the chat.</small></div>`;
-      main.textContent = "Book another session";
+      mini.innerHTML = `<div class="mini__done"><div class="mini__check" aria-hidden="true">✓</div><b>${t("Booked", "Записано")}</b><span>${esc(s.name)} · ${esc(DAY_LABEL[state.day])} ${esc(state.slot)}</span><small>${t("Demo — nothing was sent. The bot posted a confirmation in the chat.", "Демо — ничего не отправлено. Бот прислал подтверждение в чат.")}</small></div>`;
+      main.textContent = t("Book another session", "Записаться ещё раз");
       main.disabled = false;
       return;
     }
     mini.innerHTML = `
-      <h4>Book a session</h4>
-      <div class="mini__list" role="group" aria-label="Service">${SERVICES.map((s) => `<button type="button" class="mini__opt" data-svc="${s.id}" aria-pressed="${state.service === s.id}"><span>${esc(s.name)}</span><span style="color:#6b7280">${esc(s.meta)}</span></button>`).join("")}</div>
-      <div class="mini__list" role="group" aria-label="Day" style="grid-template-columns:repeat(3,1fr)">${DAYS.map((d) => `<button type="button" class="mini__slot" data-day="${d}" aria-pressed="${state.day === d}">${d}</button>`).join("")}</div>
-      <div class="mini__slots" role="group" aria-label="Time">${SLOTS.map((t, i) => `<button type="button" class="mini__slot" data-slot="${t}" aria-pressed="${state.slot === t}" ${(state.day === "Today" && i < 3) || (state.day === "Friday" && i === 4) ? "disabled" : ""}>${t}</button>`).join("")}</div>`;
+      <h4>${t("Book a session", "Запись на сессию")}</h4>
+      <div class="mini__list" role="group" aria-label="${t("Service", "Услуга")}">${SERVICES.map((s) => `<button type="button" class="mini__opt" data-svc="${s.id}" aria-pressed="${state.service === s.id}"><span>${esc(s.name)}</span><span class="mini__meta">${esc(s.meta)}</span></button>`).join("")}</div>
+      <div class="mini__list" role="group" aria-label="${t("Day", "День")}" style="grid-template-columns:repeat(3,1fr)">${DAY_IDS.map((d) => `<button type="button" class="mini__slot" data-day="${d}" aria-pressed="${state.day === d}">${DAY_LABEL[d]}</button>`).join("")}</div>
+      <div class="mini__slots" role="group" aria-label="${t("Time", "Время")}">${SLOTS.map((x, i) => `<button type="button" class="mini__slot" data-slot="${x}" aria-pressed="${state.slot === x}" ${(state.day === "today" && i < 3) || (state.day === "friday" && i === 4) ? "disabled" : ""}>${x}</button>`).join("")}</div>`;
     const ready = state.service && state.slot;
     main.disabled = !ready;
-    main.textContent = ready ? `Book · ${state.day} ${state.slot}` : state.service ? "Choose a time" : "Choose a service";
+    main.textContent = ready ? `${t("Book", "Записаться")} · ${DAY_LABEL[state.day]} ${state.slot}` : state.service ? t("Choose a time", "Выберите время") : t("Choose a service", "Выберите услугу");
   }
   mini.addEventListener("click", (e) => {
     const b = (e.target as HTMLElement).closest<HTMLButtonElement>("button");
@@ -126,7 +132,7 @@ export function initTelegram() {
     if (!state.service || !state.slot) return;
     state.done = true;
     const s = SERVICES.find((x) => x.id === state.service)!;
-    push(`✅ Booked via Mini App (demo): ${s.name}\n${state.day}, ${state.slot}`, "bot");
+    push(`✅ ${t("Booked via Mini App (demo)", "Запись через Mini App (демо)")}: ${s.name}\n${DAY_LABEL[state.day]}, ${state.slot}`, "bot");
     renderMini();
   });
 }

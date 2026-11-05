@@ -1,3 +1,5 @@
+import { type Locale, localePrefix } from "./i18n";
+
 /**
  * Site-wide configuration. Everything that differs between environments lives here.
  * Values can be overridden at build time with environment variables (see .env.example).
@@ -34,14 +36,22 @@ export const SITE = {
   contactTelegram: env("CONTACT_TELEGRAM", ""),
 } as const;
 
-/** Build an internal URL that respects the base path. */
+/** Build an internal page URL that respects the base path and the active locale. */
 export const href = (path = ""): string => {
   const clean = path.replace(/^\/+/, "");
-  return SITE.base + clean;
+  return SITE.base + localePrefix() + clean;
 };
+
+/** URL of a static asset (images, CSS, JS) — never localised. */
+export const asset = (path: string): string => SITE.base + path.replace(/^\/+/, "");
+
+/** URL of the same page in another locale. */
+export const hrefFor = (l: Locale, path = ""): string => SITE.base + localePrefix(l) + path.replace(/^\/+/, "");
 
 /** Absolute URL (for canonical / Open Graph). */
 export const absolute = (path = ""): string => SITE.origin + href(path);
+export const absoluteFor = (l: Locale, path = ""): string => SITE.origin + hrefFor(l, path);
+export const absoluteAsset = (path: string): string => SITE.origin + asset(path);
 
 export const contactMode = (): "endpoint" | "email" | "telegram" | "demo" =>
   SITE.formEndpoint ? "endpoint" : SITE.contactEmail ? "email" : SITE.contactTelegram ? "telegram" : "demo";

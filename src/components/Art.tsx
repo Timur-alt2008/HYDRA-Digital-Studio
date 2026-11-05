@@ -1,4 +1,5 @@
 import React from "react";
+import { L } from "../i18n";
 
 /* Original vector artwork for projects without screenshots and for the service pages.
    Everything is drawn from primitives — no stock imagery, no third-party assets. */
@@ -15,7 +16,7 @@ const Bubble = ({ x, y, w, h, me, lines = 2 }: { x: number; y: number; w: number
 function PhoneShell({ children, accent }: { children: React.ReactNode; accent: string }) {
   return (
     <g>
-      <rect x="290" y="40" width="220" height="420" rx="34" fill="#050707" stroke="#2a3330" />
+      <rect x="290" y="40" width="220" height="420" rx="34" fill="#050707" stroke="#2c3b55" />
       <rect x="300" y="50" width="200" height="400" rx="26" fill="#0e1621" />
       <rect x="300" y="50" width="200" height="56" rx="26" fill="#17212b" />
       <rect x="300" y="80" width="200" height="26" fill="#17212b" />
@@ -30,8 +31,8 @@ function PhoneShell({ children, accent }: { children: React.ReactNode; accent: s
 export function ProjectArt({ kind, accent, title }: { kind: string; accent: string; title: string }) {
   const bg = (
     <>
-      <rect width="800" height="500" fill="#0f1513" />
-      <g stroke="rgba(236,232,223,0.06)">
+      <rect width="800" height="500" fill="#151d2b" />
+      <g stroke="rgba(220,229,242,0.06)">
         {Array.from({ length: 16 }).map((_, i) => <line key={`v${i}`} x1={i * 50} y1="0" x2={i * 50} y2="500" />)}
         {Array.from({ length: 10 }).map((_, i) => <line key={`h${i}`} x1="0" y1={i * 50} x2="800" y2={i * 50} />)}
       </g>
@@ -77,9 +78,9 @@ export function ProjectArt({ kind, accent, title }: { kind: string; accent: stri
         <g>
           {[0, 1, 2].map((i) => (
             <g key={i} transform={`translate(${70 + i * 18} ${120 + i * 70})`}>
-              <rect width="180" height="56" fill="#121816" stroke="rgba(236,232,223,0.25)" />
-              <rect x="14" y="14" width="28" height="28" fill={i === 1 ? accent : "#1b2321"} stroke={accent} />
-              <rect x="54" y="18" width="90" height="7" fill="#ece8df" /><rect x="54" y="32" width="60" height="6" fill="#59625d" />
+              <rect width="180" height="56" fill="#1b2638" stroke="rgba(220,229,242,0.25)" />
+              <rect x="14" y="14" width="28" height="28" fill={i === 1 ? accent : "#27364d"} stroke={accent} />
+              <rect x="54" y="18" width="90" height="7" fill="#e9eef6" /><rect x="54" y="32" width="60" height="6" fill="#536783" />
             </g>
           ))}
           <path d="M250 175 C 275 175, 270 240, 300 240" fill="none" stroke={accent} strokeWidth="2" strokeDasharray="6 6" />
@@ -106,21 +107,21 @@ export function ProjectArt({ kind, accent, title }: { kind: string; accent: stri
           <rect x="312" y="400" width="176" height="36" rx="10" fill={accent} />
           <rect x="360" y="415" width="80" height="7" rx="3" fill="#fff" />
         </PhoneShell>
-        <g fill="none" stroke="rgba(236,232,223,0.5)">
+        <g fill="none" stroke="rgba(220,229,242,0.5)">
           <rect x="70" y="140" width="160" height="220" stroke={accent} strokeWidth="2" />
           <line x1="70" y1="180" x2="230" y2="180" />
-          <text x="84" y="166" fill="#ece8df" stroke="none" style={{ font: "500 12px monospace" }}>{booking ? "slots.json" : "api / orders"}</text>
-          {[0, 1, 2, 3, 4].map((i) => <rect key={i} x="86" y={196 + i * 30} width={[120, 90, 110, 70, 100][i]} height="8" fill="rgba(236,232,223,0.35)" stroke="none" />)}
+          <text x="84" y="166" fill="#e9eef6" stroke="none" style={{ font: "500 12px monospace" }}>{booking ? "slots.json" : "api / orders"}</text>
+          {[0, 1, 2, 3, 4].map((i) => <rect key={i} x="86" y={196 + i * 30} width={[120, 90, 110, 70, 100][i]} height="8" fill="rgba(220,229,242,0.35)" stroke="none" />)}
           <path d="M230 250 H 290" stroke={accent} strokeWidth="2" strokeDasharray="5 5" />
         </g>
       </>
     );
   }
   return (
-    <svg viewBox="0 0 800 500" role="img" aria-label={`${title} — illustration`} preserveAspectRatio="xMidYMid slice">
+    <svg viewBox="0 0 800 500" role="img" aria-label={`${title} — ${L("illustration", "иллюстрация")}`} preserveAspectRatio="xMidYMid slice">
       {bg}
       {body}
-      <text x="40" y="460" fill="#929b95" style={{ font: "500 13px 'JetBrains Mono', monospace", letterSpacing: "0.1em" }}>CONCEPT ILLUSTRATION</text>
+      <text x="40" y="460" fill="#a9bbd6" style={{ font: "500 13px 'JetBrains Mono', monospace", letterSpacing: "0.1em" }}>{L("CONCEPT ILLUSTRATION", "КОНЦЕПТ-ИЛЛЮСТРАЦИЯ")}</text>
     </svg>
   );
 }
@@ -138,7 +139,7 @@ export function ServiceArt({ id }: { id: string }) {
         <rect className="bx" x="80" y="110" width="290" height="230" style={{ opacity: 0.35 }} />
         <path className="hl" d="M40 360 H340" />
         <text x="40" y="384">320</text><text x="300" y="384">1920 PX</text>
-        <text x="40" y="44">01 / FROM SCRATCH</text>
+        <text x="40" y="44">{L("01 / FROM SCRATCH", "01 / С НУЛЯ")}</text>
       </svg>
     );
   }
@@ -151,8 +152,8 @@ export function ServiceArt({ id }: { id: string }) {
         <rect className="bx" x="176" y="136" width="168" height="8" /><rect className="bx" x="176" y="152" width="120" height="8" />
         <rect className="bx" x="176" y="184" width="168" height="126" />
         <path className="hl" d="M160 40 V360" />
-        <text x="40" y="44">BEFORE</text><text x="300" y="44">AFTER</text>
-        <text x="40" y="384">02 / AUDIT → REBUILD</text>
+        <text x="40" y="44">{L("BEFORE", "ДО")}</text><text x="300" y="44">{L("AFTER", "ПОСЛЕ")}</text>
+        <text x="40" y="384">{L("02 / AUDIT → REBUILD", "02 / АУДИТ → ПЕРЕСБОРКА")}</text>
       </svg>
     );
   }
@@ -164,7 +165,7 @@ export function ServiceArt({ id }: { id: string }) {
         <rect className="bx" x="136" y="260" width="62" height="26" rx="6" /><rect className="bx" x="202" y="260" width="62" height="26" rx="6" /><rect className="bx" x="136" y="292" width="128" height="26" rx="6" />
         <path className="hl" d="M280 120 C 340 120, 340 220, 380 220" /><path className="hl" d="M120 230 C 60 230, 60 300, 20 300" />
         <text x="292" y="240">BOT API</text><text x="20" y="320">MINI APP</text>
-        <text x="120" y="384">03 / WHERE USERS ALREADY ARE</text>
+        <text x="120" y="384">{L("03 / WHERE USERS ALREADY ARE", "03 / ТАМ, ГДЕ УЖЕ ЕСТЬ КЛИЕНТЫ")}</text>
       </svg>
     );
   }
@@ -174,7 +175,7 @@ export function ServiceArt({ id }: { id: string }) {
       {[[80, 80], [320, 90], [70, 300], [330, 310], [200, 40], [200, 360]].map(([x, y], i) => <rect key={`b${i}`} className="bx" x={x - 18} y={y - 14} width="36" height="28" />)}
       <rect className="fl" x="176" y="176" width="48" height="48" />
       <circle className="hl" cx="200" cy="200" r="70" />
-      <text x="20" y="384">04 / ONE IDEA → ONE PRODUCT</text>
+      <text x="20" y="384">{L("04 / ONE IDEA → ONE PRODUCT", "04 / ОДНА ИДЕЯ → ОДИН ПРОДУКТ")}</text>
     </svg>
   );
 }

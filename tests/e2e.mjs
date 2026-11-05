@@ -187,6 +187,7 @@ for (const vp of VIEWPORTS) {
   const faq = page.locator(".faq details");
   await faq.nth(0).locator("summary").click();
   await faq.nth(1).locator("summary").click();
+  await page.waitForTimeout(150); // the "toggle" event is dispatched asynchronously
   check("FAQ opens one at a time", (await faq.nth(1).getAttribute("open")) !== null && (await faq.nth(0).getAttribute("open")) === null);
   check("home interactions no errors", page.__errors.length === 0, page.__errors.join(" | "));
   await page.context().close();

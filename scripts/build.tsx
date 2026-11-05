@@ -16,24 +16,31 @@ if (existsSync(".env")) {
   }
 }
 process.env.BUILD_ID = Date.now().toString(36); // cache-busting for CSS/JS on GitHub Pages
-const { SITE, absolute } = await import("../src/config");
-const { PROJECTS } = await import("../src/data/projects");
+const { SITE, absoluteAsset, absoluteFor } = await import("../src/config");
+const { LOCALES, setLocale, localePrefix } = await import("../src/i18n");
+const { getProjects } = await import("../src/data/projects");
 const { Home } = await import("../src/pages/Home");
 const { About, Contact, NotFound, Process, ProjectDetail, Projects, Services, Start } = await import("../src/pages/Inner");
 
 const OUT = "docs";
 const t0 = Date.now();
 
-type Route = { path: string; file: string; el: React.ReactElement; priority: number };
+type Route = { path: string; el: () => React.ReactElement; priority: number };
+const projects = getProjects();
 const routes: Route[] = [
-  { path: "", file: "index.html", el: <Home />, priority: 1 },
-  { path: "services/", file: "services/index.html", el: <Services />, priority: 0.9 },
-  { path: "projects/", file: "projects/index.html", el: <Projects />, priority: 0.9 },
-  { path: "process/", file: "process/index.html", el: <Process />, priority: 0.7 },
-  { path: "about/", file: "about/index.html", el: <About />, priority: 0.7 },
-  { path: "contact/", file: "contact/index.html", el: <Contact />, priority: 0.8 },
-  { path: "start/", file: "start/index.html", el: <Start />, priority: 0.8 },
-  ...PROJECTS.map((p, i) => ({ path: `projects/${p.slug}/`, file: `projects/${p.slug}/index.html`, el: <ProjectDetail p={p} next={PROJECTS[(i + 1) % PROJECTS.length]} />, priority: 0.6 })),
+  { path: "", el: () => <Home />, priority: 1 },
+  { path: "services/", el: () => <Services />, priority: 0.9 },
+  { path: "projects/", el: () => <Projects />, priority: 0.9 },
+  { path: "process/", el: () => <Process />, priority: 0.7 },
+  { path: "about/", el: () => <About />, priority: 0.7 },
+  { path: "contact/", el: () => <Contact />, priority: 0.8 },
+  { path: "start/", el: () => <Start />, priority: 0.8 },
+  ...projects.map((p, i) => ({
+    path: `projects/${p.slug}/`,
+    // data is re-read inside the locale so titles/texts are translated
+    el: () => { const ps = getProjects(); return <ProjectDetail p={ps[i]} next={ps[(i + 1) % ps.length]} />; },
+    priority: 0.6,
+  })),
 ];
 
 // 1. clean output (keep a custom domain file if present)
@@ -52,7 +59,15 @@ const write = (file: string, html: string) => {
   mkdirSync(dirname(target), { recursive: true });
   writeFileSync(target, html);
 };
-for (const r of routes) write(r.file, "<!doctype html>" + renderToStaticMarkup(r.el));
+let pages = 0;
+for (const l of LOCALES) {
+  setLocale(l);
+  for (const r of routes) {
+    write(`${localePrefix(l)}${r.path}index.html`, "<!doctype html>" + renderToStaticMarkup(r.el()));
+    pages++;
+  }
+}
+setLocale("en");
 write("404.html", "<!doctype html>" + renderToStaticMarkup(<NotFound />));
 
 // 4. client bundle + styles
@@ -71,8 +86,8 @@ writeFileSync(join(OUT, "assets/main.css"), css.code);
 
 // 5. SEO files
 const today = new Date().toISOString().slice(0, 10);
-write("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${routes.map((r) => `  <url><loc>${absolute(r.path)}</loc><lastmod>${today}</lastmod><priority>${r.priority}</priority></url>`).join("\n")}\n</urlset>\n`);
-write("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${absolute("sitemap.xml")}\n`);
-write("site.webmanifest", JSON.stringify({ name: SITE.legalName, short_name: SITE.name, start_url: SITE.base, display: "standalone", background_color: "#0b0f0e", theme_color: "#0b0f0e", icons: [{ src: `${SITE.base}favicon.svg`, sizes: "any", type: "image/svg+xml" }, { src: `${SITE.base}apple-touch-icon.png`, sizes: "180x180", type: "image/png" }] }, null, 2));
+write("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${LOCALES.flatMap((l) => routes.map((r) => `  <url><loc>${absoluteFor(l, r.path)}</loc><lastmod>${today}</lastmod><priority>${r.priority}</priority>${LOCALES.map((x) => `<xhtml:link rel="alternate" hreflang="${x}" href="${absoluteFor(x, r.path)}"/>`).join("")}</url>`)).join("\n")}\n</urlset>\n`);
+write("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${absoluteAsset("sitemap.xml")}\n`);
+write("site.webmanifest", JSON.stringify({ name: SITE.legalName, short_name: SITE.name, start_url: SITE.base, display: "standalone", background_color: "#111722", theme_color: "#111722", icons: [{ src: `${SITE.base}favicon.svg`, sizes: "any", type: "image/svg+xml" }, { src: `${SITE.base}apple-touch-icon.png`, sizes: "180x180", type: "image/png" }] }, null, 2));
 
-console.log(`✓ built ${routes.length + 1} pages into /${OUT} in ${Date.now() - t0} ms (base ${SITE.base})`);
+console.log(`✓ built ${pages + 1} pages into /${OUT} in ${Date.now() - t0} ms (base ${SITE.base})`);

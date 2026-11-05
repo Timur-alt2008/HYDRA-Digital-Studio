@@ -1,6 +1,7 @@
 import React from "react";
 import { href } from "../config";
-import { SERVICES } from "../data/services";
+import { getServices } from "../data/services";
+import { L } from "../i18n";
 
 /** Head anchor positions inside the 600×640 viewBox. */
 export const HEADS = [
@@ -10,7 +11,7 @@ export const HEADS = [
   { x: 450, y: 206, side: "right" },
 ] as const;
 export const CORE = { x: 300, y: 590 };
-const SHORT: Record<string, string> = { web: "Web", redesign: "Redesign", telegram: "Telegram", products: "Products" };
+const short = (id: string) => ({ web: L("Web", "Веб"), redesign: L("Redesign", "Редизайн"), telegram: "Telegram", products: L("Products", "Продукты") } as Record<string, string>)[id];
 
 export const neckPath = (hx: number, hy: number, cx = CORE.x, cy = CORE.y) =>
   `M ${cx} ${cy} C ${cx} ${cy - 190}, ${hx} ${hy + 230}, ${hx} ${hy + 22}`;
@@ -23,7 +24,7 @@ export const neckPath = (hx: number, hy: number, cx = CORE.x, cy = CORE.y) =>
 export function HydraCore() {
   return (
     <div className="core" data-core>
-      <svg viewBox="0 0 600 640" role="group" aria-label="HYDRA: one core, four heads — Web Development, Website Redesign, Telegram Development, Custom Digital Products">
+      <svg viewBox="0 0 600 640" role="group" aria-label={L("HYDRA: one core, four heads — Web Development, Website Redesign, Telegram Development, Custom Digital Products", "HYDRA: одно ядро, четыре головы — веб-разработка, редизайн, Telegram-разработка, цифровые продукты")}>
         <g aria-hidden="true">
           {HEADS.map((h, i) => (
             <path key={`n${i}`} className="neck" data-neck={i} d={neckPath(h.x, h.y)} style={{ ["--n" as string]: i }} />
@@ -32,10 +33,11 @@ export function HydraCore() {
             <path key={`f${i}`} className="neck-flow" data-flow={i} d={neckPath(h.x, h.y)} style={{ ["--n" as string]: i }} />
           ))}
           <circle className="core__ring" cx={CORE.x} cy={CORE.y} r="18" />
-          <rect className="core__body" x={CORE.x - 11} y={CORE.y - 11} width="22" height="22" />
-          <text className="core__label" x={CORE.x + 24} y={CORE.y + 4}>ONE CORE</text>
+          <circle className="core__glow" cx={CORE.x} cy={CORE.y} r="46" />
+          <circle className="core__body" cx={CORE.x} cy={CORE.y} r="12" />
+          <text className="core__label" x={CORE.x + 24} y={CORE.y + 4}>{L("ONE CORE", "ОДНО ЯДРО")}</text>
         </g>
-        {SERVICES.map((s, i) => {
+        {getServices().map((s, i) => {
           const h = HEADS[i];
           const left = h.side === "left";
           const tx = left ? h.x - 30 : h.x + 30;
@@ -45,7 +47,7 @@ export function HydraCore() {
                 <circle className="head__ring" cx={h.x} cy={h.y} r="22" />
                 <circle className="head__dot" cx={h.x} cy={h.y} r="5" />
                 <text className="head__index" x={tx} y={h.y - 8} textAnchor={left ? "end" : "start"}>{s.index}</text>
-                <text className="head__label" x={tx} y={h.y + 14} textAnchor={left ? "end" : "start"}>{SHORT[s.id]}</text>
+                <text className="head__label" x={tx} y={h.y + 14} textAnchor={left ? "end" : "start"}>{short(s.id)}</text>
               </g>
             </a>
           );

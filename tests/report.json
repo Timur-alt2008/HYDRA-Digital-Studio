@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-05T12:40:51.037Z",
-  "pages": 19,
+  "date": "2026-11-05T14:19:01.949Z",
+  "pages": 38,
   "viewports": [
     [
       1920,
@@ -39,7 +39,7 @@
       800
     ]
   ],
-  "passed": 971,
+  "passed": 1868,
   "failed": 0,
   "results": [
     {
@@ -514,6 +514,481 @@
     },
     {
       "name": "1920×1080 /projects/hydra-marketplace/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1920×1080 /ru/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1920×1080 /ru/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1920×1080 /ru/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/services/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1920×1080 /ru/services/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1920×1080 /ru/services/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1920×1080 /ru/services/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/services/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/projects/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1920×1080 /ru/projects/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1920×1080 /ru/projects/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1920×1080 /ru/projects/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/projects/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/process/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1920×1080 /ru/process/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1920×1080 /ru/process/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1920×1080 /ru/process/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/process/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/about/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1920×1080 /ru/about/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1920×1080 /ru/about/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1920×1080 /ru/about/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/about/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/contact/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1920×1080 /ru/contact/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1920×1080 /ru/contact/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1920×1080 /ru/contact/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/contact/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/start/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1920×1080 /ru/start/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1920×1080 /ru/start/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1920×1080 /ru/start/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/start/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/projects/barber-atelier/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1920×1080 /ru/projects/barber-atelier/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1920×1080 /ru/projects/barber-atelier/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1920×1080 /ru/projects/barber-atelier/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/projects/barber-atelier/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/projects/coffee-house/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1920×1080 /ru/projects/coffee-house/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1920×1080 /ru/projects/coffee-house/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1920×1080 /ru/projects/coffee-house/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/projects/coffee-house/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/projects/fitness-club/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1920×1080 /ru/projects/fitness-club/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1920×1080 /ru/projects/fitness-club/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1920×1080 /ru/projects/fitness-club/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/projects/fitness-club/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/projects/cinema/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1920×1080 /ru/projects/cinema/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1920×1080 /ru/projects/cinema/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1920×1080 /ru/projects/cinema/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/projects/cinema/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/projects/auto-service/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1920×1080 /ru/projects/auto-service/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1920×1080 /ru/projects/auto-service/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1920×1080 /ru/projects/auto-service/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/projects/auto-service/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/projects/premium-automotive/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1920×1080 /ru/projects/premium-automotive/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1920×1080 /ru/projects/premium-automotive/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1920×1080 /ru/projects/premium-automotive/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/projects/premium-automotive/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/projects/beauty-salon/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1920×1080 /ru/projects/beauty-salon/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1920×1080 /ru/projects/beauty-salon/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1920×1080 /ru/projects/beauty-salon/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/projects/beauty-salon/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/projects/design-intelligence/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1920×1080 /ru/projects/design-intelligence/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1920×1080 /ru/projects/design-intelligence/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1920×1080 /ru/projects/design-intelligence/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/projects/design-intelligence/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/projects/booking-mini-app/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1920×1080 /ru/projects/booking-mini-app/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1920×1080 /ru/projects/booking-mini-app/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1920×1080 /ru/projects/booking-mini-app/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/projects/booking-mini-app/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/projects/music-recognition-bot/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1920×1080 /ru/projects/music-recognition-bot/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1920×1080 /ru/projects/music-recognition-bot/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1920×1080 /ru/projects/music-recognition-bot/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/projects/music-recognition-bot/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/projects/marketplace-bot/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1920×1080 /ru/projects/marketplace-bot/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1920×1080 /ru/projects/marketplace-bot/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1920×1080 /ru/projects/marketplace-bot/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/projects/marketplace-bot/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/projects/hydra-marketplace/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1920×1080 /ru/projects/hydra-marketplace/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1920×1080 /ru/projects/hydra-marketplace/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1920×1080 /ru/projects/hydra-marketplace/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1920×1080 /ru/projects/hydra-marketplace/ no JS errors",
       "ok": true,
       "detail": ""
     },
@@ -1088,6 +1563,576 @@
       "detail": ""
     },
     {
+      "name": "1440×900 /ru/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1440×900 /ru/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1440×900 /ru/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1440×900 /ru/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "/ru/ title + description",
+      "ok": true,
+      "detail": "HYDRA — Независимая студия цифровой разработки"
+    },
+    {
+      "name": "1440×900 /ru/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1440×900 /ru/services/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1440×900 /ru/services/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1440×900 /ru/services/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1440×900 /ru/services/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "/ru/services/ title + description",
+      "ok": true,
+      "detail": "Услуги — HYDRA"
+    },
+    {
+      "name": "1440×900 /ru/services/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1440×900 /ru/projects/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1440×900 /ru/projects/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1440×900 /ru/projects/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1440×900 /ru/projects/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "/ru/projects/ title + description",
+      "ok": true,
+      "detail": "Проекты — HYDRA"
+    },
+    {
+      "name": "1440×900 /ru/projects/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1440×900 /ru/process/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1440×900 /ru/process/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1440×900 /ru/process/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1440×900 /ru/process/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "/ru/process/ title + description",
+      "ok": true,
+      "detail": "Процесс — HYDRA"
+    },
+    {
+      "name": "1440×900 /ru/process/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1440×900 /ru/about/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1440×900 /ru/about/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1440×900 /ru/about/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1440×900 /ru/about/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "/ru/about/ title + description",
+      "ok": true,
+      "detail": "О студии — HYDRA"
+    },
+    {
+      "name": "1440×900 /ru/about/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1440×900 /ru/contact/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1440×900 /ru/contact/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1440×900 /ru/contact/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1440×900 /ru/contact/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "/ru/contact/ title + description",
+      "ok": true,
+      "detail": "Контакты — HYDRA"
+    },
+    {
+      "name": "1440×900 /ru/contact/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1440×900 /ru/start/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1440×900 /ru/start/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1440×900 /ru/start/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1440×900 /ru/start/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "/ru/start/ title + description",
+      "ok": true,
+      "detail": "Project Builder — HYDRA"
+    },
+    {
+      "name": "1440×900 /ru/start/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1440×900 /ru/projects/barber-atelier/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1440×900 /ru/projects/barber-atelier/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1440×900 /ru/projects/barber-atelier/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1440×900 /ru/projects/barber-atelier/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "/ru/projects/barber-atelier/ title + description",
+      "ok": true,
+      "detail": "Barber Atelier — Демо — HYDRA"
+    },
+    {
+      "name": "1440×900 /ru/projects/barber-atelier/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1440×900 /ru/projects/coffee-house/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1440×900 /ru/projects/coffee-house/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1440×900 /ru/projects/coffee-house/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1440×900 /ru/projects/coffee-house/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "/ru/projects/coffee-house/ title + description",
+      "ok": true,
+      "detail": "Кофейня и пекарня — Демо — HYDRA"
+    },
+    {
+      "name": "1440×900 /ru/projects/coffee-house/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1440×900 /ru/projects/fitness-club/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1440×900 /ru/projects/fitness-club/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1440×900 /ru/projects/fitness-club/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1440×900 /ru/projects/fitness-club/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "/ru/projects/fitness-club/ title + description",
+      "ok": true,
+      "detail": "Платформа фитнес-клуба — Демо — HYDRA"
+    },
+    {
+      "name": "1440×900 /ru/projects/fitness-club/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1440×900 /ru/projects/cinema/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1440×900 /ru/projects/cinema/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1440×900 /ru/projects/cinema/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1440×900 /ru/projects/cinema/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "/ru/projects/cinema/ title + description",
+      "ok": true,
+      "detail": "Кинотеатр — триллеры и хорроры — Демо — HYDRA"
+    },
+    {
+      "name": "1440×900 /ru/projects/cinema/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1440×900 /ru/projects/auto-service/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1440×900 /ru/projects/auto-service/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1440×900 /ru/projects/auto-service/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1440×900 /ru/projects/auto-service/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "/ru/projects/auto-service/ title + description",
+      "ok": true,
+      "detail": "Автосервис — Демо — HYDRA"
+    },
+    {
+      "name": "1440×900 /ru/projects/auto-service/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1440×900 /ru/projects/premium-automotive/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1440×900 /ru/projects/premium-automotive/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1440×900 /ru/projects/premium-automotive/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1440×900 /ru/projects/premium-automotive/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "/ru/projects/premium-automotive/ title + description",
+      "ok": true,
+      "detail": "Премиум-автостудия — Демо — HYDRA"
+    },
+    {
+      "name": "1440×900 /ru/projects/premium-automotive/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1440×900 /ru/projects/beauty-salon/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1440×900 /ru/projects/beauty-salon/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1440×900 /ru/projects/beauty-salon/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1440×900 /ru/projects/beauty-salon/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "/ru/projects/beauty-salon/ title + description",
+      "ok": true,
+      "detail": "Салон красоты в стиле quiet luxury — Демо — HYDRA"
+    },
+    {
+      "name": "1440×900 /ru/projects/beauty-salon/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1440×900 /ru/projects/design-intelligence/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1440×900 /ru/projects/design-intelligence/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1440×900 /ru/projects/design-intelligence/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1440×900 /ru/projects/design-intelligence/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "/ru/projects/design-intelligence/ title + description",
+      "ok": true,
+      "detail": "HYDRA Design Intelligence — Внутренний инструмент — HYDRA"
+    },
+    {
+      "name": "1440×900 /ru/projects/design-intelligence/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1440×900 /ru/projects/booking-mini-app/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1440×900 /ru/projects/booking-mini-app/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1440×900 /ru/projects/booking-mini-app/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1440×900 /ru/projects/booking-mini-app/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "/ru/projects/booking-mini-app/ title + description",
+      "ok": true,
+      "detail": "Booking Mini App — Демо — HYDRA"
+    },
+    {
+      "name": "1440×900 /ru/projects/booking-mini-app/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1440×900 /ru/projects/music-recognition-bot/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1440×900 /ru/projects/music-recognition-bot/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1440×900 /ru/projects/music-recognition-bot/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1440×900 /ru/projects/music-recognition-bot/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "/ru/projects/music-recognition-bot/ title + description",
+      "ok": true,
+      "detail": "Бот распознавания музыки — Концепт — HYDRA"
+    },
+    {
+      "name": "1440×900 /ru/projects/music-recognition-bot/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1440×900 /ru/projects/marketplace-bot/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1440×900 /ru/projects/marketplace-bot/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1440×900 /ru/projects/marketplace-bot/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1440×900 /ru/projects/marketplace-bot/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "/ru/projects/marketplace-bot/ title + description",
+      "ok": true,
+      "detail": "Бот-маркетплейс услуг — Концепт — HYDRA"
+    },
+    {
+      "name": "1440×900 /ru/projects/marketplace-bot/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1440×900 /ru/projects/hydra-marketplace/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1440×900 /ru/projects/hydra-marketplace/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1440×900 /ru/projects/hydra-marketplace/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1440×900 /ru/projects/hydra-marketplace/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "/ru/projects/hydra-marketplace/ title + description",
+      "ok": true,
+      "detail": "HYDRA Marketplace Mini App — Концепт — HYDRA"
+    },
+    {
+      "name": "1440×900 /ru/projects/hydra-marketplace/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
       "name": "1280×800 / status",
       "ok": true,
       "detail": "200"
@@ -1559,6 +2604,481 @@
     },
     {
       "name": "1280×800 /projects/hydra-marketplace/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1280×800 /ru/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1280×800 /ru/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1280×800 /ru/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/services/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1280×800 /ru/services/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1280×800 /ru/services/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1280×800 /ru/services/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/services/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/projects/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1280×800 /ru/projects/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1280×800 /ru/projects/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1280×800 /ru/projects/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/projects/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/process/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1280×800 /ru/process/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1280×800 /ru/process/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1280×800 /ru/process/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/process/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/about/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1280×800 /ru/about/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1280×800 /ru/about/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1280×800 /ru/about/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/about/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/contact/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1280×800 /ru/contact/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1280×800 /ru/contact/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1280×800 /ru/contact/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/contact/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/start/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1280×800 /ru/start/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1280×800 /ru/start/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1280×800 /ru/start/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/start/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/projects/barber-atelier/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1280×800 /ru/projects/barber-atelier/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1280×800 /ru/projects/barber-atelier/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1280×800 /ru/projects/barber-atelier/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/projects/barber-atelier/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/projects/coffee-house/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1280×800 /ru/projects/coffee-house/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1280×800 /ru/projects/coffee-house/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1280×800 /ru/projects/coffee-house/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/projects/coffee-house/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/projects/fitness-club/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1280×800 /ru/projects/fitness-club/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1280×800 /ru/projects/fitness-club/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1280×800 /ru/projects/fitness-club/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/projects/fitness-club/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/projects/cinema/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1280×800 /ru/projects/cinema/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1280×800 /ru/projects/cinema/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1280×800 /ru/projects/cinema/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/projects/cinema/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/projects/auto-service/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1280×800 /ru/projects/auto-service/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1280×800 /ru/projects/auto-service/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1280×800 /ru/projects/auto-service/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/projects/auto-service/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/projects/premium-automotive/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1280×800 /ru/projects/premium-automotive/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1280×800 /ru/projects/premium-automotive/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1280×800 /ru/projects/premium-automotive/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/projects/premium-automotive/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/projects/beauty-salon/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1280×800 /ru/projects/beauty-salon/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1280×800 /ru/projects/beauty-salon/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1280×800 /ru/projects/beauty-salon/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/projects/beauty-salon/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/projects/design-intelligence/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1280×800 /ru/projects/design-intelligence/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1280×800 /ru/projects/design-intelligence/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1280×800 /ru/projects/design-intelligence/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/projects/design-intelligence/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/projects/booking-mini-app/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1280×800 /ru/projects/booking-mini-app/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1280×800 /ru/projects/booking-mini-app/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1280×800 /ru/projects/booking-mini-app/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/projects/booking-mini-app/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/projects/music-recognition-bot/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1280×800 /ru/projects/music-recognition-bot/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1280×800 /ru/projects/music-recognition-bot/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1280×800 /ru/projects/music-recognition-bot/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/projects/music-recognition-bot/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/projects/marketplace-bot/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1280×800 /ru/projects/marketplace-bot/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1280×800 /ru/projects/marketplace-bot/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1280×800 /ru/projects/marketplace-bot/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/projects/marketplace-bot/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/projects/hydra-marketplace/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1280×800 /ru/projects/hydra-marketplace/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1280×800 /ru/projects/hydra-marketplace/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1280×800 /ru/projects/hydra-marketplace/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280×800 /ru/projects/hydra-marketplace/ no JS errors",
       "ok": true,
       "detail": ""
     },
@@ -2038,6 +3558,481 @@
       "detail": ""
     },
     {
+      "name": "1024×768 /ru/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1024×768 /ru/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1024×768 /ru/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1024×768 /ru/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/services/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1024×768 /ru/services/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1024×768 /ru/services/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1024×768 /ru/services/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/services/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/projects/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1024×768 /ru/projects/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1024×768 /ru/projects/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1024×768 /ru/projects/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/projects/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/process/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1024×768 /ru/process/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1024×768 /ru/process/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1024×768 /ru/process/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/process/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/about/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1024×768 /ru/about/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1024×768 /ru/about/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1024×768 /ru/about/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/about/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/contact/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1024×768 /ru/contact/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1024×768 /ru/contact/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1024×768 /ru/contact/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/contact/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/start/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1024×768 /ru/start/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1024×768 /ru/start/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1024×768 /ru/start/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/start/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/projects/barber-atelier/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1024×768 /ru/projects/barber-atelier/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1024×768 /ru/projects/barber-atelier/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1024×768 /ru/projects/barber-atelier/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/projects/barber-atelier/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/projects/coffee-house/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1024×768 /ru/projects/coffee-house/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1024×768 /ru/projects/coffee-house/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1024×768 /ru/projects/coffee-house/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/projects/coffee-house/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/projects/fitness-club/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1024×768 /ru/projects/fitness-club/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1024×768 /ru/projects/fitness-club/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1024×768 /ru/projects/fitness-club/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/projects/fitness-club/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/projects/cinema/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1024×768 /ru/projects/cinema/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1024×768 /ru/projects/cinema/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1024×768 /ru/projects/cinema/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/projects/cinema/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/projects/auto-service/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1024×768 /ru/projects/auto-service/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1024×768 /ru/projects/auto-service/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1024×768 /ru/projects/auto-service/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/projects/auto-service/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/projects/premium-automotive/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1024×768 /ru/projects/premium-automotive/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1024×768 /ru/projects/premium-automotive/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1024×768 /ru/projects/premium-automotive/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/projects/premium-automotive/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/projects/beauty-salon/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1024×768 /ru/projects/beauty-salon/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1024×768 /ru/projects/beauty-salon/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1024×768 /ru/projects/beauty-salon/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/projects/beauty-salon/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/projects/design-intelligence/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1024×768 /ru/projects/design-intelligence/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1024×768 /ru/projects/design-intelligence/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1024×768 /ru/projects/design-intelligence/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/projects/design-intelligence/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/projects/booking-mini-app/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1024×768 /ru/projects/booking-mini-app/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1024×768 /ru/projects/booking-mini-app/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1024×768 /ru/projects/booking-mini-app/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/projects/booking-mini-app/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/projects/music-recognition-bot/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1024×768 /ru/projects/music-recognition-bot/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1024×768 /ru/projects/music-recognition-bot/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1024×768 /ru/projects/music-recognition-bot/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/projects/music-recognition-bot/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/projects/marketplace-bot/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1024×768 /ru/projects/marketplace-bot/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1024×768 /ru/projects/marketplace-bot/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1024×768 /ru/projects/marketplace-bot/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/projects/marketplace-bot/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/projects/hydra-marketplace/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "1024×768 /ru/projects/hydra-marketplace/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "1024×768 /ru/projects/hydra-marketplace/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "1024×768 /ru/projects/hydra-marketplace/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024×768 /ru/projects/hydra-marketplace/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
       "name": "768×1024 / status",
       "ok": true,
       "detail": "200"
@@ -2509,6 +4504,481 @@
     },
     {
       "name": "768×1024 /projects/hydra-marketplace/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "768×1024 /ru/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "768×1024 /ru/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "768×1024 /ru/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/services/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "768×1024 /ru/services/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "768×1024 /ru/services/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "768×1024 /ru/services/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/services/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/projects/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "768×1024 /ru/projects/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "768×1024 /ru/projects/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "768×1024 /ru/projects/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/projects/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/process/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "768×1024 /ru/process/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "768×1024 /ru/process/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "768×1024 /ru/process/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/process/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/about/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "768×1024 /ru/about/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "768×1024 /ru/about/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "768×1024 /ru/about/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/about/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/contact/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "768×1024 /ru/contact/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "768×1024 /ru/contact/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "768×1024 /ru/contact/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/contact/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/start/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "768×1024 /ru/start/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "768×1024 /ru/start/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "768×1024 /ru/start/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/start/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/projects/barber-atelier/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "768×1024 /ru/projects/barber-atelier/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "768×1024 /ru/projects/barber-atelier/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "768×1024 /ru/projects/barber-atelier/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/projects/barber-atelier/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/projects/coffee-house/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "768×1024 /ru/projects/coffee-house/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "768×1024 /ru/projects/coffee-house/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "768×1024 /ru/projects/coffee-house/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/projects/coffee-house/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/projects/fitness-club/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "768×1024 /ru/projects/fitness-club/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "768×1024 /ru/projects/fitness-club/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "768×1024 /ru/projects/fitness-club/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/projects/fitness-club/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/projects/cinema/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "768×1024 /ru/projects/cinema/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "768×1024 /ru/projects/cinema/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "768×1024 /ru/projects/cinema/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/projects/cinema/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/projects/auto-service/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "768×1024 /ru/projects/auto-service/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "768×1024 /ru/projects/auto-service/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "768×1024 /ru/projects/auto-service/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/projects/auto-service/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/projects/premium-automotive/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "768×1024 /ru/projects/premium-automotive/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "768×1024 /ru/projects/premium-automotive/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "768×1024 /ru/projects/premium-automotive/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/projects/premium-automotive/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/projects/beauty-salon/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "768×1024 /ru/projects/beauty-salon/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "768×1024 /ru/projects/beauty-salon/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "768×1024 /ru/projects/beauty-salon/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/projects/beauty-salon/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/projects/design-intelligence/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "768×1024 /ru/projects/design-intelligence/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "768×1024 /ru/projects/design-intelligence/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "768×1024 /ru/projects/design-intelligence/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/projects/design-intelligence/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/projects/booking-mini-app/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "768×1024 /ru/projects/booking-mini-app/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "768×1024 /ru/projects/booking-mini-app/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "768×1024 /ru/projects/booking-mini-app/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/projects/booking-mini-app/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/projects/music-recognition-bot/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "768×1024 /ru/projects/music-recognition-bot/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "768×1024 /ru/projects/music-recognition-bot/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "768×1024 /ru/projects/music-recognition-bot/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/projects/music-recognition-bot/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/projects/marketplace-bot/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "768×1024 /ru/projects/marketplace-bot/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "768×1024 /ru/projects/marketplace-bot/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "768×1024 /ru/projects/marketplace-bot/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/projects/marketplace-bot/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/projects/hydra-marketplace/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "768×1024 /ru/projects/hydra-marketplace/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "768×1024 /ru/projects/hydra-marketplace/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "768×1024 /ru/projects/hydra-marketplace/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768×1024 /ru/projects/hydra-marketplace/ no JS errors",
       "ok": true,
       "detail": ""
     },
@@ -2988,6 +5458,481 @@
       "detail": ""
     },
     {
+      "name": "430×932 /ru/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "430×932 /ru/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "430×932 /ru/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "430×932 /ru/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/services/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "430×932 /ru/services/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "430×932 /ru/services/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "430×932 /ru/services/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/services/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/projects/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "430×932 /ru/projects/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "430×932 /ru/projects/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "430×932 /ru/projects/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/projects/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/process/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "430×932 /ru/process/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "430×932 /ru/process/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "430×932 /ru/process/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/process/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/about/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "430×932 /ru/about/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "430×932 /ru/about/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "430×932 /ru/about/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/about/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/contact/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "430×932 /ru/contact/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "430×932 /ru/contact/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "430×932 /ru/contact/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/contact/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/start/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "430×932 /ru/start/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "430×932 /ru/start/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "430×932 /ru/start/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/start/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/projects/barber-atelier/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "430×932 /ru/projects/barber-atelier/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "430×932 /ru/projects/barber-atelier/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "430×932 /ru/projects/barber-atelier/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/projects/barber-atelier/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/projects/coffee-house/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "430×932 /ru/projects/coffee-house/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "430×932 /ru/projects/coffee-house/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "430×932 /ru/projects/coffee-house/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/projects/coffee-house/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/projects/fitness-club/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "430×932 /ru/projects/fitness-club/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "430×932 /ru/projects/fitness-club/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "430×932 /ru/projects/fitness-club/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/projects/fitness-club/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/projects/cinema/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "430×932 /ru/projects/cinema/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "430×932 /ru/projects/cinema/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "430×932 /ru/projects/cinema/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/projects/cinema/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/projects/auto-service/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "430×932 /ru/projects/auto-service/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "430×932 /ru/projects/auto-service/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "430×932 /ru/projects/auto-service/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/projects/auto-service/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/projects/premium-automotive/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "430×932 /ru/projects/premium-automotive/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "430×932 /ru/projects/premium-automotive/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "430×932 /ru/projects/premium-automotive/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/projects/premium-automotive/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/projects/beauty-salon/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "430×932 /ru/projects/beauty-salon/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "430×932 /ru/projects/beauty-salon/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "430×932 /ru/projects/beauty-salon/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/projects/beauty-salon/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/projects/design-intelligence/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "430×932 /ru/projects/design-intelligence/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "430×932 /ru/projects/design-intelligence/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "430×932 /ru/projects/design-intelligence/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/projects/design-intelligence/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/projects/booking-mini-app/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "430×932 /ru/projects/booking-mini-app/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "430×932 /ru/projects/booking-mini-app/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "430×932 /ru/projects/booking-mini-app/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/projects/booking-mini-app/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/projects/music-recognition-bot/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "430×932 /ru/projects/music-recognition-bot/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "430×932 /ru/projects/music-recognition-bot/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "430×932 /ru/projects/music-recognition-bot/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/projects/music-recognition-bot/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/projects/marketplace-bot/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "430×932 /ru/projects/marketplace-bot/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "430×932 /ru/projects/marketplace-bot/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "430×932 /ru/projects/marketplace-bot/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/projects/marketplace-bot/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/projects/hydra-marketplace/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "430×932 /ru/projects/hydra-marketplace/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "430×932 /ru/projects/hydra-marketplace/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "430×932 /ru/projects/hydra-marketplace/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430×932 /ru/projects/hydra-marketplace/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
       "name": "390×844 / status",
       "ok": true,
       "detail": "200"
@@ -3459,6 +6404,481 @@
     },
     {
       "name": "390×844 /projects/hydra-marketplace/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "390×844 /ru/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "390×844 /ru/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "390×844 /ru/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/services/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "390×844 /ru/services/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "390×844 /ru/services/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "390×844 /ru/services/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/services/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/projects/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "390×844 /ru/projects/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "390×844 /ru/projects/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "390×844 /ru/projects/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/projects/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/process/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "390×844 /ru/process/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "390×844 /ru/process/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "390×844 /ru/process/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/process/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/about/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "390×844 /ru/about/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "390×844 /ru/about/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "390×844 /ru/about/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/about/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/contact/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "390×844 /ru/contact/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "390×844 /ru/contact/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "390×844 /ru/contact/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/contact/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/start/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "390×844 /ru/start/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "390×844 /ru/start/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "390×844 /ru/start/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/start/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/projects/barber-atelier/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "390×844 /ru/projects/barber-atelier/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "390×844 /ru/projects/barber-atelier/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "390×844 /ru/projects/barber-atelier/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/projects/barber-atelier/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/projects/coffee-house/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "390×844 /ru/projects/coffee-house/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "390×844 /ru/projects/coffee-house/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "390×844 /ru/projects/coffee-house/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/projects/coffee-house/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/projects/fitness-club/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "390×844 /ru/projects/fitness-club/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "390×844 /ru/projects/fitness-club/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "390×844 /ru/projects/fitness-club/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/projects/fitness-club/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/projects/cinema/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "390×844 /ru/projects/cinema/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "390×844 /ru/projects/cinema/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "390×844 /ru/projects/cinema/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/projects/cinema/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/projects/auto-service/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "390×844 /ru/projects/auto-service/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "390×844 /ru/projects/auto-service/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "390×844 /ru/projects/auto-service/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/projects/auto-service/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/projects/premium-automotive/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "390×844 /ru/projects/premium-automotive/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "390×844 /ru/projects/premium-automotive/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "390×844 /ru/projects/premium-automotive/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/projects/premium-automotive/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/projects/beauty-salon/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "390×844 /ru/projects/beauty-salon/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "390×844 /ru/projects/beauty-salon/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "390×844 /ru/projects/beauty-salon/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/projects/beauty-salon/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/projects/design-intelligence/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "390×844 /ru/projects/design-intelligence/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "390×844 /ru/projects/design-intelligence/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "390×844 /ru/projects/design-intelligence/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/projects/design-intelligence/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/projects/booking-mini-app/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "390×844 /ru/projects/booking-mini-app/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "390×844 /ru/projects/booking-mini-app/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "390×844 /ru/projects/booking-mini-app/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/projects/booking-mini-app/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/projects/music-recognition-bot/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "390×844 /ru/projects/music-recognition-bot/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "390×844 /ru/projects/music-recognition-bot/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "390×844 /ru/projects/music-recognition-bot/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/projects/music-recognition-bot/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/projects/marketplace-bot/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "390×844 /ru/projects/marketplace-bot/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "390×844 /ru/projects/marketplace-bot/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "390×844 /ru/projects/marketplace-bot/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/projects/marketplace-bot/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/projects/hydra-marketplace/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "390×844 /ru/projects/hydra-marketplace/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "390×844 /ru/projects/hydra-marketplace/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "390×844 /ru/projects/hydra-marketplace/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390×844 /ru/projects/hydra-marketplace/ no JS errors",
       "ok": true,
       "detail": ""
     },
@@ -3938,6 +7358,481 @@
       "detail": ""
     },
     {
+      "name": "375×812 /ru/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "375×812 /ru/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "375×812 /ru/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "375×812 /ru/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/services/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "375×812 /ru/services/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "375×812 /ru/services/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "375×812 /ru/services/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/services/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/projects/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "375×812 /ru/projects/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "375×812 /ru/projects/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "375×812 /ru/projects/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/projects/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/process/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "375×812 /ru/process/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "375×812 /ru/process/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "375×812 /ru/process/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/process/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/about/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "375×812 /ru/about/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "375×812 /ru/about/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "375×812 /ru/about/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/about/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/contact/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "375×812 /ru/contact/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "375×812 /ru/contact/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "375×812 /ru/contact/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/contact/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/start/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "375×812 /ru/start/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "375×812 /ru/start/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "375×812 /ru/start/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/start/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/projects/barber-atelier/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "375×812 /ru/projects/barber-atelier/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "375×812 /ru/projects/barber-atelier/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "375×812 /ru/projects/barber-atelier/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/projects/barber-atelier/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/projects/coffee-house/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "375×812 /ru/projects/coffee-house/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "375×812 /ru/projects/coffee-house/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "375×812 /ru/projects/coffee-house/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/projects/coffee-house/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/projects/fitness-club/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "375×812 /ru/projects/fitness-club/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "375×812 /ru/projects/fitness-club/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "375×812 /ru/projects/fitness-club/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/projects/fitness-club/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/projects/cinema/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "375×812 /ru/projects/cinema/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "375×812 /ru/projects/cinema/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "375×812 /ru/projects/cinema/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/projects/cinema/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/projects/auto-service/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "375×812 /ru/projects/auto-service/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "375×812 /ru/projects/auto-service/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "375×812 /ru/projects/auto-service/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/projects/auto-service/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/projects/premium-automotive/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "375×812 /ru/projects/premium-automotive/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "375×812 /ru/projects/premium-automotive/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "375×812 /ru/projects/premium-automotive/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/projects/premium-automotive/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/projects/beauty-salon/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "375×812 /ru/projects/beauty-salon/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "375×812 /ru/projects/beauty-salon/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "375×812 /ru/projects/beauty-salon/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/projects/beauty-salon/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/projects/design-intelligence/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "375×812 /ru/projects/design-intelligence/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "375×812 /ru/projects/design-intelligence/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "375×812 /ru/projects/design-intelligence/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/projects/design-intelligence/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/projects/booking-mini-app/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "375×812 /ru/projects/booking-mini-app/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "375×812 /ru/projects/booking-mini-app/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "375×812 /ru/projects/booking-mini-app/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/projects/booking-mini-app/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/projects/music-recognition-bot/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "375×812 /ru/projects/music-recognition-bot/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "375×812 /ru/projects/music-recognition-bot/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "375×812 /ru/projects/music-recognition-bot/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/projects/music-recognition-bot/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/projects/marketplace-bot/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "375×812 /ru/projects/marketplace-bot/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "375×812 /ru/projects/marketplace-bot/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "375×812 /ru/projects/marketplace-bot/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/projects/marketplace-bot/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/projects/hydra-marketplace/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "375×812 /ru/projects/hydra-marketplace/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "375×812 /ru/projects/hydra-marketplace/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "375×812 /ru/projects/hydra-marketplace/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "375×812 /ru/projects/hydra-marketplace/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
       "name": "360×800 / status",
       "ok": true,
       "detail": "200"
@@ -4413,6 +8308,481 @@
       "detail": ""
     },
     {
+      "name": "360×800 /ru/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "360×800 /ru/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "360×800 /ru/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "360×800 /ru/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/services/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "360×800 /ru/services/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "360×800 /ru/services/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "360×800 /ru/services/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/services/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/projects/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "360×800 /ru/projects/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "360×800 /ru/projects/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "360×800 /ru/projects/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/projects/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/process/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "360×800 /ru/process/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "360×800 /ru/process/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "360×800 /ru/process/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/process/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/about/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "360×800 /ru/about/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "360×800 /ru/about/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "360×800 /ru/about/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/about/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/contact/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "360×800 /ru/contact/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "360×800 /ru/contact/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "360×800 /ru/contact/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/contact/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/start/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "360×800 /ru/start/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "360×800 /ru/start/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "360×800 /ru/start/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/start/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/projects/barber-atelier/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "360×800 /ru/projects/barber-atelier/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "360×800 /ru/projects/barber-atelier/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "360×800 /ru/projects/barber-atelier/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/projects/barber-atelier/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/projects/coffee-house/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "360×800 /ru/projects/coffee-house/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "360×800 /ru/projects/coffee-house/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "360×800 /ru/projects/coffee-house/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/projects/coffee-house/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/projects/fitness-club/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "360×800 /ru/projects/fitness-club/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "360×800 /ru/projects/fitness-club/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "360×800 /ru/projects/fitness-club/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/projects/fitness-club/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/projects/cinema/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "360×800 /ru/projects/cinema/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "360×800 /ru/projects/cinema/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "360×800 /ru/projects/cinema/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/projects/cinema/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/projects/auto-service/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "360×800 /ru/projects/auto-service/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "360×800 /ru/projects/auto-service/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "360×800 /ru/projects/auto-service/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/projects/auto-service/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/projects/premium-automotive/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "360×800 /ru/projects/premium-automotive/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "360×800 /ru/projects/premium-automotive/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "360×800 /ru/projects/premium-automotive/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/projects/premium-automotive/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/projects/beauty-salon/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "360×800 /ru/projects/beauty-salon/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "360×800 /ru/projects/beauty-salon/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "360×800 /ru/projects/beauty-salon/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/projects/beauty-salon/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/projects/design-intelligence/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "360×800 /ru/projects/design-intelligence/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "360×800 /ru/projects/design-intelligence/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "360×800 /ru/projects/design-intelligence/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/projects/design-intelligence/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/projects/booking-mini-app/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "360×800 /ru/projects/booking-mini-app/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "360×800 /ru/projects/booking-mini-app/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "360×800 /ru/projects/booking-mini-app/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/projects/booking-mini-app/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/projects/music-recognition-bot/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "360×800 /ru/projects/music-recognition-bot/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "360×800 /ru/projects/music-recognition-bot/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "360×800 /ru/projects/music-recognition-bot/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/projects/music-recognition-bot/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/projects/marketplace-bot/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "360×800 /ru/projects/marketplace-bot/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "360×800 /ru/projects/marketplace-bot/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "360×800 /ru/projects/marketplace-bot/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/projects/marketplace-bot/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/projects/hydra-marketplace/ status",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "360×800 /ru/projects/hydra-marketplace/ no horizontal overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "360×800 /ru/projects/hydra-marketplace/ exactly one h1",
+      "ok": true,
+      "detail": "h1=1"
+    },
+    {
+      "name": "360×800 /ru/projects/hydra-marketplace/ images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360×800 /ru/projects/hydra-marketplace/ no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
       "name": "link /HYDRA-Digital-Studio/favicon.svg",
       "ok": true,
       "detail": "200"
@@ -4428,12 +8798,12 @@
       "detail": "200"
     },
     {
-      "name": "link /HYDRA-Digital-Studio/assets/main.css?v=mw3j7ch8",
+      "name": "link /HYDRA-Digital-Studio/assets/main.css?v=mw3mf8s3",
       "ok": true,
       "detail": "200"
     },
     {
-      "name": "link /HYDRA-Digital-Studio/assets/main.js?v=mw3j7ch8",
+      "name": "link /HYDRA-Digital-Studio/assets/main.js?v=mw3mf8s3",
       "ok": true,
       "detail": "200"
     },
@@ -4464,6 +8834,11 @@
     },
     {
       "name": "link /HYDRA-Digital-Studio/contact/",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "link /HYDRA-Digital-Studio/ru/",
       "ok": true,
       "detail": "200"
     },
@@ -4523,6 +8898,11 @@
       "detail": "200"
     },
     {
+      "name": "link /HYDRA-Digital-Studio/ru/services/",
+      "ok": true,
+      "detail": "200"
+    },
+    {
       "name": "link /HYDRA-Digital-Studio/start/?type=web",
       "ok": true,
       "detail": "200"
@@ -4539,6 +8919,11 @@
     },
     {
       "name": "link /HYDRA-Digital-Studio/start/?type=products",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "link /HYDRA-Digital-Studio/ru/projects/",
       "ok": true,
       "detail": "200"
     },
@@ -4598,6 +8983,36 @@
       "detail": "200"
     },
     {
+      "name": "link /HYDRA-Digital-Studio/ru/process/",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "link /HYDRA-Digital-Studio/ru/about/",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "link /HYDRA-Digital-Studio/ru/contact/",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "link /HYDRA-Digital-Studio/ru/start/",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "link /HYDRA-Digital-Studio/ru/projects/barber-atelier/",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "link /HYDRA-Digital-Studio/ru/projects/coffee-house/",
+      "ok": true,
+      "detail": "200"
+    },
+    {
       "name": "link /HYDRA-Digital-Studio/img/projects/coffee-v1.webp",
       "ok": true,
       "detail": "200"
@@ -4608,7 +9023,17 @@
       "detail": "200"
     },
     {
+      "name": "link /HYDRA-Digital-Studio/ru/projects/fitness-club/",
+      "ok": true,
+      "detail": "200"
+    },
+    {
       "name": "link /HYDRA-Digital-Studio/img/projects/fitness-m.webp",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "link /HYDRA-Digital-Studio/ru/projects/cinema/",
       "ok": true,
       "detail": "200"
     },
@@ -4618,12 +9043,72 @@
       "detail": "200"
     },
     {
+      "name": "link /HYDRA-Digital-Studio/ru/projects/auto-service/",
+      "ok": true,
+      "detail": "200"
+    },
+    {
       "name": "link /HYDRA-Digital-Studio/img/projects/autoservice-v1.webp",
       "ok": true,
       "detail": "200"
     },
     {
+      "name": "link /HYDRA-Digital-Studio/ru/projects/premium-automotive/",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "link /HYDRA-Digital-Studio/ru/projects/beauty-salon/",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "link /HYDRA-Digital-Studio/ru/projects/design-intelligence/",
+      "ok": true,
+      "detail": "200"
+    },
+    {
       "name": "link /HYDRA-Digital-Studio/img/projects/hdi-ideas.webp",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "link /HYDRA-Digital-Studio/ru/projects/booking-mini-app/",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "link /HYDRA-Digital-Studio/ru/projects/music-recognition-bot/",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "link /HYDRA-Digital-Studio/ru/projects/marketplace-bot/",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "link /HYDRA-Digital-Studio/ru/projects/hydra-marketplace/",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "link /HYDRA-Digital-Studio/ru/start/?type=web",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "link /HYDRA-Digital-Studio/ru/start/?type=redesign",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "link /HYDRA-Digital-Studio/ru/start/?type=telegram",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "link /HYDRA-Digital-Studio/ru/start/?type=products",
       "ok": true,
       "detail": "200"
     },

@@ -29,7 +29,8 @@ no-JS support, Open Graph, JSON-LD, sitemap, robots.txt, 404 page.
 
 - **React 19 + TypeScript** components rendered to static HTML at build time (no client framework shipped)
 - **Vanilla TypeScript** client bundle (24 KB, 9 KB gzipped) built with **esbuild**
-- Hand-written CSS design system (Archivo + JetBrains Mono, Abyss/Bone/Venom palette)
+- Hand-written CSS design system (Manrope + Inter + JetBrains Mono; white / soft blue `#7298D8` / deep navy `#111722`)
+- **Bilingual**: English at the root, Russian under `/ru/`, EN/RU switcher on every page, `hreflang` + bilingual sitemap
 - **Playwright** end-to-end tests on 9 viewports
 
 ```
@@ -38,12 +39,14 @@ src/
   data/                services, projects, process, FAQ, capabilities — single source of truth
   components/          Layout, UI kit, HydraCore diagram, blocks, vector art
   pages/               Home + inner pages (About, Services, Projects, ProjectDetail, Process, Contact, Start, 404)
+  i18n.ts              locale switch for the build: L("English", "Русский")
   client/              main.ts (header, menu, reveals, core, filters, before/after, process), telegram.ts, forms.ts
   styles/main.css      design tokens + components
 scripts/build.tsx      static build → /docs (GitHub Pages)
 scripts/serve.mjs      local server that mimics GitHub Pages (base path + 404)
 scripts/assets.mjs     regenerates og.png and apple-touch-icon.png
 tests/e2e.mjs          Playwright QA suite → tests/report.json
+tests/ru-smoke.mjs     Russian locale: interactive parts, language switch, untranslated-text scan
 design/                design concept and research decisions
 docs/                  production build (served by GitHub Pages)
 ```

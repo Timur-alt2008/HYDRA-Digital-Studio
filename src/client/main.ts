@@ -1,6 +1,7 @@
 /* HYDRA — client behaviour. Progressive enhancement only: every page works without JS. */
 import { initBuilder, initContactForms } from "./forms";
 import { initTelegram } from "./telegram";
+import { t as tr } from "./lang";
 
 const $ = <T extends Element = HTMLElement>(sel: string, root: ParentNode = document) => root.querySelector<T>(sel);
 const $$ = <T extends Element = HTMLElement>(sel: string, root: ParentNode = document) => Array.from(root.querySelectorAll<T>(sel));
@@ -59,7 +60,7 @@ function initMenu() {
     menu.setAttribute("aria-hidden", String(!open));
     menu.inert = !open;
     document.documentElement.classList.toggle("menu-open", open);
-    if (label) label.textContent = open ? "Close" : "Menu";
+    if (label) label.textContent = open ? tr("Close", "Закрыть") : tr("Menu", "Меню");
     if (open) $<HTMLAnchorElement>("a", menu)?.focus({ preventScroll: true });
   };
   btn.addEventListener("click", () => setOpen(btn.getAttribute("aria-expanded") !== "true"));
@@ -191,7 +192,7 @@ function initFilters() {
       t.hidden = !ok;
       if (ok) { shown++; t.classList.add("is-in"); }
     });
-    if (status) status.textContent = `${shown} project${shown === 1 ? "" : "s"} shown`;
+    if (status) status.textContent = tr(`${shown} project${shown === 1 ? "" : "s"} shown`, `Показано проектов: ${shown}`);
     if (animate && !reduceMotion()) {
       // FLIP: animate tiles from their old position to the new one
       tiles.filter((t) => !t.hidden).forEach((t) => {
@@ -228,7 +229,7 @@ function initBeforeAfter() {
   const select = (btn: HTMLButtonElement, focus = false) => {
     tabs.forEach((t) => { const on = t === btn; t.setAttribute("aria-selected", String(on)); t.tabIndex = on ? 0 : -1; });
     before.src = btn.dataset.before!; after.src = btn.dataset.after!;
-    before.alt = `${btn.dataset.title} — first version`; after.alt = `${btn.dataset.title} — redesigned version`;
+    before.alt = `${btn.dataset.title} — ${stage?.dataset.labelBefore || "first version"}`; after.alt = `${btn.dataset.title} — ${stage?.dataset.labelAfter || "redesigned version"}`;
     if (link) link.href = btn.dataset.link!;
     if (focus) btn.focus();
     if (!reduceMotion()) {

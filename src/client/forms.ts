@@ -2,6 +2,8 @@
    Delivery depends on configuration (see src/config.ts):
    endpoint → POST JSON · email → mail app · telegram → copy + open chat · demo → copy / download only. */
 
+import { t } from "./lang";
+
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 const TG = /^@?[a-zA-Z][a-zA-Z0-9_]{4,31}$/;
 
@@ -14,7 +16,7 @@ const briefId = () => {
   const rnd = Math.random().toString(36).slice(2, 6).toUpperCase();
   return `HY-${String(d.getFullYear()).slice(2)}${String(d.getMonth() + 1).padStart(2, "0")}${String(d.getDate()).padStart(2, "0")}-${rnd}`;
 };
-const toText = (id: string, brief: Brief) => [`HYDRA project brief ${id}`, "", ...Object.entries(brief).filter(([, v]) => v).map(([k, v]) => `${k}: ${v}`)].join("\n");
+const toText = (id: string, brief: Brief) => [`${t("HYDRA project brief", "Бриф проекта HYDRA")} ${id}`, "", ...Object.entries(brief).filter(([, v]) => v).map(([k, v]) => `${k}: ${v}`)].join("\n");
 
 function validContact(v: string) { return EMAIL.test(v.trim()) || TG.test(v.trim()); }
 
@@ -35,41 +37,41 @@ async function deliver(form: HTMLElement, id: string, brief: Brief): Promise<{ o
     try {
       const res = await fetch(form.dataset.endpoint!, { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify({ id, ...brief }), signal: ctrl.signal });
       if (!res.ok) throw new Error(String(res.status));
-      return { ok: true, note: "Your brief has been sent. We'll reply within one working day." };
+      return { ok: true, note: t("Your brief has been sent. We'll reply within one working day.", "Бриф отправлен. Ответим в течение рабочего дня.") };
     } catch {
-      return { ok: false, note: "We couldn't send the brief right now. Please copy or download it and try again later." };
+      return { ok: false, note: t("We couldn't send the brief right now. Please copy or download it and try again later.", "Сейчас не удалось отправить бриф. Скопируйте или скачайте его и попробуйте позже.") };
     } finally { clearTimeout(timer); }
   }
   if (mode === "email") {
-    const url = `mailto:${form.dataset.email}?subject=${encodeURIComponent(`Project brief ${id}`)}&body=${encodeURIComponent(text.slice(0, 1800))}`;
+    const url = `mailto:${form.dataset.email}?subject=${encodeURIComponent(`${t("Project brief", "Бриф проекта")} ${id}`)}&body=${encodeURIComponent(text.slice(0, 1800))}`;
     window.location.href = url;
-    return { ok: true, note: "Your mail app should open with the brief filled in — press send there. If nothing opened, copy the brief below." };
+    return { ok: true, note: t("Your mail app should open with the brief filled in — press send there. If nothing opened, copy the brief below.", "Должна открыться почта с заполненным брифом — нажмите «Отправить» там. Если ничего не открылось, скопируйте бриф ниже.") };
   }
   if (mode === "telegram") {
     try { await navigator.clipboard.writeText(text); } catch { /* clipboard may be blocked */ }
     window.open(`https://t.me/${form.dataset.telegram}`, "_blank", "noopener");
-    return { ok: true, note: "The brief is copied. Paste it into the Telegram chat that just opened." };
+    return { ok: true, note: t("The brief is copied. Paste it into the Telegram chat that just opened.", "Бриф скопирован. Вставьте его в открывшийся чат Telegram.") };
   }
-  return { ok: true, note: "Demo mode: nothing was sent. Your brief is ready below — copy or download it." };
+  return { ok: true, note: t("Demo mode: nothing was sent. Your brief is ready below — copy or download it.", "Демо-режим: ничего не отправлено. Бриф готов ниже — скопируйте или скачайте его.") };
 }
 
 function showConfirm(box: HTMLElement, id: string, brief: Brief, note: string, ok: boolean) {
   const text = toText(id, brief);
   box.hidden = false;
   box.innerHTML = `
-    <span class="label label--accent">${ok ? "Brief ready" : "Not sent"}</span>
+    <span class="label label--accent">${ok ? t("Brief ready", "Бриф готов") : t("Not sent", "Не отправлено")}</span>
     <p class="confirm__id">${esc(id)}</p>
     <p>${esc(note)}</p>
     <div class="summary"><dl>${Object.entries(brief).filter(([, v]) => v).map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join("")}</dl></div>
     <div style="display:flex;gap:12px;flex-wrap:wrap">
-      <button type="button" class="btn btn--small" data-copy><span>Copy brief</span></button>
-      <button type="button" class="btn btn--ghost btn--small" data-download><span>Download .txt</span></button>
+      <button type="button" class="btn btn--small" data-copy><span>${t("Copy brief", "Скопировать бриф")}</span></button>
+      <button type="button" class="btn btn--ghost btn--small" data-download><span>${t("Download .txt", "Скачать .txt")}</span></button>
     </div>
     <span class="label" data-copy-status aria-live="polite"></span>`;
   box.querySelector("[data-copy]")!.addEventListener("click", async () => {
     const status = box.querySelector("[data-copy-status]")!;
-    try { await navigator.clipboard.writeText(text); status.textContent = "Copied to clipboard."; }
-    catch { status.textContent = "Copy is blocked by the browser — use Download instead."; }
+    try { await navigator.clipboard.writeText(text); status.textContent = t("Copied to clipboard.", "Скопировано в буфер обмена."); }
+    catch { status.textContent = t("Copy is blocked by the browser — use Download instead.", "Браузер запретил копирование — воспользуйтесь скачиванием."); }
   });
   box.querySelector("[data-download]")!.addEventListener("click", () => {
     const url = URL.createObjectURL(new Blob([text], { type: "text/plain;charset=utf-8" }));
@@ -89,30 +91,30 @@ export function initContactForms() {
       let ok = true;
       const name = f("name")!, contact = f("contact")!, message = form.elements.namedItem("message") as HTMLTextAreaElement, consent = f("consent")!;
       const checks: [Element, string][] = [
-        [name, name.value.trim().length < 2 ? "Please enter your name." : ""],
-        [contact, !contact.value.trim() ? "How should we reply?" : !validContact(contact.value) ? "Enter an email or a Telegram @username." : ""],
-        [message, message.value.trim().length < 20 ? "A couple of sentences, please (20+ characters)." : ""],
+        [name, name.value.trim().length < 2 ? t("Please enter your name.", "Введите имя.") : ""],
+        [contact, !contact.value.trim() ? t("How should we reply?", "Куда вам ответить?") : !validContact(contact.value) ? t("Enter an email or a Telegram @username.", "Укажите email или Telegram @username.") : ""],
+        [message, message.value.trim().length < 20 ? t("A couple of sentences, please (20+ characters).", "Пару предложений, пожалуйста (от 20 символов).") : ""],
       ];
       checks.forEach(([el, msg]) => { setError(el, msg); if (msg) ok = false; });
       const cErr = form.querySelector("[data-consent-error]");
-      if (cErr) cErr.textContent = consent.checked ? "" : "Please confirm so we can reply.";
+      if (cErr) cErr.textContent = consent.checked ? "" : t("Please confirm so we can reply.", "Подтвердите согласие, чтобы мы могли ответить.");
       if (!consent.checked) ok = false;
       return ok;
     };
     form.addEventListener("input", (e) => {
-      const t = e.target as HTMLElement;
-      if (t.closest(".field.is-invalid")) validate();
+      const tg = e.target as HTMLElement;
+      if (tg.closest(".field.is-invalid")) validate();
     });
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
       if (!validate()) { (form.querySelector('[aria-invalid="true"]') as HTMLElement | null)?.focus(); return; }
       const data = new FormData(form);
       const brief: Brief = {
-        Name: String(data.get("name")).trim(),
-        Contact: String(data.get("contact")).trim(),
-        Need: String(data.get("type") || ""),
-        Message: String(data.get("message")).trim(),
-        Source: "Contact form",
+        [K.name]: String(data.get("name")).trim(),
+        [K.contact]: String(data.get("contact")).trim(),
+        [K.need]: String(data.get("type") || ""),
+        [K.message]: String(data.get("message")).trim(),
+        [K.source]: t("Contact form", "Форма обратной связи"),
       };
       const btn = form.querySelector<HTMLButtonElement>('button[type="submit"]')!;
       btn.disabled = true;
@@ -120,22 +122,28 @@ export function initContactForms() {
       const res = await deliver(form, id, brief);
       showConfirm(form.querySelector<HTMLElement>("[data-confirm]")!, id, brief, res.note, res.ok);
       btn.disabled = false;
-      if (res.ok) btn.querySelector("span")!.textContent = "Send another";
+      if (res.ok) btn.querySelector("span")!.textContent = t("Send another", "Отправить ещё");
     });
   });
 }
 
 /* --------------------------------------------------------- project builder */
 const FEATURES: Record<string, string[]> = {
-  web: ["Responsive design", "Multi-page structure", "Online store or catalogue", "Booking or order form", "Blog or news", "CMS to edit content", "Several languages", "Animations and interactions", "Analytics setup", "Integrations (CRM, payments)"],
-  redesign: ["New visual design", "New structure and navigation", "Content migration", "Speed optimisation", "Accessibility fixes", "Keep existing URLs and SEO", "CMS to edit content", "New features"],
-  bot: ["Order taking", "Booking", "Answers to common questions", "Notifications", "Payments in Telegram", "Admin panel", "Broadcasts", "CRM or Google Sheets integration", "Several languages"],
-  miniapp: ["Catalogue", "Booking", "Cart and checkout", "User profiles", "Telegram login", "Payments", "Admin panel", "Notifications through the bot"],
-  products: ["Dashboard", "User accounts", "Roles and permissions", "Data import / export", "Integrations and API", "Reports", "Admin panel", "Real-time updates"],
-  unsure: ["Website", "Telegram bot", "Mini App", "Online payments", "Admin panel", "Integrations", "Help me decide"],
+  web: [t("Responsive design", "Адаптивный дизайн"), t("Multi-page structure", "Многостраничная структура"), t("Online store or catalogue", "Интернет-магазин или каталог"), t("Booking or order form", "Форма записи или заказа"), t("Blog or news", "Блог или новости"), t("CMS to edit content", "CMS для редактирования контента"), t("Several languages", "Несколько языков"), t("Animations and interactions", "Анимации и интерактив"), t("Analytics setup", "Подключение аналитики"), t("Integrations (CRM, payments)", "Интеграции (CRM, оплата)")],
+  redesign: [t("New visual design", "Новый визуальный дизайн"), t("New structure and navigation", "Новая структура и навигация"), t("Content migration", "Перенос контента"), t("Speed optimisation", "Ускорение сайта"), t("Accessibility fixes", "Исправление доступности"), t("Keep existing URLs and SEO", "Сохранить текущие адреса и позиции"), t("CMS to edit content", "CMS для редактирования контента"), t("New features", "Новые функции")],
+  bot: [t("Order taking", "Приём заказов"), t("Booking", "Запись"), t("Answers to common questions", "Ответы на частые вопросы"), t("Notifications", "Уведомления"), t("Payments in Telegram", "Оплата в Telegram"), t("Admin panel", "Админ-панель"), t("Broadcasts", "Рассылки"), t("CRM or Google Sheets integration", "Интеграция с CRM или Google Таблицами"), t("Several languages", "Несколько языков")],
+  miniapp: [t("Catalogue", "Каталог"), t("Booking", "Запись"), t("Cart and checkout", "Корзина и оформление заказа"), t("User profiles", "Профили пользователей"), t("Telegram login", "Вход через Telegram"), t("Payments", "Оплата"), t("Admin panel", "Админ-панель"), t("Notifications through the bot", "Уведомления через бота")],
+  products: [t("Dashboard", "Дашборд"), t("User accounts", "Личные кабинеты"), t("Roles and permissions", "Роли и права доступа"), t("Data import / export", "Импорт и экспорт данных"), t("Integrations and API", "Интеграции и API"), t("Reports", "Отчёты"), t("Admin panel", "Админ-панель"), t("Real-time updates", "Обновления в реальном времени")],
+  unsure: [t("Website", "Сайт"), t("Telegram bot", "Telegram-бот"), "Mini App", t("Online payments", "Онлайн-оплата"), t("Admin panel", "Админ-панель"), t("Integrations", "Интеграции"), t("Help me decide", "Помогите решить")],
 };
-const TYPE_LABEL: Record<string, string> = { web: "Website", redesign: "Redesign", bot: "Telegram bot", miniapp: "Telegram Mini App", products: "Custom digital product", unsure: "Not sure yet" };
-const DRAFT_KEY = "hydra-builder-draft";
+const TYPE_LABEL: Record<string, string> = { web: t("Website", "Сайт"), redesign: t("Redesign", "Редизайн"), bot: t("Telegram bot", "Telegram-бот"), miniapp: "Telegram Mini App", products: t("Custom digital product", "Цифровой продукт"), unsure: t("Not sure yet", "Пока не знаю") };
+/** Brief field labels (the brief is written in the page language). */
+const K = {
+  product: t("Product", "Продукт"), task: t("Main task", "Главная задача"), context: t("Context", "Контекст"), url: t("Current site / reference", "Текущий сайт / пример"),
+  features: t("Features", "Функции"), budget: t("Budget", "Бюджет"), timeline: t("Timeline", "Сроки"), name: t("Name", "Имя"), contact: t("Contact", "Контакт"),
+  company: t("Company", "Компания"), need: t("Need", "Задача"), message: t("Message", "Сообщение"), source: t("Source", "Источник"),
+};
+const DRAFT_KEY = `hydra-builder-draft-${document.documentElement.lang || "en"}`;
 
 export function initBuilder() {
   const form = document.querySelector<HTMLFormElement>("[data-builder]");
@@ -167,38 +175,38 @@ export function initBuilder() {
   };
 
   const collect = (): Brief => ({
-    "Product": TYPE_LABEL[val("type")] || "",
-    "Main task": val("task"),
-    "Context": val("context"),
-    "Current site / reference": val("url"),
-    "Features": checkedFeatures().join(", "),
-    "Budget": val("budget"),
-    "Timeline": val("timeline"),
-    "Name": val("name"),
-    "Contact": val("contact"),
-    "Company": val("company"),
+    [K.product]: TYPE_LABEL[val("type")] || "",
+    [K.task]: val("task"),
+    [K.context]: val("context"),
+    [K.url]: val("url"),
+    [K.features]: checkedFeatures().join(", "),
+    [K.budget]: val("budget"),
+    [K.timeline]: val("timeline"),
+    [K.name]: val("name"),
+    [K.contact]: val("contact"),
+    [K.company]: val("company"),
   });
 
   const validateStep = (i: number): boolean => {
     const need = (name: string, msg: string) => { const ok = !!val(name); err(name, ok ? "" : msg); return ok; };
     switch (i) {
-      case 0: return need("type", "Choose one option.");
+      case 0: return need("type", t("Choose one option.", "Выберите вариант."));
       case 1: {
-        let ok = need("task", "Choose the main task.");
+        let ok = need("task", t("Choose the main task.", "Выберите главную задачу."));
         const url = val("url");
-        if (url && !/^https?:\/\/[^\s.]+\.[^\s]{2,}$/i.test(url)) { err("url", "Enter a full address starting with https://"); ok = false; } else err("url", "");
+        if (url && !/^https?:\/\/[^\s.]+\.[^\s]{2,}$/i.test(url)) { err("url", t("Enter a full address starting with https://", "Укажите полный адрес, начиная с https://")); ok = false; } else err("url", "");
         return ok;
       }
-      case 2: { const ok = checkedFeatures().length > 0; err("features", ok ? "" : "Pick at least one feature (or “Help me decide”)."); return ok; }
-      case 3: return need("budget", "Choose a range — “Not sure yet” is fine.");
-      case 4: return need("timeline", "Choose a timeline.");
+      case 2: { const ok = checkedFeatures().length > 0; err("features", ok ? "" : t("Pick at least one feature (or “Help me decide”).", "Выберите хотя бы одну функцию (или «Помогите решить»).")); return ok; }
+      case 3: return need("budget", t("Choose a range — “Not sure yet” is fine.", "Выберите диапазон — «Пока не знаю» тоже подойдёт."));
+      case 4: return need("timeline", t("Choose a timeline.", "Выберите сроки."));
       case 5: {
         let ok = true;
         const name = val("name"), contact = val("contact");
-        err("name", name.length >= 2 ? "" : "Please enter your name."); if (name.length < 2) ok = false;
-        const cOk = validContact(contact); err("contact", cOk ? "" : "Enter an email or a Telegram @username."); if (!cOk) ok = false;
+        err("name", name.length >= 2 ? "" : t("Please enter your name.", "Введите имя.")); if (name.length < 2) ok = false;
+        const cOk = validContact(contact); err("contact", cOk ? "" : t("Enter an email or a Telegram @username.", "Укажите email или Telegram @username.")); if (!cOk) ok = false;
         const consent = (form.elements.namedItem("consent") as HTMLInputElement).checked;
-        const ce = form.querySelector('[data-error="consent"]'); if (ce) ce.textContent = consent ? "" : "Please confirm so we can reply.";
+        const ce = form.querySelector('[data-error="consent"]'); if (ce) ce.textContent = consent ? "" : t("Please confirm so we can reply.", "Подтвердите согласие, чтобы мы могли ответить.");
         return ok && consent;
       }
     }
@@ -207,10 +215,10 @@ export function initBuilder() {
 
   const renderSummary = () => {
     const b = collect();
-    summary.innerHTML = `<dl>${Object.entries(b).filter(([k, v]) => v && !["Name", "Contact", "Company"].includes(k)).map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join("")}</dl>`;
+    summary.innerHTML = `<dl>${Object.entries(b).filter(([k, v]) => v && ![K.name, K.contact, K.company].includes(k)).map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join("")}</dl>`;
   };
 
-  const save = () => { try { localStorage.setItem(DRAFT_KEY, JSON.stringify({ ...collect(), _features: checkedFeatures(), _step: current, _raw: { type: val("type"), task: val("task"), budget: val("budget"), timeline: val("timeline") } })); } catch { /* storage unavailable */ } };
+  const save = () => { try { localStorage.setItem(DRAFT_KEY, JSON.stringify({ ...collect(), _features: checkedFeatures(), _step: current, _raw: { type: val("type"), task: val("task"), budget: val("budget"), timeline: val("timeline"), context: val("context"), url: val("url"), name: val("name"), contact: val("contact"), company: val("company") } })); } catch { /* storage unavailable */ } };
   const restore = () => {
     let d: any = null;
     try { d = JSON.parse(localStorage.getItem(DRAFT_KEY) || "null"); } catch { d = null; }
@@ -219,7 +227,7 @@ export function initBuilder() {
     const setRadio = (name: string, v?: string) => { if (!v) return; const el = form.querySelector<HTMLInputElement>(`input[name="${name}"][value="${CSS.escape(v)}"]`); if (el) el.checked = true; };
     if (d && d._raw) {
       setRadio("type", d._raw.type); setRadio("task", d._raw.task); setRadio("budget", d._raw.budget); setRadio("timeline", d._raw.timeline);
-      (["context", "url", "name", "contact", "company"] as const).forEach((n) => { const el = form.elements.namedItem(n) as HTMLInputElement; const key = { context: "Context", url: "Current site / reference", name: "Name", contact: "Contact", company: "Company" }[n]; if (el && d[key]) el.value = d[key]; });
+      (["context", "url", "name", "contact", "company"] as const).forEach((n) => { const el = form.elements.namedItem(n) as HTMLInputElement; if (el && d._raw[n]) el.value = d._raw[n]; });
     }
     if (typeParam) setRadio("type", typeParam);
     renderFeatures();
@@ -231,8 +239,8 @@ export function initBuilder() {
     steps.forEach((s, k) => (s.hidden = k !== current));
     labels.forEach((l, k) => { l.classList.toggle("is-current", k === current); l.classList.toggle("is-done", k < current); });
     prev.disabled = current === 0;
-    nextLabel.textContent = current === steps.length - 1 ? "Send brief" : "Next";
-    count.textContent = `Step ${current + 1} of ${steps.length}`;
+    nextLabel.textContent = current === steps.length - 1 ? t("Send brief", "Отправить бриф") : t("Next", "Далее");
+    count.textContent = t(`Step ${current + 1} of ${steps.length}`, `Шаг ${current + 1} из ${steps.length}`);
     progress.style.setProperty("--p", String((current + 1) / steps.length));
     if (current === 2) renderFeatures();
     if (current === steps.length - 1) renderSummary();
@@ -246,8 +254,8 @@ export function initBuilder() {
   };
 
   form.addEventListener("change", (e) => {
-    const t = e.target as HTMLInputElement;
-    if (t.name === "type") renderFeatures();
+    const tg = e.target as HTMLInputElement;
+    if (tg.name === "type") renderFeatures();
     save();
   });
   form.addEventListener("input", save);
@@ -257,13 +265,13 @@ export function initBuilder() {
     if (!validateStep(current)) { (steps[current].querySelector('[aria-invalid="true"], input:not([type=hidden])') as HTMLElement | null)?.focus(); return; }
     if (current < steps.length - 1) { go(current + 1); return; }
     next.disabled = true;
-    const brief = { ...collect(), Source: "Project Builder" };
+    const brief = { ...collect(), [K.source]: "Project Builder" };
     const id = briefId();
     const res = await deliver(form, id, brief);
     steps.forEach((s) => (s.hidden = true));
     form.querySelector<HTMLElement>("[data-builder-nav]")!.hidden = true;
     labels.forEach((l) => { l.classList.remove("is-current"); l.classList.add("is-done"); });
-    count.textContent = "Done";
+    count.textContent = t("Done", "Готово");
     progress.style.setProperty("--p", "1");
     showConfirm(confirm, id, brief, res.note, res.ok);
     if (res.ok) { try { localStorage.removeItem(DRAFT_KEY); } catch { /* ignore */ } }
