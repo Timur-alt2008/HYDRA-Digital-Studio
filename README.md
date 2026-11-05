@@ -29,7 +29,7 @@ no-JS support, Open Graph, JSON-LD, sitemap, robots.txt, 404 page.
 
 - **React 19 + TypeScript** components rendered to static HTML at build time (no client framework shipped)
 - **Vanilla TypeScript** client bundle (24 KB, 9 KB gzipped) built with **esbuild**
-- Hand-written CSS design system (Manrope + Inter + JetBrains Mono; grey scale `#0B0B0B → #FFFFFF` + one colour, electric blue `#3550D0`)
+- Hand-written CSS design system (Manrope + Inter + JetBrains Mono; soft grey scale without pure white (`#0B0B0B` → `#F2F2F2`, page `#E8E8E8`) + one colour, electric blue `#3550D0`)
 - **Bilingual**: English at the root, Russian under `/ru/`, EN/RU switcher on every page, `hreflang` + bilingual sitemap
 - **Playwright** end-to-end tests on 9 viewports
 
