@@ -163,7 +163,7 @@ export function Layout({ meta, children }: { meta: PageMeta; children: React.Rea
         {!meta.noindex && <link rel="alternate" hrefLang="ru" href={absoluteFor("ru", meta.path)} />}
         {!meta.noindex && <link rel="alternate" hrefLang="x-default" href={absoluteFor("en", meta.path)} />}
         {meta.noindex && <meta name="robots" content="noindex" />}
-        <meta name="theme-color" content="#0b0b0b" />
+        <meta name="theme-color" content="#0b0720" />
         <meta name="color-scheme" content="light dark" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content={SITE.legalName} />

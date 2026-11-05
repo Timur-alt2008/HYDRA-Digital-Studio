@@ -6,9 +6,9 @@ import { L } from "../i18n";
 
 const Bubble = ({ x, y, w, h, me, lines = 2 }: { x: number; y: number; w: number; h: number; me?: boolean; lines?: number }) => (
   <g>
-    <rect x={x} y={y} width={w} height={h} rx="14" fill={me ? "#2f45b8" : "#1a1a1a"} />
+    <rect x={x} y={y} width={w} height={h} rx="14" fill={me ? "#5524a8" : "#160d33"} />
     {Array.from({ length: lines }).map((_, i) => (
-      <rect key={i} x={x + 14} y={y + 14 + i * 14} width={(w - 28) * (i === lines - 1 ? 0.6 : 1)} height="6" rx="3" fill={me ? "#c9d1fa" : "#6b6b6b"} />
+      <rect key={i} x={x + 14} y={y + 14 + i * 14} width={(w - 28) * (i === lines - 1 ? 0.6 : 1)} height="6" rx="3" fill={me ? "#d1b8ff" : "#6b5a8e"} />
     ))}
   </g>
 );
@@ -16,13 +16,13 @@ const Bubble = ({ x, y, w, h, me, lines = 2 }: { x: number; y: number; w: number
 function PhoneShell({ children, accent }: { children: React.ReactNode; accent: string }) {
   return (
     <g>
-      <rect x="290" y="40" width="220" height="420" rx="34" fill="#0b0b0b" stroke="#333333" />
-      <rect x="300" y="50" width="200" height="400" rx="26" fill="#0b0b0b" />
-      <rect x="300" y="50" width="200" height="56" rx="26" fill="#141414" />
-      <rect x="300" y="80" width="200" height="26" fill="#141414" />
+      <rect x="290" y="40" width="220" height="420" rx="34" fill="#0b0720" stroke="#25134d" />
+      <rect x="300" y="50" width="200" height="400" rx="26" fill="#0b0720" />
+      <rect x="300" y="50" width="200" height="56" rx="26" fill="#120a2b" />
+      <rect x="300" y="80" width="200" height="26" fill="#120a2b" />
       <circle cx="326" cy="80" r="13" fill={accent} />
-      <rect x="346" y="72" width="70" height="7" rx="3" fill="#f4f4f4" />
-      <rect x="346" y="84" width="44" height="5" rx="2.5" fill="#9e9e9e" />
+      <rect x="346" y="72" width="70" height="7" rx="3" fill="#f2e9ff" />
+      <rect x="346" y="84" width="44" height="5" rx="2.5" fill="#a08fc4" />
       {children}
     </g>
   );
@@ -31,7 +31,7 @@ function PhoneShell({ children, accent }: { children: React.ReactNode; accent: s
 export function ProjectArt({ kind, accent, title }: { kind: string; accent: string; title: string }) {
   const bg = (
     <>
-      <rect width="800" height="500" fill="#1a1a1a" />
+      <rect width="800" height="500" fill="#160d33" />
       <g stroke="rgba(255,255,255,0.06)">
         {Array.from({ length: 16 }).map((_, i) => <line key={`v${i}`} x1={i * 50} y1="0" x2={i * 50} y2="500" />)}
         {Array.from({ length: 10 }).map((_, i) => <line key={`h${i}`} x1="0" y1={i * 50} x2="800" y2={i * 50} />)}
@@ -45,15 +45,15 @@ export function ProjectArt({ kind, accent, title }: { kind: string; accent: stri
         <PhoneShell accent={accent}>
           <Bubble x={312} y={120} w={140} h={44} />
           <g>
-            <rect x={380} y={176} width={108} height={40} rx="14" fill="#2f45b8" />
-            {Array.from({ length: 14 }).map((_, i) => <rect key={i} x={392 + i * 6} y={196 - [6, 10, 14, 8, 16, 12, 6, 14, 10, 4, 12, 8, 14, 6][i] / 2} width="3" height={[6, 10, 14, 8, 16, 12, 6, 14, 10, 4, 12, 8, 14, 6][i]} fill="#c9d1fa" />)}
+            <rect x={380} y={176} width={108} height={40} rx="14" fill="#5524a8" />
+            {Array.from({ length: 14 }).map((_, i) => <rect key={i} x={392 + i * 6} y={196 - [6, 10, 14, 8, 16, 12, 6, 14, 10, 4, 12, 8, 14, 6][i] / 2} width="3" height={[6, 10, 14, 8, 16, 12, 6, 14, 10, 4, 12, 8, 14, 6][i]} fill="#d1b8ff" />)}
           </g>
-          <rect x={312} y={228} width={160} height={110} rx="14" fill="#1a1a1a" />
+          <rect x={312} y={228} width={160} height={110} rx="14" fill="#160d33" />
           <rect x={324} y={240} width={60} height={60} fill={accent} />
-          <circle cx={354} cy={270} r="16" fill="#0b0b0b" /><circle cx={354} cy={270} r="4" fill={accent} />
-          <rect x={392} y={246} width={68} height="7" rx="3" fill="#f4f4f4" />
-          <rect x={392} y={260} width={48} height="6" rx="3" fill="#6b6b6b" />
-          <rect x={324} y={310} width={136} height="18" rx="6" fill="#333333" />
+          <circle cx={354} cy={270} r="16" fill="#0b0720" /><circle cx={354} cy={270} r="4" fill={accent} />
+          <rect x={392} y={246} width={68} height="7" rx="3" fill="#f2e9ff" />
+          <rect x={392} y={260} width={48} height="6" rx="3" fill="#6b5a8e" />
+          <rect x={324} y={310} width={136} height="18" rx="6" fill="#25134d" />
           <Bubble x={312} y={350} w={120} h={30} lines={1} />
         </PhoneShell>
         <g fill="none" stroke={accent} strokeWidth="2">
@@ -69,7 +69,7 @@ export function ProjectArt({ kind, accent, title }: { kind: string; accent: stri
           <Bubble x={312} y={120} w={150} h={58} lines={3} />
           <g>
             {["New request", "My orders", "Responses", "Profile"].map((t, i) => (
-              <g key={t}><rect x={312 + (i % 2) * 90} y={192 + Math.floor(i / 2) * 40} width={86} height={34} rx="8" fill="#333333" /><rect x={326 + (i % 2) * 90} y={206 + Math.floor(i / 2) * 40} width={56} height="6" rx="3" fill="#d9d9d9" /></g>
+              <g key={t}><rect x={312 + (i % 2) * 90} y={192 + Math.floor(i / 2) * 40} width={86} height={34} rx="8" fill="#25134d" /><rect x={326 + (i % 2) * 90} y={206 + Math.floor(i / 2) * 40} width={56} height="6" rx="3" fill="#d1b8ff" /></g>
             ))}
           </g>
           <Bubble x={360} y={290} w={128} h={44} me />
@@ -78,9 +78,9 @@ export function ProjectArt({ kind, accent, title }: { kind: string; accent: stri
         <g>
           {[0, 1, 2].map((i) => (
             <g key={i} transform={`translate(${70 + i * 18} ${120 + i * 70})`}>
-              <rect width="180" height="56" fill="#1a1a1a" stroke="rgba(255,255,255,0.25)" />
-              <rect x="14" y="14" width="28" height="28" fill={i === 1 ? accent : "#333333"} stroke={accent} />
-              <rect x="54" y="18" width="90" height="7" fill="#f4f4f4" /><rect x="54" y="32" width="60" height="6" fill="#6b6b6b" />
+              <rect width="180" height="56" fill="#160d33" stroke="rgba(255,255,255,0.25)" />
+              <rect x="14" y="14" width="28" height="28" fill={i === 1 ? accent : "#25134d"} stroke={accent} />
+              <rect x="54" y="18" width="90" height="7" fill="#f2e9ff" /><rect x="54" y="32" width="60" height="6" fill="#6b5a8e" />
             </g>
           ))}
           <path d="M250 175 C 275 175, 270 240, 300 240" fill="none" stroke={accent} strokeWidth="2" strokeDasharray="6 6" />
@@ -110,7 +110,7 @@ export function ProjectArt({ kind, accent, title }: { kind: string; accent: stri
         <g fill="none" stroke="rgba(255,255,255,0.5)">
           <rect x="70" y="140" width="160" height="220" stroke={accent} strokeWidth="2" />
           <line x1="70" y1="180" x2="230" y2="180" />
-          <text x="84" y="166" fill="#f4f4f4" stroke="none" style={{ font: "500 12px monospace" }}>{booking ? "slots.json" : "api / orders"}</text>
+          <text x="84" y="166" fill="#f2e9ff" stroke="none" style={{ font: "500 12px monospace" }}>{booking ? "slots.json" : "api / orders"}</text>
           {[0, 1, 2, 3, 4].map((i) => <rect key={i} x="86" y={196 + i * 30} width={[120, 90, 110, 70, 100][i]} height="8" fill="rgba(255,255,255,0.35)" stroke="none" />)}
           <path d="M230 250 H 290" stroke={accent} strokeWidth="2" strokeDasharray="5 5" />
         </g>
@@ -121,7 +121,7 @@ export function ProjectArt({ kind, accent, title }: { kind: string; accent: stri
     <svg viewBox="0 0 800 500" role="img" aria-label={`${title} — ${L("illustration", "иллюстрация")}`} preserveAspectRatio="xMidYMid slice">
       {bg}
       {body}
-      <text x="40" y="460" fill="#9e9e9e" style={{ font: "500 13px 'JetBrains Mono', monospace", letterSpacing: "0.1em" }}>{L("CONCEPT ILLUSTRATION", "КОНЦЕПТ-ИЛЛЮСТРАЦИЯ")}</text>
+      <text x="40" y="460" fill="#a08fc4" style={{ font: "500 13px 'JetBrains Mono', monospace", letterSpacing: "0.1em" }}>{L("CONCEPT ILLUSTRATION", "КОНЦЕПТ-ИЛЛЮСТРАЦИЯ")}</text>
     </svg>
   );
 }

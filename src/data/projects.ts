@@ -188,7 +188,7 @@ export const getProjects = (): Project[] => [
     cover: "hdi-recs",
     extra: [{ src: "hdi-ideas", alt: L("Idea report: six scores, six answers and the design review checklist", "Отчёт по идее: шесть оценок, шесть ответов и чек-лист дизайн-ревью") }],
     repo: REPO + "HYDRA-Design-Intelligence",
-    accent: "#3d58df",
+    accent: "#7a3fd8",
     featured: true,
   },
   {
@@ -204,7 +204,7 @@ export const getProjects = (): Project[] => [
     features: [L("Bot conversation with quick replies", "Диалог с ботом и быстрые ответы"), L("Service and slot selection", "Выбор услуги и времени"), L("Main-button confirmation pattern", "Подтверждение главной кнопкой"), L("Booking summary returned to the chat", "Итог записи приходит в чат")],
     stack: ["TypeScript", L("Telegram Mini Apps SDK (target)", "Telegram Mini Apps SDK (целевой)"), L("Telegram Bot API (target)", "Telegram Bot API (целевой)")],
     art: "miniapp-booking",
-    accent: "#3d58df",
+    accent: "#7a3fd8",
   },
   {
     slug: "music-recognition-bot",
@@ -219,7 +219,7 @@ export const getProjects = (): Project[] => [
     features: [L("Voice and audio file recognition", "Распознавание голосовых и аудиофайлов"), L("History of the last 10 tracks", "История последних 10 треков"), L("Anti-spam rate limiting", "Антиспам-ограничение"), L("Inline buttons for sharing a result", "Inline-кнопки, чтобы поделиться результатом")],
     stack: ["Python", "aiogram", "SQLite"],
     art: "bot-music",
-    accent: "#8fa9e0",
+    accent: "#9d71e8",
   },
   {
     slug: "marketplace-bot",
@@ -234,7 +234,7 @@ export const getProjects = (): Project[] => [
     features: [L("Order creation with categories", "Создание заказов по категориям"), L("Provider responses and selection", "Отклики исполнителей и выбор"), L("Status notifications", "Уведомления о статусах"), L("Migrations with Alembic", "Миграции через Alembic")],
     stack: ["Python", "aiogram", "SQLite", "Alembic"],
     art: "bot-market",
-    accent: "#9e9e9e",
+    accent: "#a08fc4",
   },
   {
     slug: "hydra-marketplace",
@@ -249,7 +249,7 @@ export const getProjects = (): Project[] => [
     features: [L("Mini App client with Telegram auth", "Клиент Mini App с авторизацией Telegram"), L("Separate order and deal statuses", "Раздельные статусы заказа и сделки"), L("Admin panel", "Админ-панель"), L("Payment steps behind a feature flag", "Платёжные шаги за feature-флагом")],
     stack: ["React", "TypeScript", "Vite", "Fastify", "PostgreSQL", "Prisma"],
     art: "miniapp-market",
-    accent: "#5a80c4",
+    accent: "#6a2fc8",
   },
 ];
 

@@ -34,7 +34,7 @@ export function BrandMark({ className }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 32 32" aria-hidden="true">
       <path d="M16 28V18M16 18C16 13 6 13 5 5M16 18c0-5-4-8-3.5-14M16 18c0-5 4-8 3.5-14M16 18c0-5 10-5 11-13" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-      <circle cx="16" cy="27.5" r="3" fill="#3d58df" />
+      <circle cx="16" cy="27.5" r="3" fill="#7a3fd8" />
     </svg>
   );
 }
