@@ -88,6 +88,6 @@ writeFileSync(join(OUT, "assets/main.css"), css.code);
 const today = new Date().toISOString().slice(0, 10);
 write("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${LOCALES.flatMap((l) => routes.map((r) => `  <url><loc>${absoluteFor(l, r.path)}</loc><lastmod>${today}</lastmod><priority>${r.priority}</priority>${LOCALES.map((x) => `<xhtml:link rel="alternate" hreflang="${x}" href="${absoluteFor(x, r.path)}"/>`).join("")}</url>`)).join("\n")}\n</urlset>\n`);
 write("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${absoluteAsset("sitemap.xml")}\n`);
-write("site.webmanifest", JSON.stringify({ name: SITE.legalName, short_name: SITE.name, start_url: SITE.base, display: "standalone", background_color: "#111111", theme_color: "#111111", icons: [{ src: `${SITE.base}favicon.svg`, sizes: "any", type: "image/svg+xml" }, { src: `${SITE.base}apple-touch-icon.png`, sizes: "180x180", type: "image/png" }] }, null, 2));
+write("site.webmanifest", JSON.stringify({ name: SITE.legalName, short_name: SITE.name, start_url: SITE.base, display: "standalone", background_color: "#0b0b0b", theme_color: "#0b0b0b", icons: [{ src: `${SITE.base}favicon.svg`, sizes: "any", type: "image/svg+xml" }, { src: `${SITE.base}apple-touch-icon.png`, sizes: "180x180", type: "image/png" }] }, null, 2));
 
 console.log(`✓ built ${pages + 1} pages into /${OUT} in ${Date.now() - t0} ms (base ${SITE.base})`);

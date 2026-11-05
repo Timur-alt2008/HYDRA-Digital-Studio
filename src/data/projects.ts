@@ -234,7 +234,7 @@ export const getProjects = (): Project[] => [
     features: [L("Order creation with categories", "Создание заказов по категориям"), L("Provider responses and selection", "Отклики исполнителей и выбор"), L("Status notifications", "Уведомления о статусах"), L("Migrations with Alembic", "Миграции через Alembic")],
     stack: ["Python", "aiogram", "SQLite", "Alembic"],
     art: "bot-market",
-    accent: "#a1a3ad",
+    accent: "#9e9e9e",
   },
   {
     slug: "hydra-marketplace",
