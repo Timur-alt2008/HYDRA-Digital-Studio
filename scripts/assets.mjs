@@ -17,8 +17,8 @@ const og = `<!doctype html><html><head><style>
   svg.core{position:absolute;right:60px;top:118px;width:360px;height:380px;opacity:.9}
 </style></head><body>
 <svg class="core" viewBox="0 0 600 640"><g fill="none" stroke="rgba(236,232,223,.35)" stroke-width="2">
-<path d="M300 590 C300 400,96 406,96 198"/><path d="M300 590 C300 400,230 296,230 88"/><path d="M300 590 C300 400,372 300,372 92"/><path d="M300 590 C300 400,470 430,470 222"/></g>
-<g fill="#0b0f0e" stroke="#ff4f1f" stroke-width="2"><circle cx="96" cy="176" r="22"/><circle cx="230" cy="66" r="22"/><circle cx="372" cy="70" r="22"/><circle cx="470" cy="200" r="22"/></g>
+<path d="M300 590 C300 400,96 406,96 198"/><path d="M300 590 C300 400,230 296,230 88"/><path d="M300 590 C300 400,372 300,372 92"/><path d="M300 590 C300 400,450 436,450 228"/></g>
+<g fill="#0b0f0e" stroke="#ff4f1f" stroke-width="2"><circle cx="96" cy="176" r="22"/><circle cx="230" cy="66" r="22"/><circle cx="372" cy="70" r="22"/><circle cx="450" cy="206" r="22"/></g>
 <rect x="289" y="579" width="22" height="22" fill="#ff4f1f"/></svg>
 <div class="wrap">
   <div class="top"><b>We build digital experiences</b><span>Web · Redesign · Telegram · Products</span></div>

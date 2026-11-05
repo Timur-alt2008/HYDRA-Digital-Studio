@@ -117,7 +117,7 @@ function initCore() {
   const groups = $$<SVGGElement>("[data-head-g]", core);
   const heads = $$<SVGAElement>(".head", core);
   const base = [
-    { x: 96, y: 176 }, { x: 230, y: 66 }, { x: 372, y: 70 }, { x: 470, y: 200 },
+    { x: 96, y: 176 }, { x: 230, y: 66 }, { x: 372, y: 70 }, { x: 450, y: 206 },
   ];
   const C = { x: 300, y: 590 };
   const path = (hx: number, hy: number) => `M ${C.x} ${C.y} C ${C.x} ${C.y - 190}, ${hx} ${hy + 230}, ${hx} ${hy + 22}`;

@@ -205,7 +205,7 @@ html.js [data-split].is-in .split-line > span { transform: none; }
 .core .head__ring { fill: var(--abyss); stroke: var(--line-strong); stroke-width: 1.2; vector-effect: non-scaling-stroke; transition: stroke 300ms var(--ease), fill 300ms var(--ease); }
 .core .head__dot { fill: var(--bone); transition: fill 300ms var(--ease), r 300ms var(--ease); }
 .core .head__index { font: 500 15px var(--mono); fill: var(--venom); letter-spacing: 0.08em; }
-.core .head__label { font: 700 24px var(--display); fill: var(--bone); letter-spacing: 0.02em; text-transform: uppercase; font-variation-settings: "wdth" 118; }
+.core .head__label { font: 700 22px var(--display); fill: var(--bone); letter-spacing: 0.01em; text-transform: uppercase; font-variation-settings: "wdth" 100; }
 .core .head:hover .head__ring, .core .head:focus-visible .head__ring, .core .head.is-active .head__ring { stroke: var(--venom); fill: var(--venom-soft); }
 .core .head:hover .head__dot, .core .head:focus-visible .head__dot, .core .head.is-active .head__dot { fill: var(--venom); }
 .core .head:focus-visible .head__ring { stroke-width: 2.4; }

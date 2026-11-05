@@ -7,7 +7,7 @@ export const HEADS = [
   { x: 96, y: 176, side: "left" },
   { x: 230, y: 66, side: "left" },
   { x: 372, y: 70, side: "right" },
-  { x: 470, y: 200, side: "right" },
+  { x: 450, y: 206, side: "right" },
 ] as const;
 export const CORE = { x: 300, y: 590 };
 const SHORT: Record<string, string> = { web: "Web", redesign: "Redesign", telegram: "Telegram", products: "Products" };
